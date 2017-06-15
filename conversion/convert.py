@@ -2,12 +2,12 @@ from lxml import etree
 from .tree import Tree
 
 #http://effbot.org/zone/element.htm
-def iterparent(tree, tag):
+def iter_parent(tree, tag):
     for parent in tree.getiterator(tag):
         for child in parent:
             yield parent, child
 
-def iterparentchildrelations(tree, tag):
+def iter_parent_child_relations(tree, tag):
     for parent in tree.getiterator(tag):
         children = []
         for child in parent:
@@ -15,16 +15,15 @@ def iterparentchildrelations(tree, tag):
         yield parent, children
 
 
-def toTree(file_ref):
+def to_tree(file_ref):
     file_tree = etree.parse(file_ref)
     tree = Tree("root")
-    for parent, children in iterparentchildrelations(file_tree, "node"):
+    for parent, children in iter_parent_child_relations(file_tree, "node"):
         parent_tree = Tree(parent)
         for child in children:
-            parent_tree.addChild(Tree(child))
+            parent_tree.add_child(Tree(child))
         tree.insert(parent_tree)
     return tree
-
 
 
 
