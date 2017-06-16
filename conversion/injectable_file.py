@@ -29,7 +29,7 @@ class InjectableFile:
 
     def read_lines(self, include_modifications=False):
         """
-        Read the lines of a file.
+        Read the lines of a file and removes the line seperators.
 
         Args:
             include_modifications (bool): Whether the modification should be included or the file
@@ -68,6 +68,13 @@ class InjectableFile:
 
         for line in lines:
             existing_modification.after.append(line)
+
+    def write(self, filename):
+        """
+        Write the modified content to the specified file. Cannot be used to override the input file.
+        """
+        with open(filename, 'w') as file:
+            file.writelines(line + "\n" for line in self.read_lines(True))
 
 class LineModifications:
     """
