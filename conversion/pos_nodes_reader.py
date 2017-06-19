@@ -49,6 +49,7 @@ class PosNode:
         self.tag = pos_node.get("postag")
         self.lemma = pos_node.get("lemma")
         self.word = pos_node.get("word")
+        self.root = pos_node.get("root")
 
     def get_sort_key(self):
         """Get a key to sort the nodes by their position in the sentence."""
