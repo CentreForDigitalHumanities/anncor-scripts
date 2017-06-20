@@ -29,7 +29,7 @@ class InjectableFile:
 
     def read_lines(self, include_modifications=False):
         """
-        Read the lines of a file and removes the line seperators.
+        Read the lines of a file and removes the line separators.
 
         Args:
             include_modifications (bool): Whether the modification should be included or the file

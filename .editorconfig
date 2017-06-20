@@ -15,7 +15,7 @@ insert_final_newline = true
 [*.{js,css,scss}]
 indent_size = 2
 
-[*.{html,csv}]
+[*.{html,cha,csv}]
 indent_style = tab
 
 [*.{py,html,md}]
