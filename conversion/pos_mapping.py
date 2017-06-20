@@ -7,6 +7,7 @@ from enum import Enum
 import csv
 import logging
 
+
 class WordForm(Enum):
     """
     Different word forms to be used for formatting.
@@ -15,13 +16,15 @@ class WordForm(Enum):
     LEMMA = "lemma"
     ROOT = "root"
 
+
 class PosMapping:
     """
     Mapping of POS nodes to Lassy XML format. Use read() to initialize the mapping.
     """
 
-    def __init__(self):
+    def __init__(self, punctuation_mapping):
         self.lookup = {}
+        self.punctuation_mapping = punctuation_mapping
 
     def __getitem__(self, key):
         return self.lookup[key]
@@ -58,12 +61,27 @@ class PosMapping:
             elif word_form_type == WordForm.ROOT:
                 stem = pos_node.root
             else:
-                raise Exception("Unknown word form type: {0}".format(word_form_type))
+                raise Exception(
+                    "Unknown word form type: {0}".format(word_form_type))
 
-            if affix is None:
-                return "{0}|{1}".format(pos_tag, stem)
+            if pos_tag == "V" and '_' in pos_node.root:
+                # Separable verbs should mark the preposition separately.
+                [verb, preposition] = pos_node.root.split('_')
+                if pos_node.word.startswith(preposition):
+                    return "{0}$ {1}".format(preposition, self.__format_stem(pos_tag, verb, affix))
+                else:
+                    return self.__format_stem(pos_tag, verb, affix)
+            elif pos_tag == "PUNCT":
+                return self.__format_stem(pos_tag, self.punctuation_mapping[stem])
             else:
-                return "{0}|{1}{2}".format(pos_tag, stem, affix)
+                return self.__format_stem(pos_tag, stem, affix)
         else:
-            logging.warning("No mapping exists for POS %s, word: %s", pos_node.tag, pos_node.word)
+            logging.warning("No mapping exists for POS %s, word: %s",
+                            pos_node.tag, pos_node.word)
             return None
+
+    def __format_stem(self, pos_tag, stem, affix=None):
+        if affix is None:
+            return "{0}|{1}".format(pos_tag, stem)
+        else:
+            return "{0}|{1}{2}".format(pos_tag, stem, affix)

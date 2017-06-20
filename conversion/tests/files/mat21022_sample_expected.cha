@@ -14,21 +14,21 @@
 @Location:	MATs home , Utrecht , Holland
 @Situation:	making peanuts cord for the birds , reading books
 *MAR:	nee , we gaan zo pindaatjes rijgen .
-%mor:	CO|nee PUNCT|, PRO:RED|we-1PLNOM V|ga-PRES-PL ADV|zo N|pinda-DIM-PL V|rijg-INF PUNCT|.
+%mor:	CO|nee PUNCT|cm PRO:RED|we-1PLNOM V|ga-PRES-PL ADV|zo N|pinda-DIM-PL V|rijg-INF PUNCT|period
 *EVE:	nee .
-%mor:	CO|nee PUNCT|.
+%mor:	CO|nee PUNCT|period
 *EVE:	ja !
-%mor:	CO|ja PUNCT|!
+%mor:	CO|ja PUNCT|exclamation
 *MAR:	weet je nog ?
-%mor:	V|weet PRO:RED|je-2SNOM ADV|nog PUNCT|?
+%mor:	V|weet PRO:RED|je-2SNOM ADV|nog PUNCT|question
 *MAR:	had mama gisteren al gezegd .
-%mor:	V|heb N|mama-SG ADV|gisteren ADV|al V|zeg-PASP PUNCT|.
+%mor:	V|heb N|mama-SG ADV|gisteren ADV|al V|zeg-PASP PUNCT|period
 *MAR:	je hebt nog helemaal niet verteld aan Evelien dat jij ziek bent geweest .
-%mor:	PRO:RED|je-2SNOM V|heb ADV|nog ADV|helemaal ADV|niet V|vertel-PASP prep|aan N|Evelien prep|dat adv|jij adj|ziek V|ben V|ben-PASP PUNCT|.
+%mor:	PRO:RED|je-2SNOM V|heb ADV|nog ADV|helemaal ADV|niet V|vertel-PASP prep|aan N|Evelien prep|dat adv|jij adj|ziek V|ben V|ben-PASP PUNCT|period
 *EVE:	ach !
-%mor:	CO|ach PUNCT|!
+%mor:	CO|ach PUNCT|exclamation
 *CHI:	ja !
-%mor:	CO|ja PUNCT|!
+%mor:	CO|ja PUNCT|exclamation
 *EVE:	hoe kwam dat nou ?
-%mor:	ADV|hoe V|kom adv|dat ADV|nou PUNCT|?
+%mor:	ADV|hoe V|kom adv|dat ADV|nou PUNCT|question
 @End

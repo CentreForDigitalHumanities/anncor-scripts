@@ -6,11 +6,14 @@ Test the morphological enriching.
 import unittest
 from ..morph_enricher import MorphEnricher
 from ..pos_mapping import PosMapping
+from ..punctuation_mapping import PunctuationMapping
 
 MAPPING_FILE = "conversion/tests/files/morph_enricher_mapping.csv"
+PUNCTUATION_FILE = "conversion/tests/files/punctuation_mapping_test.csv"
 MAT21022_SAMPLE_CHAT = "conversion/tests/files/mat21022_sample.cha"
 MAT21022_SAMPLE_CHAT_EXPECTED = "conversion/tests/files/mat21022_sample_expected.cha"
 MAT21022_SAMPLE_LASSY = "conversion/tests/files/mat21022_sample.xml"
+
 
 class MorphEnricherTest(unittest.TestCase):
     """
@@ -18,7 +21,7 @@ class MorphEnricherTest(unittest.TestCase):
     """
 
     def setUp(self):
-        mapping = PosMapping()
+        mapping = PosMapping(PunctuationMapping(PUNCTUATION_FILE))
         mapping.read(MAPPING_FILE)
         self.morph_enricher = MorphEnricher(mapping)
 
