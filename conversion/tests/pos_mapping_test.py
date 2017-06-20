@@ -32,10 +32,10 @@ class PosMappingTest(unittest.TestCase):
 
         # Lines with a postfix
         self.assertEqual(
-            ("PRO:RED", WordForm.LEMMA, "1PLNOM"),
+            ("PRO:RED", WordForm.LEMMA, "-1PLNOM"),
             self.mapping["VNW(pers,pron,nomin,red,1,mv)"])
         self.assertEqual(
-            ("V", WordForm.ROOT, "INF"),
+            ("V", WordForm.ROOT, "-INF"),
             self.mapping["WW(inf,vrij,zonder)"])
 
     def test_map(self):

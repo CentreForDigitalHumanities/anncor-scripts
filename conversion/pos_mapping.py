@@ -30,9 +30,9 @@ class PosMapping:
         """
         Read the mapping file, expecting a semicolon separated file containing 4 columns:
          * Lassy POS tag
-         * Prefix
+         * CHAT POS tag
          * Word form to use
-         * Postfix (optional)
+         * Affix (optional)
         """
         self.lookup = {}
 
@@ -52,18 +52,18 @@ class PosMapping:
 
         mapping = self.lookup.get(pos_node.tag)
         if mapping:
-            (prefix, word_form_type, postfix) = mapping
+            (pos_tag, word_form_type, affix) = mapping
             if word_form_type == WordForm.LEMMA:
-                word_form = pos_node.lemma
+                stem = pos_node.lemma
             elif word_form_type == WordForm.ROOT:
-                word_form = pos_node.root
+                stem = pos_node.root
             else:
                 raise Exception("Unknown word form type: {0}".format(word_form_type))
 
-            if postfix is None:
-                return "{0}|{1}".format(prefix, word_form)
+            if affix is None:
+                return "{0}|{1}".format(pos_tag, stem)
             else:
-                return "{0}|{1}-{2}".format(prefix, word_form, postfix)
+                return "{0}|{1}{2}".format(pos_tag, stem, affix)
         else:
             logging.warning("No mapping exists for POS %s, word: %s", pos_node.tag, pos_node.word)
             return None

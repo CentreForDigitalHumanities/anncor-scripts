@@ -8,7 +8,8 @@ class PosNodesReader:
     """
     Reader used to parse (combined) Alpino XML files.
     """
-    def read_sentences(self, filepath):
+
+    def read_sentences(self, file_handle):
         """
         Read the parsed Alpino sentences and give the nodes which are directly
         related to a word in the sentence.
@@ -17,7 +18,7 @@ class PosNodesReader:
             A generator returning tuples of the form (sentence, PosNode[])
         """
         parsed_xml = etree.parse(
-            filepath, etree.XMLParser(remove_blank_text=True))
+            file_handle, etree.XMLParser(remove_blank_text=True))
         parsed_sentences = parsed_xml.findall(".//alpino_ds")
 
         if parsed_sentences:
@@ -33,16 +34,30 @@ class PosNodesReader:
         """
         Read a sentence structure and return the nodes directly relating to a word.
         """
-        sentence = parsed_sentence.find("sentence").text
+        sentence = parsed_sentence.find("sentence")
         pos_nodes = parsed_sentence.findall(".//node[@postag]")
 
-        return (sentence,
-                sorted((PosNode(node) for node in pos_nodes), key=PosNode.get_sort_key))
+        return AlpinoSentence(
+            sentence.text,
+            sentence.attrib["sentid"],
+            sorted((PosNode(node) for node in pos_nodes), key=PosNode.get_sort_key))
+
+
+class AlpinoSentence:
+    """
+    Represents a sentence in the grouped Lassy (Alpino) XML file.
+    """
+
+    def __init__(self, sentence_text, sentence_id, pos_nodes):
+        self.sentence_text = sentence_text
+        self.sentence_id = sentence_id
+        self.pos_nodes = pos_nodes
 
 class PosNode:
     """
     Represents a word with an Alpino POS tag.
     """
+
     def __init__(self, pos_node):
         self.begin = int(pos_node.get("begin"))
         self.end = int(pos_node.get("end"))

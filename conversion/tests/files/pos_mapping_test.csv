@@ -1,8 +1,8 @@
 LET();PUNCT;lemma;
 TSW();CO;lemma;
 BW();ADV;lemma;
-VNW(pers,pron,nomin,red,1,mv);PRO:RED;lemma;1PLNOM
-WW(pv,tgw,mv);V;root;PRES-PL
-N(soort,mv,dim);N;lemma;DIM-PL
-WW(inf,vrij,zonder);V;root;INF
-WW(vd,vrij,zonder);V;root;PASP
+VNW(pers,pron,nomin,red,1,mv);PRO:RED;lemma;-1PLNOM
+WW(pv,tgw,mv);V;root;-PRES-PL
+N(soort,mv,dim);N;lemma;-DIM-PL
+WW(inf,vrij,zonder);V;root;-INF
+WW(vd,vrij,zonder);V;root;-PASP
