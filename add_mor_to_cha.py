@@ -6,6 +6,7 @@ Command line interface for adding morphological information to CHAT files.
 import sys
 import argparse
 import coloredlogs
+import logging
 
 from conversion import morph_enricher
 from conversion import pos_mapping
@@ -75,6 +76,12 @@ def perform_map(mapping_filename, punctuation_filename, chat_filename, pos_filen
     enricher = morph_enricher.MorphEnricher(mapping)
     for line in enricher.map(chat_filename, pos_filename):
         print(line)
+
+    if enricher.has_failures:
+        logging.error("%s sentence(s) have no tag mapping defined!",
+                      enricher.failed_sentences_count)
+        logging.error("Missing mapping(s):\n%s",
+                      "\n".join(sorted(enricher.missing_tags)))
 
 
 main(sys.argv[1:])

@@ -14,6 +14,11 @@ MAT21022_SAMPLE_CHAT = "conversion/tests/files/mat21022_sample.cha"
 MAT21022_SAMPLE_CHAT_EXPECTED = "conversion/tests/files/mat21022_sample_expected.cha"
 MAT21022_SAMPLE_LASSY = "conversion/tests/files/mat21022_sample.xml"
 
+MISSING_MAPPING = "conversion/tests/files/morph_enricher_missing_mapping.csv"
+MISSING_CHAT = "conversion/tests/files/morph_enricher_missing.cha"
+MISSING_CHAT_EXPECTED = "conversion/tests/files/morph_enricher_missing_expected.cha"
+MISSING_LASSY = "conversion/tests/files/morph_enricher_missing.xml"
+
 
 class MorphEnricherTest(unittest.TestCase):
     """
@@ -34,3 +39,20 @@ class MorphEnricherTest(unittest.TestCase):
             self.assertSequenceEqual(
                 list(line.rstrip('\n') for line in expected),
                 list(self.morph_enricher.map(MAT21022_SAMPLE_CHAT, MAT21022_SAMPLE_LASSY)))
+
+    def test_missing(self):
+        """
+        Test that a missing POS tag mapping is detected and returned as expected.
+        """
+
+        self.assertFalse(self.morph_enricher.has_failures)
+        mapped = list(self.morph_enricher.map(MISSING_CHAT, MISSING_LASSY))
+
+        with open(MISSING_CHAT_EXPECTED) as expected:
+            self.assertSequenceEqual(
+                list(line.rstrip('\n') for line in expected),
+                mapped)
+
+        self.assertTrue(self.morph_enricher.has_failures)
+        self.assertEqual(1, self.morph_enricher.failed_sentences_count)
+        self.assertSetEqual({"FOOBAR"}, self.morph_enricher.missing_tags)

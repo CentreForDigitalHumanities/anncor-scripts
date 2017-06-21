@@ -2,10 +2,9 @@
 """
 Handles the mapping of a POS Lassy XML node to the format used in CHAT.
 """
-
-from enum import Enum
 import csv
-import logging
+from enum import Enum
+from .exceptions import NodeMappingException
 
 
 class WordForm(Enum):
@@ -51,6 +50,12 @@ class PosMapping:
     def map(self, pos_node):
         """
         Map a POS Lassy node to a morphological tag as used in CHAT.
+
+        Returns:
+            The string to use in the MOR tier.
+
+        Raises:
+            PosMappingException: A mapping is missing.
         """
 
         mapping = self.lookup.get(pos_node.tag)
@@ -76,9 +81,7 @@ class PosMapping:
             else:
                 return self.__format_stem(pos_tag, stem, affix)
         else:
-            logging.warning("No mapping exists for POS %s, word: %s",
-                            pos_node.tag, pos_node.word)
-            return None
+            raise NodeMappingException(pos_node)
 
     def __format_stem(self, pos_tag, stem, affix=None):
         if affix is None:
