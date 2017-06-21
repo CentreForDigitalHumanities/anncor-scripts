@@ -17,7 +17,7 @@ def get_solution(P, nGen, sizePop, nBest):
     best = None
     for gen in range(0,nGen):
         fittest = getFittest(pop, P.fitness_function, nBest)
-        freshPop =P.get_random_solutions(3)
+        freshPop =P.get_random_solutions(round(0.3 * nBest))
         fittest += freshPop
         pop = mate(fittest, P.mate, sizePop)
         best = fittest[0]

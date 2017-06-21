@@ -2,7 +2,7 @@
 
 import unittest
 from ..evo_alg import *
-from ..selection_problem import SelectionProblem
+from ..selection_problem_example import SelectionProblem
 from ..selection_data import SelectionData
 
 
