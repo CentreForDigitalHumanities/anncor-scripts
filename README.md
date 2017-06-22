@@ -35,3 +35,23 @@ These errors could also be written to a file if needed:
 ```bash
 $ ./add_mor_to_cha.py -c example.cha -p example.xml -c incomplete_mapping.csv > enriched.cha 2> errors.log
 ```
+
+### POS Mapping
+
+The POS mapping can be provided as a semicolon-separated CSV file using `--mapping` (`-m`). This is used to map each node denoting as single word in the Lassy XML file to a well-formed CHAT tag e.g. `V|help-inf`. The CSV file should contain the following columns:
+
+1. The value in the Lassy `postag` attribute to match.
+2. The CHAT tag to place before the word in the `%mor` tier, e.g. `V`.
+3. The word representation to use (`lemma` or `root`).
+4. The affix to use including the delimiter (e.g. `-`, `#` or `&`) (optional).
+
+#### Separable Verbs
+
+Separable verbs are automatically detected and mapped: either placing the preposition separately if its included in the node (e.g. `aan$ V|schaats-PASP`) or removing it when it's not embedded in this node. See `test_separable_verb` for precise details.
+
+#### Punctuation Mapping
+
+Punctuation performed is done when a word is mapped to `PUNCT` e.g.: `PUNCT|period`. Instead of the symbol itself, a mapping is used. A tab-separated CSV file can be provided using `--punctuation` (`-u`), containing:
+
+1. The punctuation symbol to match.
+2. The word to use in its place.
