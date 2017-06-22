@@ -1,4 +1,4 @@
-from .evo_alg import *
+from selection.evo_alg import *
 import numpy as np
 
 

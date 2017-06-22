@@ -2,7 +2,8 @@ import os
 import zipfile
 import codecs
 import time
-from datetime import date
+from datetime import *
+
 import json
 
 dates = {
@@ -146,6 +147,18 @@ def check_double(solution):
         names.add(entry["name"])
     return False
 
+def get_lines_to_check_second(solution):
+    return count_attr(solution, "first_check") - count_attr(solution, "second_check")
+
+def get_lines_to_check_first(solution):
+    return count_attr(solution, "nr_of_lines") - count_attr(solution, "first_check")
+
+
+def get_summary_of_name(solution, name):
+    name_solution = [e for e in solution if name in e["name"]]
+    dates = [datetime.fromtimestamp(int(e["time_stamp"])).strftime('%Y-%m-%d') for e in name_solution]
+
+    return {"nr_of_files": len(name_solution), "nr_of_lines": count_attr(name_solution, "nr_of_lines"), "dates": dates}
 
 
 

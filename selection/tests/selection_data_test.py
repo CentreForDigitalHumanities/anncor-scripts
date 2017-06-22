@@ -1,9 +1,8 @@
 
 
 import unittest
-from ..evo_alg import *
-from ..selection_data import SelectionData
 
+from selection.selection_problem_example.selection_data import SelectionData
 
 
 class TestSelectionData(unittest.TestCase):
