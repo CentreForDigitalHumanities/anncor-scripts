@@ -2,7 +2,7 @@ import os
 import zipfile
 import codecs
 import time
-from datetime import *
+from datetime import datetime, date
 
 import json
 
@@ -48,12 +48,18 @@ def clean_file_name(file_name):
 def count_expressions(path):
     files = list_all_files(path, ".xml")
     result = {}
+    #to make sure there are no duplicates
+    found = set()
     for file in files:
-        file = clean_file_name(file)
-        if file in result.keys():
-            result[file] += 1
+        if file in found:
+            pass
         else:
-            result[file] = 1
+            found.add(file)
+            file = clean_file_name(file)
+            if file in result.keys():
+                result[file] += 1
+            else:
+                result[file] = 1
     return result
 
 def normalize_xml_files(path):
@@ -118,47 +124,6 @@ def load_info(location):
         for line in f.readlines():
             info.append(json.loads(line))
     return info
-
-def get_total_lines(data):
-    total_lines = 0
-    for entry in data:
-        total_lines += entry["nr_of_lines"]
-    return total_lines
-
-def get_total_first_checked(data):
-    return count_attr(data, "first_check")
-
-
-def get_total_second_checked(data):
-    return count_attr(data, "second_check")
-
-
-def count_attr(data, attr):
-    count = 0
-    for entry in data:
-        count += entry[attr]
-    return count
-
-def check_double(solution):
-    names = set([])
-    for entry in solution:
-        if entry["name"] in names:
-            return True
-        names.add(entry["name"])
-    return False
-
-def get_lines_to_check_second(solution):
-    return count_attr(solution, "first_check") - count_attr(solution, "second_check")
-
-def get_lines_to_check_first(solution):
-    return count_attr(solution, "nr_of_lines") - count_attr(solution, "first_check")
-
-
-def get_summary_of_name(solution, name):
-    name_solution = [e for e in solution if name in e["name"]]
-    dates = [datetime.fromtimestamp(int(e["time_stamp"])).strftime('%Y-%m-%d') for e in name_solution]
-
-    return {"nr_of_files": len(name_solution), "nr_of_lines": count_attr(name_solution, "nr_of_lines"), "dates": dates}
 
 
 

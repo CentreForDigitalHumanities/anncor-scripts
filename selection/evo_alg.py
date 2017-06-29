@@ -1,5 +1,6 @@
 import random
 from abc import abstractmethod
+import numpy as np
 
 def getFittest(pop, fitness_function, n):
     return sorted(pop, key=lambda individual: fitness_function(individual), reverse=True)[0:n]
@@ -21,6 +22,10 @@ def get_solution(P, nGen, sizePop, nBest):
         fittest += freshPop
         pop = mate(fittest, P.mate, sizePop)
         best = fittest[0]
+    if(P.fitness_function(best) == -np.inf):
+        print("--------")
+        print("Warning, best violates constraints")
+        print("--------")
     return best
 
 class Problem:
