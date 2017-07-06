@@ -22,10 +22,6 @@ def get_solution(P, nGen, sizePop, nBest):
         fittest += freshPop
         pop = mate(fittest, P.mate, sizePop)
         best = fittest[0]
-    if(P.fitness_function(best) == -np.inf):
-        print("--------")
-        print("Warning, best violates constraints")
-        print("--------")
     return best
 
 class Problem:

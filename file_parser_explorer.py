@@ -1,8 +1,7 @@
 from selection.file_parser import *
 
 
-info = load_info("selection/info.txt")
-info2 = load_info("selection/new_info.txt")
+info = load_info("selection/new_info.txt")
 
 def first_check_test(e):
     if(e["nr_of_lines"] < e["first_check"]):
@@ -28,15 +27,32 @@ def totally_checked(e):
         print(e)
 
 
-for e in info:
-    first_check_test(e)
-    second_check_test(e)
-    first_second_test(e)
+def check_line_number(info):
+    files = list_all_files("selection/data/1. eerste ronde", ".xml")
+    for file in files:
+        name, number = file_to_name_and_number(file)
+        for e in info:
+            if e['name'] == name:
+                if e["nr_of_lines"] < number:
+                    print("Correction number to high: ")
+                    print(e)
 
 
-print("Totally checked")
-for e in info:
-    totally_checked(e)
+
+def check_info(info):
+    for e in info:
+        first_check_test(e)
+        second_check_test(e)
+        first_second_test(e)
+
+
+    print("Totally checked")
+    for e in info:
+        totally_checked(e)
+
+    check_line_number(info)
+
+check_info(info)
 
 def find_duplicates(path):
     files = list_all_files(path, ".xml")

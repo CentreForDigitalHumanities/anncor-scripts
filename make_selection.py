@@ -23,7 +23,7 @@ max_percentage_files = 20
 
 
 #Algorithm parameters
-number_of_generations = 10000
+number_of_iterations = 10000
 size_of_generation = 100
 #The number of solutions selected to generate the a new generation of solutions with
 n_best = 10
@@ -40,7 +40,7 @@ weights = [
 
 p = SelectionProblem("selection/info.txt", weights, min_percentage_files, max_percentage_files, max_lines_to_check)
 
-solution = get_solution(p, number_of_generations, size_of_generation, n_best)
+solution = get_solution(p, number_of_iterations, size_of_generation, n_best)
 solution = SelectionProblem.sort_solution_name(solution)
 print(p.print_file_names(solution))
 p.print_summary(solution)

@@ -1,0 +1,96 @@
+----------
+['laura40', 'laura43', 'laura44', 'laura45', 'laura46', 'laura47', 'laura52', 'laura58', 'laura59', 'laura64', 'laura65', 'laura67', 'laura71', 'laura74', 'sarah35', 'sarah37', 'sarah38', 'sarah41', 'sarah42', 'sarah43', 'sarah44', 'sarah45', 'sarah46', 'sarah50']
+Parameters Settings: 
+  "percentage_weight": "1", "proportion_weight": "1", "uniformity_weight": "1", "first_check_weight": "1", "second_check_weight": "1
+    "max_lines_to_check": "75000", "min_percentage_files": "10", "max_percentage_files": "20"
+
+    Summary:
+        Violates Constraints:
+            False
+        percentage lines checked: 
+            0.19845456774205264
+        number of lines to check: 
+            15348
+            first (and second):
+                5151
+            second:
+                5046
+        number of lines checked:
+            50220
+            first time:
+                16705
+            first and second time:
+                16810
+        
+            laura:
+                files:
+                    14
+        
+            sarah:
+                files:
+                    10
+        
+----------
+['laura32', 'laura34', 'laura43', 'laura44', 'laura45', 'laura46', 'laura47', 'laura52', 'laura55', 'laura59', 'laura64', 'laura65', 'laura71', 'laura72', 'sarah35', 'sarah36', 'sarah37', 'sarah38', 'sarah41', 'sarah43', 'sarah44', 'sarah45', 'sarah50']
+Parameters Settings: 
+  "percentage_weight": "1", "proportion_weight": "1", "uniformity_weight": "1", "first_check_weight": "1", "second_check_weight": "1
+    "max_lines_to_check": "75000", "min_percentage_files": "10", "max_percentage_files": "20"
+
+    Summary:
+        Violates Constraints:
+            False
+        percentage lines checked: 
+            0.18850278304927767
+        number of lines to check: 
+            14556
+            first (and second):
+                4626
+            second:
+                5304
+        number of lines checked:
+            47724
+            first time:
+                16134
+            first and second time:
+                15456
+        
+            laura:
+                files:
+                    14
+        
+            sarah:
+                files:
+                    9
+        
+----------
+['laura03', 'laura08', 'laura22', 'laura26', 'laura33', 'laura34', 'laura37', 'laura46', 'laura53', 'laura54', 'laura61', 'laura63', 'laura70', 'laura70 (Exemplaar met conflict van Jan Odijk 2017-06-17)', 'laura71', 'sarah11', 'sarah18', 'sarah19', 'sarah33', 'sarah36', 'sarah38', 'sarah44']
+Parameters Settings: 
+  "percentage_weight": "2", "proportion_weight": "3", "uniformity_weight": "1", "first_check_weight": "5", "second_check_weight": "1
+    "max_lines_to_check": "500", "min_percentage_files": "10", "max_percentage_files": "20"
+
+    Summary:
+        Violates Constraints:
+            True
+        percentage lines checked: 
+            0.1722130916817245
+        number of lines to check: 
+            41917
+            first (and second):
+                13824
+            second:
+                14269
+        number of lines checked:
+            14981
+            first time:
+                5142
+            first and second time:
+                4697
+        
+            laura:
+                files:
+                    15
+        
+            sarah:
+                files:
+                    7
+        

@@ -37,7 +37,6 @@ class SelectionProblem(Problem):
         return result
 
     def fitness_function(self, solution):
-
         if(self.violates_hard_constraints(solution)):
             return -np.inf
         score = self.get_score(solution)
@@ -50,7 +49,6 @@ class SelectionProblem(Problem):
     def check_line_constraints(self, solution):
         return self.get_total_lines_to_check(solution) > self.max_lines_to_check
 
-
     def get_score(self, solution):
         return  [
             self.get_percentage_score(solution),
@@ -59,11 +57,8 @@ class SelectionProblem(Problem):
             self.get_first_check_score(solution),
             self.get_second_check_score(solution)
         ]
-
     def get_percentage_score(self, solution):
         return self.get_line_percentage(solution)
-
-
 
     #Proportion between laura and sarah files
     def get_proportion_score(self, solution):
@@ -102,7 +97,6 @@ class SelectionProblem(Problem):
     def get_mean_differences(self, solution):
         sarah_solution = [e for e in solution if "sarah" in e["name"]]
         laura_solution = [e for e in solution if "laura" in e["name"] ]
-
         if len(sarah_solution) != 0:
             sarah_mse = self.get_mean_square_error_date_difs(sarah_solution)
         else:
@@ -118,7 +112,6 @@ class SelectionProblem(Problem):
         for i in range(0, len(solution) - 1):
             difs.append(solution[i + 1]["time_stamp"] - solution[i]["time_stamp"])
         return difs
-
 
     def get_mean_square_error_date_difs(self, solution):
         s = sorted(solution , key = lambda e: e["time_stamp"] )
@@ -147,10 +140,8 @@ class SelectionProblem(Problem):
     def get_total_first_checked(self,data):
         return self.count_attr(data, "first_check")
 
-
     def get_total_second_checked(self,data):
         return self.count_attr(data, "second_check")
-
 
     def count_attr(self,data, attr):
         count = 0
@@ -173,7 +164,13 @@ class SelectionProblem(Problem):
         return self.count_attr(solution, "nr_of_lines") - self.count_attr(solution, "first_check")
 
     def get_total_lines_to_check(self, solution):
-        return self.get_lines_to_check_second(solution) + self.get_lines_to_check_first(solution)
+        return self.get_lines_to_check_second(solution) + 2 * self.get_lines_to_check_first(solution)
+
+    def get_lines_checked_first(self, solution):
+        return  self.count_attr(solution, "first_check")
+
+    def get_lines_checked_second(self, solution):
+        return  self.count_attr(solution, "second_check")
 
 
     def get_summary_of_name(self,solution, name):
@@ -191,6 +188,41 @@ class SelectionProblem(Problem):
     def sort_solution_name(solution):
         return sorted(solution, key = lambda e: e["name"])
 
+    def get_summary(self, solution):
+        laura_summary = self.get_summary_of_name_str(solution, "laura")
+        sarah_summary = self.get_summary_of_name_str(solution, "sarah")
+        to_check_first = self.get_lines_to_check_first(solution)
+        to_check_second = self.get_lines_to_check_second(solution)
+        checked_first = self.get_lines_checked_first(solution)
+        checked_second = self.get_lines_checked_second(solution)
+        return '''
+    Summary:
+        Violates Constraints:
+            {}
+        percentage lines checked: 
+            {}
+        number of lines to check: 
+            {}
+            first (and second):
+                {}
+            second:
+                {}
+        number of lines checked:
+            {}
+            first time:
+                {}
+            first and second time:
+                {}
+        '''.format(self.violates_hard_constraints(solution), self.get_percentage_score(solution), 2 * to_check_first+to_check_second, to_check_first, to_check_second,
+                   2 * checked_first + checked_second, checked_first, checked_second) + laura_summary + sarah_summary
+
+    def get_summary_of_name_str(self, solution, name):
+        summary = self.get_summary_of_name(solution, name)
+        return '''
+            {}:
+                files:
+                    {}
+        '''.format(name, summary["nr_of_files"])
 
 
     def print_summary(self, solution):
@@ -250,4 +282,9 @@ class SelectionProblem(Problem):
             sum_difference += abs(ideal_sorted[i] - actual_sorted[i])
         return sum_difference
 
+    def to_string(self):
+        return '''  "percentage_weight": "{}", "proportion_weight": "{}", "uniformity_weight": "{}", "first_check_weight": "{}", "second_check_weight": "{}
+    "max_lines_to_check": "{}", "min_percentage_files": "{}", "max_percentage_files": "{}"'''.format(self.weights[0], self.weights[1], self.weights[2], self.weights[3], self.weights[4], self.max_lines_to_check, self.min_percentage_files, self.max_percentage_files)
+
+            #'{"percentage_weight": "{}",  "proportion_weight": "{}", "uniformity_weight": "{}", first_check_weight: "{}", "second_check_weight": "{}"}'.format(self.weights[0],self.weights[1],self.weights[2],self.weights[3],self.weights[4])
 

@@ -1,5 +1,5 @@
 import numpy as np
-from .evo_alg import Problem
+from selection.evo_alg import Problem
 
 
 class OneMaxProblem(Problem):
