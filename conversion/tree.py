@@ -1,36 +1,39 @@
-
-
-
 class Tree:
     def __init__(self, root):
         self.root = root
         self.children = []
 
-    def addChild(self, child):
+    def add_child(self, child):
         self.children.append(child)
 
-    def addChildren(self, children):
+    def add_children(self, children):
         self.children += children
 
-    #Adds a tree to this tree, if this tree already has a the given root node, it combines the children of the root node
     def insert(self, tree):
+        """
+        Adds a sub-tree to this tree, if this tree already has a given root node, it combines
+        the children of the root node.
+        """
         child = self.get(tree.root)
-        child.addChildren(tree.children) if child else self.addChildren(tree.children)
+        parent = child if child else self
+        parent.add_children(tree.children)
 
     def has(self, child):
-        if(child.root == self.root):
+        if child.root == self.root:
             return True
+
         for next_child in self.children:
-                if(next_child.has(child)):
-                    return True
+            if next_child.has(child):
+                return True
+
         return False
 
     def get(self, root):
-        if(root == self.root):
+        if root == self.root:
             return self
         for next_child in self.children:
             child = next_child.get(root)
-            if(child):
+            if child:
                 return child
         return None
 

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <alpino_ds version="1.3" id="MOREXP-1.xml">
+    <node begin="0" cat="top" end="8" id="0" rel="top">
+      <node begin="1" end="2" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+      <node begin="0" cat="du" end="7" id="2" rel="--">
+        <node begin="0" end="1" frame="tag" id="3" lcat="advp" lemma="nee" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="nee" sense="nee" word="nee"/>
+        <node begin="2" cat="smain" end="7" id="4" rel="nucl">
+          <node begin="2" case="nom" def="def" end="3" frame="pronoun(nwh,fir,pl,de,nom,def,wkpro)" gen="de" getal="mv" id="5" index="1" lcat="np" lemma="we" naamval="nomin" num="pl" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,red,1,mv)" pt="vnw" rel="su" rnum="pl" root="we" sense="we" special="wkpro" status="red" vwtype="pers" wh="nwh" word="we"/>
+          <node begin="3" end="4" frame="verb(zijn,pl,aux(inf))" id="6" infl="pl" lcat="smain" lemma="gaan" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="ga" sc="aux(inf)" sense="ga" stype="declarative" tense="present" word="gaan" wvorm="pv"/>
+          <node begin="2" cat="inf" end="7" id="7" rel="vc">
+            <node begin="2" end="3" id="8" index="1" rel="su"/>
+            <node begin="4" end="5" frame="adverb" id="9" lcat="advp" lemma="zo" pos="adv" postag="BW()" pt="bw" rel="mod" root="zo" sense="zo" word="zo"/>
+            <node begin="5" end="6" frame="noun(het,count,pl)" gen="het" getal="mv" graad="dim" id="10" lcat="np" lemma="pinda" ntype="soort" num="pl" pos="noun" postag="N(soort,mv,dim)" pt="n" rel="obj1" rnum="pl" root="pinda_DIM" sense="pinda_DIM" word="pindaatjes"/>
+            <node begin="6" buiging="zonder" end="7" frame="verb(hebben,inf,transitive)" id="11" infl="inf" lcat="inf" lemma="rijgen" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="rijg" sc="transitive" sense="rijg" word="rijgen" wvorm="inf"/></node>
+        </node>
+      </node>
+      <node begin="7" end="8" frame="punct(punt)" id="12" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/></node>
+    <sentence sentid="1">nee , we gaan zo pindaatjes rijgen .</sentence>
+    <metadata>
+      <meta type="text" name="pid" value="11312/c-00022185-1"/>
+      <meta type="text" name="transcriber" value="Evelien Krikhaar"/>
+      <meta type="text" name="charencoding" value="UTF8"/>
+      <meta type="date" name="date" value="1994-02-18"/>
+      <meta type="text" name="tape_location" value="M 37 , 60 minutes"/>
+      <meta type="text" name="location" value="MATs home , Utrecht , Holland"/>
+      <meta type="text" name="situation" value="making peanuts cord for the birds , reading books"/>
+      <meta type="text" name="speaker" value="MAR"/>
+      <meta type="text" name="origutt" value="nee , we gaan zo pindaatjes rijgen ."/>
+      <meta type="text" name="name" value="Marlies"/>
+      <meta type="text" name="role" value="Mother"/>
+      <meta type="text" name="corpus" value="Groningen"/>
+      <meta type="text" name="language" value="nld"/>
+    </metadata>
+  </alpino_ds>
+  <alpino_ds version="1.3" id="MOREXP-10.xml">
+    <node begin="0" cat="top" end="7" id="0" rel="top">
+      <node begin="0" case="nom" def="def" end="1" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="1" lcat="--" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="--" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+      <node begin="1" cat="du" end="6" id="2" rel="--">
+        <node begin="1" case="nom" def="def" end="2" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="3" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="dp" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+        <node begin="2" cat="sv1" end="6" id="4" rel="dp">
+          <node begin="2" end="3" frame="verb(hebben,sg_heeft,aux_psp_hebben)" id="5" infl="sg_heeft" lcat="sv1" lemma="hebben" pos="verb" postag="WW(pv,tgw,met-t)" pt="ww" pvagr="met-t" pvtijd="tgw" rel="hd" root="heb" sc="aux_psp_hebben" sense="heb" stype="topic_drop" tense="present" word="heeft" wvorm="pv"/>
+          <node begin="3" cat="ppart" end="6" id="6" rel="vc">
+            <node begin="3" buiging="zonder" end="4" frame="verb(hebben,psp,ld_pp)" id="7" infl="psp" lcat="ppart" lemma="spugen" pos="verb" positie="vrij" postag="WW(vd,vrij,zonder)" pt="ww" rel="hd" root="spuug" sc="ld_pp" sense="spuug" word="gespuugd" wvorm="vd"/>
+            <node begin="4" cat="pp" end="6" id="8" rel="ld">
+              <node begin="4" end="5" frame="preposition(in,[])" id="9" lcat="pp" lemma="in" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="in" sense="in" vztype="init" word="in"/>
+              <node begin="5" end="6" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="basis" id="10" lcat="np" lemma="bed" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,onz,stan)" pt="n" rel="obj1" rnum="sg" root="bed" sense="bed" word="bed"/></node>
+          </node>
+        </node>
+      </node>
+      <node begin="6" end="7" frame="punct(uitroep)" id="11" lcat="--" lemma="!" pos="punct" postag="LET()" pt="let" rel="--" root="!" sense="!" special="uitroep" word="!"/></node>
+    <sentence sentid="10">ik ik heeft gespuugd in bed !</sentence>
+    <metadata>
+      <meta type="text" name="pid" value="11312/c-00022185-1"/>
+      <meta type="text" name="transcriber" value="Evelien Krikhaar"/>
+      <meta type="text" name="charencoding" value="UTF8"/>
+      <meta type="date" name="date" value="1994-02-18"/>
+      <meta type="text" name="tape_location" value="M 37 , 60 minutes"/>
+      <meta type="text" name="location" value="MATs home , Utrecht , Holland"/>
+      <meta type="text" name="situation" value="making peanuts cord for the birds , reading books"/>
+      <meta type="text" name="speaker" value="CHI"/>
+      <meta type="text" name="origutt" value="&lt;ik &amp;he (.)&gt; [/] ik heeft gespuugd in bed !"/>
+      <meta type="text" name="name" value="Matthijs"/>
+      <meta type="text" name="role" value="Target_Child"/>
+      <meta type="text" name="role" value="Target_Child"/>
+      <meta type="text" name="corpus" value="Groningen"/>
+      <meta type="text" name="language" value="nld"/>
+      <meta type="int" name="uttid" value="9"/>
+      <meta type="text" name="age" value="2;10.22"/>
+      <meta type="int" name="months" value="34"/>
+    </metadata>
+  </alpino_ds>
+  <alpino_ds version="1.3" id="MOREXP-100.xml">
+    <node begin="0" cat="top" end="16" id="0" rel="top">
+      <node begin="0" cat="smain" end="15" id="1" rel="--">
+        <node begin="1" end="2" frame="verb('hebben/zijn',pl,aux(inf))" id="2" infl="pl" lcat="smain" lemma="kunnen" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="kan" sc="aux(inf)" sense="kan" stype="declarative" tense="present" word="kunnen" wvorm="pv"/>
+        <node begin="2" case="nom" def="def" end="3" frame="pronoun(nwh,fir,pl,de,nom,def,wkpro)" gen="de" getal="mv" id="3" index="1" lcat="np" lemma="we" naamval="nomin" num="pl" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,red,1,mv)" pt="vnw" rel="su" rnum="pl" root="we" sense="we" special="wkpro" status="red" vwtype="pers" wh="nwh" word="we"/>
+        <node begin="0" cat="inf" end="15" id="4" rel="vc">
+          <node begin="0" end="1" frame="tmp_adverb" id="5" lcat="advp" lemma="dan" pos="adv" postag="BW()" pt="bw" rel="mod" root="dan" sense="dan" special="tmp" word="dan"/>
+          <node begin="2" end="3" id="6" index="1" rel="su"/>
+          <node begin="3" end="4" frame="tmp_adverb" id="7" lcat="advp" lemma="straks" pos="adv" postag="BW()" pt="bw" rel="mod" root="straks" sense="straks" special="tmp" word="straks"/>
+          <node begin="4" end="5" frame="adverb" id="8" lcat="advp" lemma="nog" pos="adv" postag="BW()" pt="bw" rel="mod" root="nog" sense="nog" word="nog"/>
+          <node aform="base" begin="5" end="6" frame="adjective(pred(adv))" id="9" infl="pred" lcat="ap" lemma="wel" pos="adj" postag="BW()" pt="bw" rel="mod" root="wel" sense="wel" vform="adj" word="wel"/>
+          <node begin="6" buiging="zonder" end="7" frame="verb(hebben,inf,sbar)" id="10" infl="inf" lcat="inf" lemma="kijken" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="kijk" sc="sbar" sense="kijk" word="kijken" wvorm="inf"/>
+          <node begin="7" cat="cp" end="15" id="11" rel="vc">
+            <node begin="7" conjtype="onder" end="8" frame="complementizer(of)" id="12" lcat="cp" lemma="of" pos="comp" postag="VG(onder)" pt="vg" rel="cmp" root="of" sc="of" sense="of" word="of"/>
+            <node begin="8" cat="ssub" end="15" id="13" rel="body">
+              <node begin="8" case="nom" def="def" end="9" frame="pronoun(nwh,fir,pl,de,nom,def,wkpro)" gen="de" getal="mv" id="14" index="2" lcat="np" lemma="we" naamval="nomin" num="pl" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,red,1,mv)" pt="vnw" rel="su" rnum="pl" root="we" sense="we" special="wkpro" status="red" vwtype="pers" wh="nwh" word="we"/>
+              <node begin="13" end="14" frame="verb('hebben/zijn',pl,aux(inf))" id="15" infl="pl" lcat="ssub" lemma="kunnen" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="kan" sc="aux(inf)" sense="kan" tense="present" word="kunnen" wvorm="pv"/>
+              <node begin="8" cat="inf" end="15" id="16" rel="vc">
+                <node begin="8" end="9" id="17" index="2" rel="su"/>
+                <node begin="9" end="10" frame="adverb" id="18" lcat="advp" lemma="nog" pos="adv" postag="BW()" pt="bw" rel="mod" root="nog" sense="nog" word="nog"/>
+                <node begin="10" cat="np" end="13" id="19" rel="obj1">
+                  <node begin="10" end="11" frame="determiner(een)" id="20" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+                  <node aform="base" begin="11" buiging="zonder" end="12" frame="adjective(no_e(adv))" graad="basis" id="21" infl="no_e" lcat="ap" lemma="leuk" pos="adj" positie="prenom" postag="ADJ(prenom,basis,zonder)" pt="adj" rel="mod" root="leuk" sense="leuk" vform="adj" word="leuk"/>
+                  <node begin="12" end="13" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="dim" id="22" lcat="np" lemma="boek" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,dim,onz,stan)" pt="n" rel="hd" rnum="sg" root="boek_DIM" sense="boek_DIM" word="boekje"/></node>
+                <node begin="14" buiging="zonder" end="15" frame="verb(hebben,inf,transitive_ndev_ndev)" id="23" infl="inf" lcat="inf" lemma="vinden" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="vind" sc="transitive_ndev_ndev" sense="vind" word="vinden" wvorm="inf"/></node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node begin="15" end="16" frame="punct(punt)" id="24" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/></node>
+    <sentence sentid="100">dan kunnen we straks nog wel kijken of we nog een leuk boekje kunnen vinden .</sentence>
+    <metadata>
+      <meta type="text" name="pid" value="11312/c-00022185-1"/>
+      <meta type="text" name="transcriber" value="Evelien Krikhaar"/>
+      <meta type="text" name="charencoding" value="UTF8"/>
+      <meta type="date" name="date" value="1994-02-18"/>
+      <meta type="text" name="tape_location" value="M 37 , 60 minutes"/>
+      <meta type="text" name="location" value="MATs home , Utrecht , Holland"/>
+      <meta type="text" name="situation" value="making peanuts cord for the birds , reading books"/>
+      <meta type="text" name="speaker" value="EVE"/>
+      <meta type="text" name="origutt" value="dan kunnen we straks nog wel kijken of we nog (ee)n leuk boekje kunnen vinden ."/>
+      <meta type="text" name="name" value="Evelien"/>
+      <meta type="text" name="role" value="Investigator"/>
+      <meta type="text" name="role" value="Investigator"/>
+      <meta type="text" name="corpus" value="Groningen"/>
+      <meta type="text" name="language" value="nld"/>
+      <meta type="int" name="uttid" value="99"/>
+    </metadata>
+  </alpino_ds>
+</treebank>
