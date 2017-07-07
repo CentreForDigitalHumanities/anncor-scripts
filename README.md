@@ -1,4 +1,4 @@
-# gretel-scripts
+# AnnCor-scripts
 
 It is recommended to create a `virtualenv` using Python 3.5 (or higher) before running any of the code.
 
