@@ -2,4 +2,4 @@ env
 .idea
 selection/data
 *.pyc
-
+__pycache__
