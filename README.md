@@ -4,9 +4,11 @@ It is recommended to create a `virtualenv` using Python 3.5 (or higher) before r
 
 Then simply:
 ```bash
-$ pip install -r requirements.txt
+$ pip install -r requirements/deploy.txt
 $ ./run_tests.sh
 ```
+
+Run `pip install -r requirements/develop.txt` for setting up the development environment.
 
 All provided tests should run without issues.
 
