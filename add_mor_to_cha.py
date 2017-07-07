@@ -5,8 +5,8 @@ Command line interface for adding morphological information to CHAT files.
 
 import sys
 import argparse
-import coloredlogs
 import logging
+import coloredlogs
 
 from conversion import morph_enricher
 from conversion import pos_mapping
