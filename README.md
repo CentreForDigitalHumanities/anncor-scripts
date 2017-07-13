@@ -40,12 +40,14 @@ $ ./add_mor_to_cha.py -c example.cha -p example.xml -c incomplete_mapping.csv > 
 
 ### POS Mapping
 
-The POS mapping can be provided as a semicolon-separated CSV file using `--mapping` (`-m`). This is used to map each node denoting as single word in the Lassy XML file to a well-formed CHAT tag e.g. `V|help-inf`. The CSV file should contain the following columns:
+The POS mapping can be provided as a comma-separated CSV file using `--mapping` (`-m`). This is used to map each node denoting as single word in the Lassy XML file to a well-formed CHAT tag e.g. `V|help-inf`. The CSV file should contain a header and the following columns:
 
-1. The value in the Lassy `postag` attribute to match.
-2. The CHAT tag to place before the word in the `%mor` tier, e.g. `V`.
-3. The word representation to use (`lemma` or `root`).
-4. The affix to use including the delimiter (e.g. `-`, `#` or `&`) (optional).
+1. The CHAT tag to place before the word in the `%mor` tier, e.g. `V`. *Optionally* a delimiter (e.g. `-`, `#` or `&`) followed by the affix to use.
+2. The ID (ignored).
+3. The value in the Lassy `postag` attribute to match.
+4. The word form to use (`lemma` or `root`).
+
+Additional columns are ignored.
 
 #### Separable Verbs
 

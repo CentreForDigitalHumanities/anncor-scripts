@@ -1,8 +1,9 @@
-LET();PUNCT;lemma;
-TSW();CO;lemma;
-BW();ADV;lemma;
-VNW(pers,pron,nomin,red,1,mv);PRO:RED;lemma;-1PLNOM
-WW(pv,tgw,mv);V;root;-PRES-PL
-N(soort,mv,dim);N;lemma;-DIM-PL
-WW(inf,vrij,zonder);V;root;-INF
-WW(vd,vrij,zonder);V;root;-PASP
+MOR tags,ID,DCOI,FORM
+PUNCT,[T101],LET(),lemma
+CO,[T102],TSW(),lemma
+ADV,[T103],BW(),lemma
+PRO:RED-1PLNOM,[T104],"VNW(pers,pron,nomin,red,1,mv)",lemma
+V-PRES-PL,[T105],"WW(pv,tgw,mv)",root
+N-DIM-PL,[T106],"N(soort,mv,dim)",lemma
+V-INF,[T107],"WW(inf,vrij,zonder)",root
+V-PASP,[T108],"WW(vd,vrij,zonder)",root

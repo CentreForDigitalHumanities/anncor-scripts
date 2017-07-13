@@ -3,6 +3,7 @@
 Handles the mapping of a POS Lassy XML node to the format used in CHAT.
 """
 import csv
+import re
 from enum import Enum
 from .exceptions import NodeMappingException
 
@@ -30,22 +31,30 @@ class PosMapping:
 
     def read(self, filename):
         """
-        Read the mapping file, expecting a semicolon separated file containing 4 columns:
-         * Lassy POS tag
-         * CHAT POS tag
-         * Word form to use
-         * Affix (optional)
+        Read the mapping file, expecting a comma separated file containing 4 columns:
+         * 0: CHAT POS tag and affix (optional)
+         * 1: ID (ignored)
+         * 2: Lassy POS tag
+         * 3: Word form to use
         """
         self.lookup = {}
 
         with open(filename) as csv_file:
-            for row in csv.reader(csv_file, delimiter=';'):
-                if row[3] == "":
+            reader = csv.reader(csv_file, delimiter=',')
+            # skip the header
+            next(reader)
+            for row in reader:
+                # - suffix, # prefix or & infix?
+                match = re.search("(-|#|&).+", row[0])
+                if not match:
+                    prefix = row[0]
                     postfix = None
                 else:
-                    postfix = row[3]
+                    index = match.start()
+                    prefix = row[0][:index]
+                    postfix = row[0][index:]
 
-                self.lookup[row[0]] = (row[1], WordForm(row[2]), postfix)
+                self.lookup[row[2]] = (prefix, WordForm(row[3]), postfix)
 
     def map(self, pos_node):
         """
@@ -69,14 +78,14 @@ class PosMapping:
                 raise Exception(
                     "Unknown word form type: {0}".format(word_form_type))
 
-            if pos_tag == "V" and '_' in pos_node.root:
+            if pos_tag.upper() == "V" and '_' in pos_node.root:
                 # Separable verbs should mark the preposition separately.
                 [verb, preposition] = pos_node.root.split('_')
                 if pos_node.word.startswith(preposition):
                     return "{0}$ {1}".format(preposition, self.__format_stem(pos_tag, verb, affix))
                 else:
                     return self.__format_stem(pos_tag, verb, affix)
-            elif pos_tag == "PUNCT":
+            elif pos_tag.upper() == "PUNCT":
                 return self.__format_stem(pos_tag, self.punctuation_mapping[stem])
             else:
                 return self.__format_stem(pos_tag, stem, affix)
