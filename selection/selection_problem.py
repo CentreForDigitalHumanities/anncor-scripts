@@ -214,7 +214,7 @@ class SelectionProblem(Problem):
             first and second time:
                 {}
         '''.format(self.violates_hard_constraints(solution), self.get_percentage_score(solution), 2 * to_check_first+to_check_second, to_check_first, to_check_second,
-                   2 * checked_first + checked_second, checked_first, checked_second) + laura_summary + sarah_summary
+                   checked_first + checked_second, checked_first, checked_second) + laura_summary + sarah_summary
 
     def get_summary_of_name_str(self, solution, name):
         summary = self.get_summary_of_name(solution, name)
