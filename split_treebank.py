@@ -23,21 +23,32 @@ def main(argv):
             "-b", "--base",
             help="The base filename to use.",
             required=False)
+        parser.add_argument(
+            "-m", "--map",
+            help="The DATE -> number mapping to use.",
+            required=False)
 
         options = parser.parse_args(argv)
 
-        split(options.treebank, options.base)
+        split(options.treebank, options.base, options.map)
     except Exception as exception:
         sys.stderr.write(repr(exception) + "\n")
         sys.stderr.write("for help use --help\n\n")
         raise exception
 
 
-def split(treebank_filename, base_filename):
+def split(treebank_filename, base_filename, map_filename):
     if base_filename is None:
         (_, base_filename) = os.path.split(treebank_filename)
 
     date_map = {}
+    if not map_filename is None:
+        with open(map_filename, 'r') as map_file:
+            for line in map_file:
+                if not line.startswith('#') and line.find('=') >= 0:
+                    [number, date] = line.split('=')
+                    date_map[date.strip()] = number.strip()
+
     with open(treebank_filename, 'r') as treebank_file:
         treebank_file.readline()
         while True:
@@ -53,8 +64,9 @@ def split(treebank_filename, base_filename):
             write_file(base_filename, file_number, file)
 
     print("# mapping used for " + treebank_filename)
-    for date,number in date_map.items():
-        print(base_filename + number + ' = ' + date)
+    for date, number in sorted(date_map.items()):
+        print(number + ' = ' + date)
+
 
 def read_file(lines):
     """
@@ -76,26 +88,27 @@ def read_file(lines):
         if line.find("</alpino_ds>") >= 0:
             break
         elif line.find("<sentence") >= 0:
-            sentence_number = int(line[line.find("sentid=\""):].split('"')[1])
-        elif line.find("<meta") >= 0 and line.find("name=\"date\"") > 0:
-            date = line[line.find("value=\""):].split('"')[1]
+            utterance_number = int(line[line.find("sentid=\""):].split('"')[1])
+        elif line.find("<meta") >= 0:
+            if line.find("name=\"date\"") > 0:
+                date = line[line.find("value=\""):].split('"')[1]
+            elif line.find("name=\"uttid\"") > 0:
+                utterance_number = int(
+                    line[line.find("value=\""):].split('"')[1])
 
-    if date == None:
-        print(''.join(file_lines))
-
-    return File(file_lines, sentence_number, date)
+    return File(file_lines, utterance_number, date)
 
 
 def write_file(base_filename, file_number, file):
-    with open(base_filename + file_number + '_u' + str(file.sentence_number).zfill(11) + '.xml', 'w') as target:
+    with open(base_filename + file_number + '_u' + str(file.utterance_number).zfill(11) + '.xml', 'w') as target:
         target.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         target.writelines(file.lines)
 
 
 class File:
-    def __init__(self, lines, sentence_number, date):
+    def __init__(self, lines, utterance_number, date):
         self.lines = lines
-        self.sentence_number = sentence_number
+        self.utterance_number = utterance_number
         self.date = date
 
 
