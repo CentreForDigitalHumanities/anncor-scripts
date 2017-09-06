@@ -1,5 +1,8 @@
 """
 Windowed file selection: select a range from a file with the highest associated total score.
+Notes:
+- Utterance scores are assumed to be integer, which can be safely added/subtracted indefinitely
+- If multiple selections exist with the maximum score, the first will be returned
 """
 import math
 
