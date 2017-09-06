@@ -33,8 +33,8 @@ class TestFileParser(unittest.TestCase):
         self.assertEqual(result2, ("Laura43", 100))
 
     def test_get_number_from_file(self):
-        file = "VanKampen_uttfiles2_Laura43_u0000028.xml"
-        file2 = "VanKampen_laura43_u00000100.xml"
+        file = "VanKampen_uttfiles2_Laura43_u0000028"
+        file2 = "VanKampen_laura43_u00000100"
         result = get_number_from_file(file)
         result2 = get_number_from_file(file2)
         self.assertEqual(result,28)
