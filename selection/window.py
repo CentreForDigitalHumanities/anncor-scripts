@@ -1,5 +1,6 @@
 """
 Windowed file selection: select a range from a file with the highest associated total score.
+
 Notes:
 - Utterance scores are assumed to be integer, which can be safely added/subtracted indefinitely
 - If multiple selections exist with the maximum score, the first will be returned
@@ -11,9 +12,10 @@ def get_selection(utterances, fraction):
     """
     Return the windowed selection with the highest score.
 
-    Arguments:
-    utterances -- a list of utterance numbers and their scores (number,score)[]
-    fraction -- the fraction size to select
+    :param utterances: a list of utterance numbers and their scores
+    :param fraction: the fraction size to select
+    :type utterances: (int,int)[]
+    :rtype: int[]
     """
     subset_length = math.ceil(fraction * len(utterances))
 
@@ -38,8 +40,10 @@ def get_file_selection(files, fraction):
     """
     Return the files with the window selections having the highest score.
 
-    Arguments:
-    files -- a list of filenames, utterances number and their scores (filename, (number,score)[])[]
-    fraction -- the fraction size to select
+    :param files: a list of filenames, utterances number and their scores
+    :param fraction: the fraction size to select
+    :type files: (str, (int,int)[])[]
+    :type fraction: float
+    :rtype: (str, int[])[]
     """
     return [(filename, get_selection(utterances, fraction)) for filename, utterances in files]
