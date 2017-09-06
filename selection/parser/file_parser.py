@@ -1,10 +1,13 @@
+"""
+ Contains functions to parse and get info about the cha files and xml files that corresponds to the checked lines in the cha files
+"""
+
 import os
 import codecs
 import time
 from datetime import datetime, date
 import re
-from DHLabUtils.filesystem import *
-
+import zipfile
 import json
 
 dates = {
@@ -25,7 +28,9 @@ dates = {
 
 def create_info_file():
     """"
-        Creates the information foor each cha files. This information includes: "name, time_stamp, nr_of_lines. nr_of_first_checked, nr_of_second_checked"
+        Creates the information for each cha files. This information includes: "name, time_stamp, nr_of_lines. nr_of_first_checked, nr_of_second_checked"
+        :return information: Returns the information as specified above
+        :rtype dict
     """
     path = "selection/data/cha-files"
 
@@ -65,7 +70,12 @@ def create_info_file():
         results.append(info)
     return results
 
-def get_lines_of_files(path):
+def get_lines_of_cha_files(path):
+    """
+    Gets the lines in the cha files in the given path
+    :param path: The path that is looked at, this includes the subfolders
+    :return: a list of cha files with the lines
+    """
     results = []
     for file in os.listdir(path):
 
@@ -77,9 +87,13 @@ def get_lines_of_files(path):
             results.append((file[:-4], [i for i in range(count)]))
     return results
 
-def list_all_files(path, extension):
+def list_all_files_with_extension(path, extension):
     """"
         Lists all the files in the path with the given extension, when there is a zip folder it unzips it and removes the zip folder
+        :param path: The path that we list all the files in, this includes the subfolders and zip files
+        :param extension: The extension that we look at
+        :return the files in the path with the given extension
+        :rtype string[]
     """
     files = []
     for file in os.listdir(path):
@@ -88,23 +102,26 @@ def list_all_files(path, extension):
         if file.endswith(".zip"):
             new_path = unzip(os.path.join(path, file))
             os.remove(os.path.join(path, file))
-            files = files + list_all_files(new_path, extension)
+            files = files + list_all_files_with_extension(new_path, extension)
         # Dive into subfolders.
         if os.path.isdir(os.path.join(path, file)):
-            files = files + list_all_files(os.path.join(path, file), extension)
+            files = files + list_all_files_with_extension(os.path.join(path, file), extension)
     return files
 
 
 def list_cha_files(path):
     """"
          List all the cha files in a given path
+        :param path: The path that we list all the files in, this includes the subfolders and zip files
     """
-    return list_all_files(path, ".cha")
+    return list_all_files_with_extension(path, ".cha")
 
 
 def clean_file_name(file_name):
     """"
-        Cleanes a file such that it only contains the name of the session
+        Cleans a file such that it only contains the name of the session.
+        :param file_name: the name that should be cleaned.
+        :return the cleaned file name.
     """
     file_name = file_name.replace("VanKampen_", "")
     file_name = file_name.replace("uttfiles2_", "")
@@ -115,6 +132,8 @@ def clean_file_name(file_name):
 def get_number_from_file(file_name):
     """"
         Get the line number that this file annotates
+        :param file_name: the name of the file that we want to look get the number from
+        :return the number of the line that this file annotates
     """
 
     # First delete everything before the numbers
@@ -129,20 +148,33 @@ def get_number_from_file(file_name):
     return number
 
 
-def file_to_name_and_number(file):
+def file_to_name_and_number(file_name):
+    """
+    Splits the file in a name and a line number
+    :param file_name: the file name that we want to splitup
+    :return: a tuple containing the name (e.g. laura47) and the line number
+    """
+
     # Examplaar is a file that we do not need to concern ourselfs with.
-    if ("Exemplaar" in file):
+    if ("Exemplaar" in file_name):
         return ("", -1)
-    name = clean_file_name(file[:-4])
-    number = get_number_from_file(file[:-4])
+    name = clean_file_name(file_name[:-4])
+    number = get_number_from_file(file_name[:-4])
     return (name, number)
 
 
 def get_line_score(files_path, first_checked_path, second_checked_path):
+    """
+    Gets the line score
+    :param files_path:
+    :param first_checked_path:
+    :param second_checked_path:
+    :return:
+    """
     first_checked = get_lines_checked(first_checked_path)
     second_checked = get_lines_checked(second_checked_path)
     #Clean file name
-    files_and_lines = get_lines_of_files(files_path)
+    files_and_lines = get_lines_of_cha_files(files_path)
     result = []
     for (file, lines) in files_and_lines:
         file_result = [file]
@@ -171,7 +203,7 @@ def get_lines_checked(path):
     :param path:
     :return: A dictionary containing file names and the lines that are checked
     """
-    files = list_all_files(path, ".xml")
+    files = list_all_files_with_extension(path, ".xml")
     result = {}
     found = set()
     for file in files:
@@ -195,7 +227,7 @@ def count_line_files(path):
     :param path:
     :return:
     """
-    files = list_all_files(path, ".xml")
+    files = list_all_files_with_extension(path, ".xml")
     result = {}
     # to make sure there are no duplicates
     found = set()
@@ -217,7 +249,7 @@ def count_line_files(path):
 
 
 def normalize_xml_files(path):
-    files = list_all_files(path, ".xml")
+    files = list_all_files_with_extension(path, ".xml")
     result = set([])
     for file in files:
         file = clean_file_name(file)
@@ -256,3 +288,16 @@ def load_info(location):
         for line in f.readlines():
             info.append(json.loads(line))
     return info
+
+
+def unzip(path):
+    """
+    Unzips a zip folder and creates a folder containing the results
+    :param path: The path to the folder to zip
+    :return: The new name fo the path
+    """
+    zip_ref = zipfile.ZipFile(path, 'r')
+    new_path = path[:-3]
+    zip_ref.extractall(new_path)
+    zip_ref.close()
+    return new_path

@@ -25,7 +25,7 @@ def totally_checked(e):
 
 
 def check_line_number(info):
-    files = list_all_files("selection/data/1. eerste ronde", ".xml")
+    files = list_all_files_with_extension("selection/data/1. eerste ronde", ".xml")
     for file in files:
         name, number = file_to_name_and_number(file)
         for e in info:
@@ -51,7 +51,7 @@ def check_info(info):
 
 
 def find_duplicates(path):
-    files = list_all_files(path, ".xml")
+    files = list_all_files_with_extension(path, ".xml")
     result = set()
     duplicates = set()
     for file in files:
