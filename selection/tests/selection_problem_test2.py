@@ -1,8 +1,8 @@
 import unittest
 
+from selection.parser.file_parser import *
 from selection.selection_problem import SelectionProblem
 from ..evo_alg import *
-from ..file_parser import *
 
 
 class testSelectionProblem(unittest.TestCase):

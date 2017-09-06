@@ -1,6 +1,8 @@
-from selection.evo_alg import *
 import numpy as np
-from selection.file_parser import *
+
+from selection.evo_alg import *
+from selection.parser.file_parser import *
+
 
 class SelectionProblem(Problem):
     def __init__(self, data_path, weights=[1,1,1,1,1,], min_percentage_files=10, max_percentage_files=20, max_lines_to_check=np.inf):

@@ -1,9 +1,9 @@
 import os
-import zipfile
 import codecs
 import time
 from datetime import datetime, date
 import re
+from DHLabUtils.filesystem import *
 
 import json
 
@@ -23,7 +23,7 @@ dates = {
 }
 
 
-def create_info():
+def create_info_file():
     """"
         Creates the information foor each cha files. This information includes: "name, time_stamp, nr_of_lines. nr_of_first_checked, nr_of_second_checked"
     """
@@ -35,36 +35,47 @@ def create_info():
     count = 0
     for k in second_round:
         for entry in second_round[k]:
-            if( entry not in first_round[k] and entry[0] != "sarah46"):
-                count +=1
+            if (entry not in first_round[k] and entry[0] != "sarah46"):
+                count += 1
                 print(entry)
     print(count)
     results = []
 
-    #Count the lines and get the dates out of the files
+    # Count the lines and get the dates out of the files
     for file in os.listdir(path):
         date = ""
         with codecs.open(os.path.join(path, file), "r", "utf-8") as f:
             count = 0
             for line in f.readlines():
-                if("*" == line[0]):
+                if ("*" == line[0]):
                     count += 1
-                if("@Date" in line):
+                if ("@Date" in line):
                     date = date_to_timestamp(get_date(line))
 
-        #Remove the .cha extension
+        # Remove the .cha extension
         file = file[:-4]
         info = {
             "name": file,
             "time_stamp": date,
             "nr_of_lines": count,
-            "first_check": len(first_round[file]) if file in first_round else 0 ,
+            "first_check": len(first_round[file]) if file in first_round else 0,
             "second_check": len(second_round[file]) if file in second_round else 0
         }
 
         results.append(info)
     return results
 
+def get_lines_of_files(path):
+    results = []
+    for file in os.listdir(path):
+
+        with codecs.open(os.path.join(path, file), "r", "utf-8") as f:
+            count = 0
+            for line in f.readlines():
+                if ("*" == line[0]):
+                    count += 1
+            results.append((file[:-4], [i for i in range(count)]))
+    return results
 
 def list_all_files(path, extension):
     """"
@@ -83,49 +94,83 @@ def list_all_files(path, extension):
             files = files + list_all_files(os.path.join(path, file), extension)
     return files
 
+
 def list_cha_files(path):
-   """"
-        List all the cha files in a given path
-   """
-   return list_all_files(path, ".cha")
+    """"
+         List all the cha files in a given path
+    """
+    return list_all_files(path, ".cha")
+
 
 def clean_file_name(file_name):
     """"
         Cleanes a file such that it only contains the name of the session
     """
-    file_name  = file_name.replace("VanKampen_", "")
+    file_name = file_name.replace("VanKampen_", "")
     file_name = file_name.replace("uttfiles2_", "")
     i = file_name.find("_")
     return file_name[0:i]
+
 
 def get_number_from_file(file_name):
     """"
         Get the line number that this file annotates
     """
 
-    #First delete everything before the numbers
+    # First delete everything before the numbers
     occurences = [m.start() for m in re.finditer('_', file_name)]
 
     number = file_name[occurences[-1] + 1:]
-    print("number: ", number)
-    #some sort of side_case
-    if("u" in file_name):
+    # some sort of side_case
+    if ("u" in file_name):
         number = number[1:]
     number = int(number)
 
     return number
 
-def file_to_name_and_number(file):
 
-    #Examplaar is a file that we do not need to concern ourselfs with.
-    if("Exemplaar" in file):
-        return ( "", -1)
+def file_to_name_and_number(file):
+    # Examplaar is a file that we do not need to concern ourselfs with.
+    if ("Exemplaar" in file):
+        return ("", -1)
     name = clean_file_name(file[:-4])
     number = get_number_from_file(file[:-4])
     return (name, number)
 
 
+def get_line_score(files_path, first_checked_path, second_checked_path):
+    first_checked = get_lines_checked(first_checked_path)
+    second_checked = get_lines_checked(second_checked_path)
+    #Clean file name
+    files_and_lines = get_lines_of_files(files_path)
+    result = []
+    for (file, lines) in files_and_lines:
+        file_result = [file]
+
+        for line in lines:
+            score = 0
+            if file in first_checked:
+                if line in first_checked[file]:
+                    score = 1
+            if file in second_checked:
+                if line in second_checked[file]:
+                    score = 2
+            line_results = (line, score)
+            file_result.append(line_results)
+
+        result.append(file_result)
+    print(result)
+    return result
+
+
+
 def get_lines_checked(path):
+    """
+    Get all the lines checked in the given path.
+     It expects a path pointing to xml files which contain files that describes which line is checked
+    :param path:
+    :return: A dictionary containing file names and the lines that are checked
+    """
     files = list_all_files(path, ".xml")
     result = {}
     found = set()
@@ -138,27 +183,29 @@ def get_lines_checked(path):
         if (not "uttfiles2_" in file):
             file = clean_file_name(file)
             if file in result.keys():
-                result[file].add(name_number)
+                result[file].add(name_number[1])
             else:
-                result[file] = set([name_number])
+                result[file] = set([name_number[1]])
     return result
 
 
-def count_expressions(path):
+def count_line_files(path):
+    """
+    Counts the line files in a given path e.g laura47_00001.xml and laura47_000002.xml
+    :param path:
+    :return:
+    """
     files = list_all_files(path, ".xml")
     result = {}
-    #to make sure there are no duplicates
+    # to make sure there are no duplicates
     found = set()
     for file in files:
         name_number = file_to_name_and_number(file)
         if name_number in found:
-            if(name_number[0] == "laura47"):
-                print(file)
-                print(name_number)
             pass
         else:
             found.add(name_number)
-            if(not "uttfiles2_" in file):
+            if (not "uttfiles2_" in file):
                 file = clean_file_name(file)
                 if file in result.keys():
                     result[file] += 1
@@ -167,6 +214,7 @@ def count_expressions(path):
             else:
                 print(file)
     return result
+
 
 def normalize_xml_files(path):
     files = list_all_files(path, ".xml")
@@ -177,15 +225,8 @@ def normalize_xml_files(path):
     return result
 
 
-#Unzips all the zips in the path
-def unzip(path):
-    zip_ref = zipfile.ZipFile(path, 'r')
-    new_path = path[:-3]
-    zip_ref.extractall(new_path)
-    zip_ref.close()
-    return new_path
 
-#Get the date out of a date string from a cha file
+# Get the date out of a date string from a cha file
 def get_date(string):
     return string[7:-1]
 
@@ -194,7 +235,6 @@ def date_to_timestamp(date_string):
     ar = date_string.split("-")
     d = date(int(ar[2]), dates[ar[1]], int(ar[0]))
     return time.mktime(d.timetuple())
-
 
 
 def store_info(info, location):
@@ -206,6 +246,7 @@ def store_info(info, location):
             json.dump(entry, f)
             f.write("\n")
 
+
 def load_info(location):
     """"
         Loads the info from the given location
@@ -215,6 +256,3 @@ def load_info(location):
         for line in f.readlines():
             info.append(json.loads(line))
     return info
-
-
-

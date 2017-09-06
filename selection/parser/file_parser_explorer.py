@@ -1,7 +1,4 @@
-from selection.file_parser import *
-
-
-info = load_info("selection/new_info.txt")
+from selection.parser.file_parser import *
 
 def first_check_test(e):
     if(e["nr_of_lines"] < e["first_check"]):
@@ -52,7 +49,6 @@ def check_info(info):
 
     check_line_number(info)
 
-check_info(info)
 
 def find_duplicates(path):
     files = list_all_files(path, ".xml")
@@ -66,11 +62,3 @@ def find_duplicates(path):
         else:
             result.add(file)
     return duplicates
-
-
-path = "selection/data/1. eerste ronde"
-
-#dups = find_duplicates(path)
-#print(dups)
-
-
