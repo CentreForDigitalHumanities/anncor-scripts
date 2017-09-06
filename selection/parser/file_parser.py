@@ -177,9 +177,9 @@ def get_line_score(files_path, first_checked_path, second_checked_path):
     files_and_lines = get_lines_of_cha_files(files_path)
     result = []
     for (file, lines) in files_and_lines:
-        file_result = [file]
-
+        line_results = []
         for line in lines:
+
             score = 0
             if file in first_checked:
                 if line in first_checked[file]:
@@ -187,10 +187,9 @@ def get_line_score(files_path, first_checked_path, second_checked_path):
             if file in second_checked:
                 if line in second_checked[file]:
                     score = 2
-            line_results = (line, score)
-            file_result.append(line_results)
+            line_results.append((line, score))
 
-        result.append(file_result)
+        result.append((file, line_results))
     return result
 
 
