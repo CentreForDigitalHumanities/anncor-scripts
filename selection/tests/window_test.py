@@ -1,4 +1,6 @@
-
+"""
+Test the windowed selection
+"""
 import unittest
 from ..window import get_file_selection, get_selection
 
@@ -25,7 +27,7 @@ class TestWindow(unittest.TestCase):
             (11, 0),
             (12, 1)],
             0.3)
-        self.assertEqual(result, [range(5, 9)])
+        self.assertEqual(result, list(range(5, 9)))
 
     def test_files_window(self):
         data = self.generate_files(
@@ -35,17 +37,17 @@ class TestWindow(unittest.TestCase):
                 # middle
                 [0, 0, 2, 0, 1, 2, 1, 2, 1, 0, 0, 1],
                 # end
-                [0, 1, 0, 2, 0, 1, 0, 2, 2, 1, 2, 1]
+                [0, 1, 0, 2, 0, 1, 0, 1, 2, 1, 2, 2]
             ]
         )
 
         results = get_file_selection(data, 0.3)
-        self.assertEqual(len(results), 1)
+        self.assertEqual(len(results), 3)
         self.assert_file(results[0], "file0", 0, 4)
-        self.assert_file(results[0], "file1", 4, 8)
-        self.assert_file(results[0], "file2", 8, 12)
+        self.assert_file(results[1], "file1", 4, 8)
+        self.assert_file(results[2], "file2", 8, 12)
 
     def assert_file(self, result, expected_filename, start, end):
         (actual_filename, utterances) = result
         self.assertEqual(actual_filename, expected_filename)
-        self.assertEqual(utterances, [range(start, end)])
+        self.assertEqual(utterances, list(range(start, end)))
