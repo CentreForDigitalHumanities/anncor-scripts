@@ -98,16 +98,21 @@ def clean_file_name(file_name):
     i = file_name.find("_")
     return file_name[0:i]
 
-def get_number_from_file(file):
+def get_number_from_file(file_name):
     """"
         Get the line number that this file annotates
     """
+
     #First delete everything before the numbers
-    occurences = [m.start() for m in re.finditer('_', file)]
-    number = file[occurences[-1] + 1:]
-    if("u" in file):
+    occurences = [m.start() for m in re.finditer('_', file_name)]
+
+    number = file_name[occurences[-1] + 1:]
+    print("number: ", number)
+    #some sort of side_case
+    if("u" in file_name):
         number = number[1:]
     number = int(number)
+
     return number
 
 def file_to_name_and_number(file):

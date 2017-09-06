@@ -2,7 +2,7 @@
 
 import unittest
 from ..evo_alg import *
-from ..one_max_problem import OneMaxProblem
+from ..one_max_problem.one_max_problem import OneMaxProblem
 
 
 
