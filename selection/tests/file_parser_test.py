@@ -2,7 +2,9 @@
 
 
 import unittest
-from ..file_parser import *
+
+from selection.parser.file_parser import *
+
 
 class TestFileParser(unittest.TestCase):
 
