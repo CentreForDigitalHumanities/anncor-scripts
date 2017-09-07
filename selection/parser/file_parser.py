@@ -2,28 +2,12 @@
  Contains functions to parse and get info about the cha files and xml files that corresponds to the checked lines in the cha files
 """
 
-import os
 import codecs
-import time
-from datetime import datetime, date
 import re
-import zipfile
 import json
 
-dates = {
-    "JAN": 1,
-    "FEB": 2,
-    "MAR": 3,
-    "APR": 4,
-    "MAY": 5,
-    "JUN": 6,
-    "JUL": 7,
-    "AUG": 8,
-    "SEP": 9,
-    "OCT": 10,
-    "NOV": 11,
-    "DEC": 12
-}
+from utils.filesystem import *
+from utils.textmanipulation import *
 
 
 def create_info_file():
@@ -42,8 +26,6 @@ def create_info_file():
         for entry in second_round[k]:
             if (entry not in first_round[k] and entry[0] != "sarah46"):
                 count += 1
-                print(entry)
-    print(count)
     results = []
 
     # Count the lines and get the dates out of the files
@@ -55,7 +37,7 @@ def create_info_file():
                 if ("*" == line[0]):
                     count += 1
                 if ("@Date" in line):
-                    date = date_to_timestamp(get_date(line))
+                    date = datestring_to_timestamp(get_date(line))
 
         # Remove the .cha extension
         file = file[:-4]
@@ -69,6 +51,7 @@ def create_info_file():
 
         results.append(info)
     return results
+
 
 def get_lines_of_cha_files(path):
     """
@@ -86,27 +69,6 @@ def get_lines_of_cha_files(path):
                     count += 1
             results.append((file[:-4], [i for i in range(count)]))
     return results
-
-def list_all_files_with_extension(path, extension):
-    """"
-        Lists all the files in the path with the given extension, when there is a zip folder it unzips it and removes the zip folder
-        :param path: The path that we list all the files in, this includes the subfolders and zip files
-        :param extension: The extension that we look at
-        :return:the files in the path with the given extension
-        :rtype string[]
-    """
-    files = []
-    for file in os.listdir(path):
-        if file.endswith(extension):
-            files.append(file)
-        if file.endswith(".zip"):
-            new_path = unzip(os.path.join(path, file))
-            os.remove(os.path.join(path, file))
-            files = files + list_all_files_with_extension(new_path, extension)
-        # Dive into subfolders.
-        if os.path.isdir(os.path.join(path, file)):
-            files = files + list_all_files_with_extension(os.path.join(path, file), extension)
-    return files
 
 
 def list_cha_files(path):
@@ -173,7 +135,7 @@ def get_line_score(files_path, first_checked_path, second_checked_path):
     """
     first_checked = get_lines_checked(first_checked_path)
     second_checked = get_lines_checked(second_checked_path)
-    #Clean file name
+    # Clean file name
     files_and_lines = get_lines_of_cha_files(files_path)
     result = []
     for (file, lines) in files_and_lines:
@@ -191,7 +153,6 @@ def get_line_score(files_path, first_checked_path, second_checked_path):
 
         result.append((file, line_results))
     return result
-
 
 
 def get_lines_checked(path):
@@ -233,7 +194,6 @@ def get_cleaned_xml_files_in_path(path):
     return result
 
 
-
 def get_date(string):
     """
     Gets the date out of string, this string should have to following format:
@@ -242,18 +202,6 @@ def get_date(string):
     :return:
     """
     return string[7:-1]
-
-
-def date_to_timestamp(date_string):
-    """
-    Converts the string containing a date to a timestamp: the string is of the following format
-    day-month-year, where day and year are a number and month is a three letter acronym
-    :param date_string:
-    :return: a timestamp
-    """
-    ar = date_string.split("-")
-    d = date(int(ar[2]), dates[ar[1]], int(ar[0]))
-    return time.mktime(d.timetuple())
 
 
 def store_info(info, file_ref):
@@ -279,17 +227,3 @@ def load_info(file_ref):
         for line in f.readlines():
             info.append(json.loads(line))
     return info
-
-
-def unzip(path):
-    """
-    Unzips a zip folder and creates a folder containing the results,
-    this folder has the same name as the zip folder minus the .zip extension
-    :param path: The path to the folder to zip
-    :return: The new name fo the path
-    """
-    zip_ref = zipfile.ZipFile(path, 'r')
-    new_path = path[:-3]
-    zip_ref.extractall(new_path)
-    zip_ref.close()
-    return new_path

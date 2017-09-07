@@ -7,23 +7,13 @@ from selection.window import *
 
 import sys
 
+
 perc = float(sys.argv[1])
 result_location = sys.argv[2]
 
 line_scores = get_line_score("./selection/data/cha_files", "./selection/data/first_round",
                              "./selection/data/second_round")
 selection = get_file_selection(line_scores, perc)
-
-
-def prepend_zeros(length, string):
-    """
-    Prepend zeros to the string until the desired length is reached
-    :param length: the length that the string should have
-    :param string: the string that we should appends 0's to
-    :return: A string with zeros appended
-    """
-    return "{}{}".format("0" * (length - len(string)), string)
-
 
 def get_nr_to_check(selection, line_scores):
     """
@@ -42,7 +32,7 @@ def get_nr_to_check(selection, line_scores):
     return maximum_checks - total_checks
 
 
-print("Number of checks to perform: {}".format(get_nr_to_check(selection, line_scores)))
+print("Number of lines to check: {}".format(get_nr_to_check(selection, line_scores)))
 
 # Sorting the selection for convenience
 selection = sorted(selection, key=lambda name_lines: name_lines[0])

@@ -23,7 +23,7 @@ class TestFileParser(unittest.TestCase):
         self.assertEqual(result, "10-FEB-1988")
 
     def test_date_to_timestamp(self):
-        result = date_to_timestamp("10-FEB-1988")
+        result = datestring_to_timestamp("10-FEB-1988")
         self.assertEqual(result, 571446000)
 
     def test_file_to_number_and_name(self):
