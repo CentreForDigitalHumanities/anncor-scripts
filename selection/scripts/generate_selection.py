@@ -7,13 +7,20 @@ from selection.window import *
 
 import sys
 
-
-perc = float(sys.argv[1])
+# Arguments needed to generate the selection
+percentage = float(sys.argv[1])
+# Path to the file where the results should be stored
 result_location = sys.argv[2]
+# Ref to the folders containing the cha files
+cha_files = "./selection/data/cha_files"
+# Ref to the folder containing the files that have been looked at for the first time
+first_round = "./selection/data/first_round"
+# Ref to the folder containing the files that have been looked at for the second time
+second_round = "./selection/data/second_round"
 
-line_scores = get_line_score("./selection/data/cha_files", "./selection/data/first_round",
-                             "./selection/data/second_round")
-selection = get_file_selection(line_scores, perc)
+line_scores = get_line_score(cha_files, first_round, second_round)
+selection = get_file_selection(line_scores, percentage)
+
 
 def get_nr_to_check(selection, line_scores):
     """
