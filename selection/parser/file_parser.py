@@ -2,34 +2,18 @@
  Contains functions to parse and get info about the cha files and xml files that corresponds to the checked lines in the cha files
 """
 
-import os
 import codecs
-import time
-from datetime import datetime, date
 import re
-import zipfile
 import json
 
-dates = {
-    "JAN": 1,
-    "FEB": 2,
-    "MAR": 3,
-    "APR": 4,
-    "MAY": 5,
-    "JUN": 6,
-    "JUL": 7,
-    "AUG": 8,
-    "SEP": 9,
-    "OCT": 10,
-    "NOV": 11,
-    "DEC": 12
-}
+from utils.filesystem import *
+from utils.textmanipulation import *
 
 
 def create_info_file():
     """"
         Creates the information for each cha files. This information includes: "name, time_stamp, nr_of_lines. nr_of_first_checked, nr_of_second_checked"
-        :return information: Returns the information as specified above
+        :return:information: Returns the information as specified above
         :rtype dict
     """
     path = "selection/data/cha-files"
@@ -42,8 +26,6 @@ def create_info_file():
         for entry in second_round[k]:
             if (entry not in first_round[k] and entry[0] != "sarah46"):
                 count += 1
-                print(entry)
-    print(count)
     results = []
 
     # Count the lines and get the dates out of the files
@@ -55,7 +37,7 @@ def create_info_file():
                 if ("*" == line[0]):
                     count += 1
                 if ("@Date" in line):
-                    date = date_to_timestamp(get_date(line))
+                    date = datestring_to_timestamp(get_date(line))
 
         # Remove the .cha extension
         file = file[:-4]
@@ -69,6 +51,7 @@ def create_info_file():
 
         results.append(info)
     return results
+
 
 def get_lines_of_cha_files(path):
     """
@@ -87,27 +70,6 @@ def get_lines_of_cha_files(path):
             results.append((file[:-4], [i for i in range(count)]))
     return results
 
-def list_all_files_with_extension(path, extension):
-    """"
-        Lists all the files in the path with the given extension, when there is a zip folder it unzips it and removes the zip folder
-        :param path: The path that we list all the files in, this includes the subfolders and zip files
-        :param extension: The extension that we look at
-        :return the files in the path with the given extension
-        :rtype string[]
-    """
-    files = []
-    for file in os.listdir(path):
-        if file.endswith(extension):
-            files.append(file)
-        if file.endswith(".zip"):
-            new_path = unzip(os.path.join(path, file))
-            os.remove(os.path.join(path, file))
-            files = files + list_all_files_with_extension(new_path, extension)
-        # Dive into subfolders.
-        if os.path.isdir(os.path.join(path, file)):
-            files = files + list_all_files_with_extension(os.path.join(path, file), extension)
-    return files
-
 
 def list_cha_files(path):
     """"
@@ -121,7 +83,7 @@ def clean_file_name(file_name):
     """"
         Cleans a file such that it only contains the name of the session.
         :param file_name: the name that should be cleaned.
-        :return the cleaned file name.
+        :return:the cleaned file name.
     """
     file_name = file_name.replace("VanKampen_", "")
     file_name = file_name.replace("uttfiles2_", "")
@@ -133,7 +95,7 @@ def get_number_from_file(file_name):
     """"
         Get the line number that this file annotates
         :param file_name: the name of the file that we want to look get the number from
-        :return the number of the line that this file annotates
+        :return: the number of the line that this file annotates
     """
 
     # First delete everything before the numbers
@@ -165,21 +127,21 @@ def file_to_name_and_number(file_name):
 
 def get_line_score(files_path, first_checked_path, second_checked_path):
     """
-    Gets the line score
-    :param files_path:
-    :param first_checked_path:
-    :param second_checked_path:
-    :return:
+    Gets the score of each line for the files in the files_path
+    :param files_path: the path containing the files that we want to look at
+    :param first_checked_path: the path containing the files that represent the first check
+    :param second_checked_path: the path containing the files that represent the second check
+    :return: a list containing tuples with a, each tuple contains a file_name and an array containing the scores for each line
     """
     first_checked = get_lines_checked(first_checked_path)
     second_checked = get_lines_checked(second_checked_path)
-    #Clean file name
+    # Clean file name
     files_and_lines = get_lines_of_cha_files(files_path)
     result = []
     for (file, lines) in files_and_lines:
-        file_result = [file]
-
+        line_results = []
         for line in lines:
+
             score = 0
             if file in first_checked:
                 if line in first_checked[file]:
@@ -187,20 +149,17 @@ def get_line_score(files_path, first_checked_path, second_checked_path):
             if file in second_checked:
                 if line in second_checked[file]:
                     score = 2
-            line_results = (line, score)
-            file_result.append(line_results)
+            line_results.append((line, score))
 
-        result.append(file_result)
-    print(result)
+        result.append((file, line_results))
     return result
-
 
 
 def get_lines_checked(path):
     """
     Get all the lines checked in the given path.
-     It expects a path pointing to xml files which contain files that describes which line is checked
-    :param path:
+    It expects a path pointing to xml files which contain files that describes which line is checked
+    :param path: the path to look in (including subdirectories)
     :return: A dictionary containing file names and the lines that are checked
     """
     files = list_all_files_with_extension(path, ".xml")
@@ -221,34 +180,12 @@ def get_lines_checked(path):
     return result
 
 
-def count_line_files(path):
+def get_cleaned_xml_files_in_path(path):
     """
-    Counts the line files in a given path e.g laura47_00001.xml and laura47_000002.xml
-    :param path:
-    :return:
+    Looks inside the path and gets all the "cleaned" versions of the xml files. Cleaned means that the Vankampen_utfiles2 etc is dropped
+    :param path: The path to look in (including subfolders)
+    :return: the xml files with cleaned names
     """
-    files = list_all_files_with_extension(path, ".xml")
-    result = {}
-    # to make sure there are no duplicates
-    found = set()
-    for file in files:
-        name_number = file_to_name_and_number(file)
-        if name_number in found:
-            pass
-        else:
-            found.add(name_number)
-            if (not "uttfiles2_" in file):
-                file = clean_file_name(file)
-                if file in result.keys():
-                    result[file] += 1
-                else:
-                    result[file] = 1
-            else:
-                print(file)
-    return result
-
-
-def normalize_xml_files(path):
     files = list_all_files_with_extension(path, ".xml")
     result = set([])
     for file in files:
@@ -257,47 +194,36 @@ def normalize_xml_files(path):
     return result
 
 
-
-# Get the date out of a date string from a cha file
 def get_date(string):
+    """
+    Gets the date out of string, this string should have to following format:
+    @Date:	<actual date>
+    :param string:
+    :return:
+    """
     return string[7:-1]
 
 
-def date_to_timestamp(date_string):
-    ar = date_string.split("-")
-    d = date(int(ar[2]), dates[ar[1]], int(ar[0]))
-    return time.mktime(d.timetuple())
-
-
-def store_info(info, location):
+def store_info(info, file_ref):
     """"
-        Stores the given info in the given location
+        Stores info in a file
+        :param info: the info to be stored
+        :param file_ref: a reference to the file where we need to store the information
+        :rtype info: dict[]
     """
-    with open(location, "w") as f:
+    with open(file_ref, "w") as f:
         for entry in info:
             json.dump(entry, f)
             f.write("\n")
 
 
-def load_info(location):
+def load_info(file_ref):
     """"
-        Loads the info from the given location
+        Loads the info from the given file
+        :return: the info that is inside the file
     """
     info = []
-    with open(location, "r") as f:
+    with open(file_ref, "r") as f:
         for line in f.readlines():
             info.append(json.loads(line))
     return info
-
-
-def unzip(path):
-    """
-    Unzips a zip folder and creates a folder containing the results
-    :param path: The path to the folder to zip
-    :return: The new name fo the path
-    """
-    zip_ref = zipfile.ZipFile(path, 'r')
-    new_path = path[:-3]
-    zip_ref.extractall(new_path)
-    zip_ref.close()
-    return new_path

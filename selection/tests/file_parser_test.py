@@ -14,7 +14,7 @@ class TestFileParser(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_normalize_xml_files(self):
-        result = normalize_xml_files("selection/tests/test_files")
+        result = get_cleaned_xml_files_in_path("selection/tests/test_files")
         expected = set(["test1", "test2"])
         self.assertEqual(result, expected)
 
@@ -23,7 +23,7 @@ class TestFileParser(unittest.TestCase):
         self.assertEqual(result, "10-FEB-1988")
 
     def test_date_to_timestamp(self):
-        result = date_to_timestamp("10-FEB-1988")
+        result = datestring_to_timestamp("10-FEB-1988")
         self.assertEqual(result, 571446000)
 
     def test_file_to_number_and_name(self):
