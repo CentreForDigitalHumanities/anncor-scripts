@@ -39,7 +39,7 @@ def get_nr_to_check(selection, line_scores):
     return maximum_checks - total_checks
 
 
-print("Number of lines to check: {}".format(get_nr_to_check(selection, line_scores)))
+print("Number of checks to perform: {}".format(get_nr_to_check(selection, line_scores)))
 
 # Sorting the selection for convenience
 selection = sorted(selection, key=lambda name_lines: name_lines[0])
