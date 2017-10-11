@@ -34,7 +34,7 @@ def main(argv):
     except Exception as exception:
         sys.stderr.write(repr(exception) + "\n")
         sys.stderr.write("for help use --help\n\n")
-        raise exception
+        raise
 
 
 def split(treebank_filename, base_filename, map_filename):
@@ -49,6 +49,7 @@ def split(treebank_filename, base_filename, map_filename):
                     [number, date] = line.split('=')
                     date_map[date.strip()] = number.strip()
 
+    counts = {}
     with open(treebank_filename, 'r') as treebank_file:
         treebank_file.readline()
         while True:
@@ -62,6 +63,16 @@ def split(treebank_filename, base_filename, map_filename):
             else:
                 file_number = date_map[file.date]
             write_file(base_filename, file_number, file)
+
+            # show the sentence count for each file
+            cha_filename = base_filename + file_number
+            if not cha_filename in counts:
+                counts[cha_filename] = 1
+            else:
+                counts[cha_filename] += 1
+
+    for (filename, count) in sorted(counts.items()):
+        print("# " + filename + " " + str(count))
 
     print("# mapping used for " + treebank_filename)
     for date, number in sorted(date_map.items()):
@@ -83,12 +94,15 @@ def read_file(lines):
     tab_width = next(i for i, char in enumerate(line) if char != ' ')
     file_lines = [line[tab_width:]]
     date = None
-    for line in lines:
+    utterance_number = 0
+
+    while True:
+        line = lines.readline()
+        if line is None:
+            break
         file_lines.append(line[tab_width:])
         if line.find("</alpino_ds>") >= 0:
             break
-        elif line.find("<sentence") >= 0:
-            utterance_number = int(line[line.find("sentid=\""):].split('"')[1])
         elif line.find("<meta") >= 0:
             if line.find("name=\"date\"") > 0:
                 date = line[line.find("value=\""):].split('"')[1]
@@ -100,7 +114,11 @@ def read_file(lines):
 
 
 def write_file(base_filename, file_number, file):
-    with open(base_filename + file_number + '_u' + str(file.utterance_number).zfill(11) + '.xml', 'w') as target:
+    filename = base_filename + file_number + '_u' + str(file.utterance_number).zfill(11) + '.xml'
+    if os.path.exists(filename):
+        raise Exception("File " + filename + " already exist!")
+
+    with open(filename, 'w') as target:
         target.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         target.writelines(file.lines)
 
