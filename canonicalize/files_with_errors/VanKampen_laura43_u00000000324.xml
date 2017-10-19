@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node rel="top" cat="top">
+    <node rel="--" cat="smain">
+      <node rel="mod" pos="adv" root="nu" postag="BW()" pt="bw" lemma="nu" word="nu" begin="0" end="1"/>
+      <node rel="hd" pos="verb" root="ben" postag="WW(pv,tgw,ev)" pt="ww" wvorm="pv" pvtijd="tgw" pvagr="ev" lemma="zijn" word="is" begin="1" end="2"/>
+      <node rel="vc" cat="inf">
+        <node rel="su" index="1"/>
+        <node rel="hd" pos="verb" root="afgelopen" postag="WW(vd,vrij,zonder)" pt="ww" wvorm="vd" positie="vrij" buiging="zonder" lemma="afgelopen" word="afgelope" begin="2" end="3"/>
+      </node>
+    </node>
+    <node rel="--" pos="punct" root="." postag="LET()" pt="let" lemma="." word="." begin="3" end="4"/>
+  </node>
+  <sentence>nu is afgelope .</sentence>
+  <comments>
+    <comment>Q#1|nu is afgelope .|1|1|-0.14142004948000092</comment>
+  </comments>
+</alpino_ds>

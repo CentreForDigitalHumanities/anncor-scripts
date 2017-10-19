@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="3" id="0" rel="top">
+    <node begin="0" end="1" frame="punct(komma)" id="1" lcat="--" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="1" end="2" frame="noun(both,both,both)" gen="both" genus="zijd" getal="ev" graad="basis" id="2" lcat="np" lemma="umme" naamval="stan" ntype="soort" num="both" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="--" rnum="sg" root="umme" sense="umme" word="umme"/>
+    <node begin="2" end="3" frame="punct(punt)" id="3" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>, umme .</sentence>
+  <comments>
+    <comment>Q#1|, umme .|1|1|1.1698025850999998</comment>
+  </comments>
+</alpino_ds>

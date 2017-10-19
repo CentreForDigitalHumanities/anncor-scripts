@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="4" id="0" rel="top">
+    <node begin="0" cat="whq" end="3" id="1" rel="--">
+      <node begin="0" end="1" frame="wh_adjective" id="2" index="1" lcat="ap" lemma="hoe" pos="adj" postag="BW()" pt="bw" rel="whd" root="hoe" sense="hoe" wh="ywh" word="hoe"/>
+      <node begin="0" cat="sv1" end="3" id="3" rel="body">
+        <node begin="0" end="1" id="4" index="1" rel="predc"/>
+        <node begin="1" end="2" frame="verb(hebben,sg,copula)" id="5" infl="sg" lcat="sv1" lemma="heten" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="heet" sc="copula" sense="heet" stype="whquestion" tense="present" word="heet" wvorm="pv"/>
+        <node begin="2" end="3" frame="determiner(het,nwh,nmod,pro,nparg)" getal="ev" id="6" infl="het" lcat="np" lemma="dit" naamval="stan" pdtype="pron" persoon="3o" pos="det" postag="VNW(aanw,pron,stan,vol,3o,ev)" pt="vnw" rel="su" rnum="sg" root="dit" sense="dit" status="vol" vwtype="aanw" wh="nwh" word="dit"/>
+      </node>
+    </node>
+    <node begin="3" end="4" frame="punct(vraag)" id="7" lcat="punct" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence>hoe heet dit ?</sentence>
+  <comments>
+    <comment>Q#1|hoe heet dit ?|1|1|-0.47602468332000014</comment>
+  </comments>
+</alpino_ds>

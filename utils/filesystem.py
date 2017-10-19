@@ -42,7 +42,7 @@ def list_all_files_with_extension(path, extension, do_unzip=True):
 
 def find_duplicates(path, extension):
     """
-    Find duplicate files with the same extension"
+    Find duplicate files with the same extension
     :param path:
     :param extension:
     :return:

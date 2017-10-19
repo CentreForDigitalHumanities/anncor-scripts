@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="6" id="0" rel="top">
+    <node begin="0" cat="whq" end="5" id="1" rel="--">
+      <node begin="0" cat="np" end="2" id="2" index="1" rel="whd">
+        <node begin="0" buiging="met-e" end="1" frame="determiner(welke,rwh,nmod,pro,yparg)" id="3" infl="welke" lcat="detp" lemma="welk" naamval="stan" npagr="rest" pdtype="det" pos="det" positie="prenom" postag="VNW(vb,det,stan,prenom,met-e,rest)" pt="vnw" rel="det" root="welk" sense="welk" vwtype="vb" wh="rwh" word="welke"/>
+        <node begin="1" end="2" frame="noun(de,count,pl)" gen="de" getal="mv" graad="basis" id="4" lcat="np" lemma="beer" ntype="soort" num="pl" pos="noun" postag="N(soort,mv,basis)" pt="n" rel="hd" rnum="pl" root="beer" sense="beer" word="beren"/>
+      </node>
+      <node begin="0" cat="sv1" end="5" id="5" rel="body">
+        <node begin="0" end="2" id="6" index="1" rel="su"/>
+        <node begin="2" end="3" frame="verb(unacc,pl,copula)" id="7" infl="pl" lcat="sv1" lemma="zijn" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="ben" sc="copula" sense="ben" stype="whquestion" tense="present" word="zijn" wvorm="pv"/>
+        <node begin="3" end="4" frame="adverb" id="8" lcat="advp" lemma="nog" pos="adv" postag="BW()" pt="bw" rel="mod" root="nog" sense="nog" word="nog"/>
+        <node aform="base" begin="4" buiging="zonder" end="5" frame="adjective(no_e(adv))" graad="basis" id="9" infl="no_e" lcat="ap" lemma="droog" pos="adj" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="predc" root="droog" sense="droog" vform="adj" word="droog"/>
+      </node>
+    </node>
+    <node begin="5" end="6" frame="punct(vraag)" id="10" lcat="punct" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence>welke beren zijn nog droog ?</sentence>
+  <comments>
+    <comment>Q#1|welke beren zijn nog droog ?|1|1|-1.3614843636999996</comment>
+  </comments>
+</alpino_ds>

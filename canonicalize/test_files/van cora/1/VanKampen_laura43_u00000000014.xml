@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="8" id="0" rel="top">
+    <node begin="2" end="3" id="1" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," word=","/>
+    <node begin="0" cat="du" end="7" id="2" rel="--">
+      <node begin="0" end="1" id="3" lemma="ja" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="ja" word="ja"/>
+      <node begin="1" cat="du" end="7" id="4" rel="nucl">
+        <node begin="1" conjtype="neven" end="2" id="5" lemma="maar" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="maar" word="maar"/>
+        <node begin="3" cat="whq" end="7" id="6" rel="nucl">
+          <node begin="3" end="4" getal="getal" id="7" index="1" lemma="waar" naamval="obl" pdtype="adv-pron" persoon="3o" pos="adv" postag="VNW(vb,adv-pron,obl,vol,3o,getal)" pt="vnw" rel="whd" root="waar" status="vol" vwtype="vb" word="waar"/>
+          <node begin="3" cat="sv1" end="7" id="8" rel="body">
+            <node begin="4" end="5" genus="zijd" getal="ev" graad="basis" id="9" index="2" lemma="Sinterklaas" naamval="stan" ntype="eigen" pos="name" postag="N(eigen,ev,basis,zijd,stan)" pt="n" rel="su" root="Sinterklaas" word="Sinterklaas"/>
+            <node begin="3" cat="ppart" end="7" id="10" rel="vc">
+              <node begin="3" end="4" id="11" index="1" rel="mod"/>
+              <node begin="4" end="5" id="12" index="2" rel="su"/>
+              <node begin="5" end="6" genus="onz" getal="ev" id="13" lemma="het" naamval="stan" pdtype="pron" persoon="3" pos="pron" postag="VNW(pers,pron,stan,red,3,ev,onz)" pt="vnw" rel="obj1" root="het" status="red" vwtype="pers" word="het"/>
+              <node begin="6" buiging="zonder" end="7" id="14" lemma="leggen" pos="verb" positie="vrij" postag="WW(vd,vrij,zonder)" pt="ww" rel="hd" root="leg" word="gelegd" wvorm="vd"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node begin="7" end="8" id="15" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" word="?"/>
+  </node>
+  <sentence>ja maar , waar Sinterklaas het gelegd ?</sentence>
+  <comments>
+    <comment>#IC_C geanalyseerd als: &apos;Ja maar, waar heeft Sinterklaas het gelegd?&apos;</comment>
+    <comment>Q#1|ja maar , waar Sinterklaas het gelegd ?|1|1|8.077388014779999</comment>
+  </comments>
+</alpino_ds>

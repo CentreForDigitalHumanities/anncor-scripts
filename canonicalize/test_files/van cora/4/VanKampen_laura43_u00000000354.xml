@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="6" id="0" rel="top">
+    <node begin="3" end="4" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="5" id="2" rel="--">
+      <node begin="0" cat="whq" end="3" id="3" rel="nucl">
+        <node begin="0" case="both" def="indef" end="1" frame="pronoun(ywh,thi,sg,het,both,indef,nparg)" gen="het" getal="ev" id="4" index="1" lcat="np" lemma="wat" naamval="stan" num="sg" pdtype="pron" per="thi" persoon="3o" pos="pron" postag="VNW(vb,pron,stan,vol,3o,ev)" pt="vnw" rel="whd" rnum="sg" root="wat" sense="wat" special="nparg" status="vol" vwtype="vb" wh="ywh" word="wat"/>
+        <node begin="0" cat="sv1" end="3" id="5" rel="body">
+          <node begin="0" end="1" id="6" index="1" rel="obj1"/>
+          <node begin="1" end="2" frame="verb(hebben,sg3,transitive)" id="7" infl="sg3" lcat="sv1" lemma="zeggen" pos="verb" postag="WW(pv,tgw,met-t)" pt="ww" pvagr="met-t" pvtijd="tgw" rel="hd" root="zeg" sc="transitive" sense="zeg" stype="whquestion" tense="present" word="zegt" wvorm="pv"/>
+          <node begin="2" case="both" def="def" end="3" frame="pronoun(nwh,u,sg,de,both,def)" gen="de" getal="getal" id="8" lcat="np" lemma="u" naamval="nomin" num="sg" pdtype="pron" per="u" persoon="2b" pos="pron" postag="VNW(pers,pron,nomin,vol,2b,getal)" pt="vnw" rel="su" rnum="sg" root="u" sense="u" status="vol" vwtype="pers" wh="nwh" word="u"/>
+        </node>
+      </node>
+      <node begin="4" end="5" frame="tag" id="9" lcat="advp" lemma="mama" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="mama" sense="mama" word="mama"/>
+    </node>
+    <node begin="5" end="6" frame="punct(vraag)" id="10" lcat="punct" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence>wat zegt u , mama ?</sentence>
+  <comments>
+    <comment>Q#1|wat zegt u , mama ?|1|1|2.4389621645799986</comment>
+  </comments>
+</alpino_ds>

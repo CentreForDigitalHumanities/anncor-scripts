@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="7" id="0" rel="top">
+    <node begin="1" end="2" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="6" id="2" rel="--">
+      <node begin="0" end="1" frame="tag" id="3" lcat="advp" lemma="hee" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="hee" sense="hee" word="hee"/>
+      <node begin="2" cat="whq" end="6" id="4" rel="nucl">
+        <node begin="2" case="both" def="indef" end="3" frame="pronoun(ywh,thi,sg,het,both,indef,nparg)" gen="het" getal="ev" id="5" index="1" lcat="np" lemma="wat" naamval="stan" num="sg" pdtype="pron" per="thi" persoon="3o" pos="pron" postag="VNW(vb,pron,stan,vol,3o,ev)" pt="vnw" rel="whd" rnum="sg" root="wat" sense="wat" special="nparg" status="vol" vwtype="vb" wh="ywh" word="wat"/>
+        <node begin="2" cat="sv1" end="6" id="6" rel="body">
+          <node begin="3" end="4" frame="verb(hebben,past(sg),aux_psp_hebben)" id="7" infl="sg" lcat="sv1" lemma="hebben" pos="verb" postag="WW(pv,verl,ev)" pt="ww" pvagr="ev" pvtijd="verl" rel="hd" root="heb" sc="aux_psp_hebben" sense="heb" stype="whquestion" tense="past" word="had" wvorm="pv"/>
+          <node begin="4" case="nom" def="def" end="5" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="8" index="2" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+          <node begin="2" cat="ppart" end="6" id="9" rel="vc">
+            <node begin="2" end="3" id="10" index="1" rel="obj1"/>
+            <node begin="4" end="5" id="11" index="2" rel="su"/>
+            <node begin="5" buiging="zonder" end="6" frame="verb(hebben,psp,transitive)" id="12" infl="psp" lcat="ppart" lemma="zeggen" pos="verb" positie="vrij" postag="WW(vd,vrij,zonder)" pt="ww" rel="hd" root="zeg" sc="transitive" sense="zeg" word="gezegd" wvorm="vd"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node begin="6" end="7" frame="punct(vraag)" id="13" lcat="punct" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence>hee , wat had ik gezegd ?</sentence>
+  <comments>
+    <comment>Q#1|hee , wat had ik gezegd ?|1|1|-3.9941620913399998</comment>
+  </comments>
+</alpino_ds>

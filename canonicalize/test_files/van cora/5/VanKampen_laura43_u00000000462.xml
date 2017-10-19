@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="7" id="0" rel="top">
+    <node begin="2" end="3" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="sv1" end="6" id="2" rel="--">
+      <node begin="0" end="1" frame="verb(zijn,sg,part_pc_pp(op,met))" id="3" infl="sg" lcat="sv1" lemma="op_schieten" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="schiet_op" sc="part_pc_pp(op,met)" sense="schiet_op-met" stype="topic_drop" tense="present" word="schiet" wvorm="pv"/>
+      <node begin="1" end="2" frame="particle(op)" id="4" lcat="part" lemma="op" pos="part" postag="VZ(fin)" pt="vz" rel="svp" root="op" sense="op" vztype="fin" word="op"/>
+      <node begin="3" cat="pp" end="6" id="5" rel="pc">
+        <node begin="3" end="4" frame="preposition(met,[mee,[en,al]])" id="6" lcat="pp" lemma="met" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="met" sense="met" vztype="init" word="met"/>
+        <node begin="4" cat="np" end="6" id="7" rel="obj1">
+          <node begin="4" buiging="zonder" end="5" frame="determiner(de,nwh,nmod,pro,nparg)" id="8" infl="de" lcat="detp" lemma="die" naamval="stan" npagr="rest" pdtype="det" pos="det" positie="prenom" postag="VNW(aanw,det,stan,prenom,zonder,rest)" pt="vnw" rel="det" root="die" sense="die" vwtype="aanw" wh="nwh" word="die"/>
+          <node begin="5" end="6" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="9" lcat="np" lemma="kriebel" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="kriebel" sense="kriebel" word="kriebel"/>
+        </node>
+      </node>
+    </node>
+    <node begin="6" end="7" frame="punct(punt)" id="10" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>schiet op , met die kriebel .</sentence>
+  <comments>
+    <comment>Q#1|schiet op , met die kriebel .|1|1|-0.8079446829999982</comment>
+  </comments>
+</alpino_ds>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="8" id="0" rel="top">
+    <node begin="1" end="2" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="5" end="6" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="7" id="3" rel="--">
+      <node begin="0" end="1" frame="tag" id="4" lcat="advp" lemma="he" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="he" sense="he" word="he"/>
+      <node begin="2" cat="du" end="7" id="5" rel="nucl">
+        <node begin="2" cat="sv1" end="5" id="6" rel="nucl">
+          <node begin="2" end="3" frame="verb(unacc,sg_heeft,copula)" id="7" infl="sg_heeft" lcat="sv1" lemma="zijn" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="ben" sc="copula" sense="ben" stype="topic_drop" tense="present" word="is" wvorm="pv"/>
+          <node begin="3" end="4" frame="adverb" id="8" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="nie"/>
+          <node begin="4" end="5" frame="noun(de,mass,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="9" lcat="np" lemma="melk" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="predc" rnum="sg" root="melk" sense="melk" word="melk"/>
+        </node>
+        <node begin="6" end="7" frame="tag" id="10" lcat="advp" lemma="he" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="he" sense="he" word="he"/>
+      </node>
+    </node>
+    <node begin="7" end="8" frame="punct(punt)" id="11" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>he , is nie melk , he .</sentence>
+  <comments>
+    <comment>Q#1|he , is nie melk , he .|1|1|1.5454633637899988</comment>
+  </comments>
+</alpino_ds>

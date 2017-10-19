@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="9" id="0" rel="top">
+    <node begin="3" end="4" id="1" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," word=","/>
+    <node begin="0" cat="du" end="7" id="2" rel="--">
+      <node begin="0" cat="smain" end="3" id="3" rel="dp">
+        <node begin="0" end="1" id="4" lemma="kunnen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="kan" word="kan" wvorm="pv"/>
+        <node begin="1" end="2" id="5" lemma="nu" pos="adv" postag="BW()" pt="bw" rel="mod" root="nu" word="nu"/>
+        <node begin="2" end="3" id="6" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" word="niet"/>
+      </node>
+      <node begin="4" cat="smain" end="7" id="7" rel="dp">
+        <node begin="4" end="5" id="8" lemma="nu" pos="adv" postag="BW()" pt="bw" rel="mod" root="nu" word="nu"/>
+        <node begin="5" end="6" id="9" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" word="niet"/>
+        <node begin="6" end="7" id="10" lemma="aankleden" pos="verb" postag="WW(nf,vrij,zonder)" pt="ww" rel="hd" root="aankleed" word="aankleee"/>
+      </node>
+    </node>
+    <node begin="8" end="9" id="11" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." word="."/>
+  </node>
+  <sentence>kan nu niet , nu niet aankleee .</sentence>
+  <comments>
+    <comment>#IC_C &apos;aanklee e&apos; geanalyseerd als &apos;aankleden&apos; (inf)</comment>
+    <comment>Q#1|kan nu niet , nu niet aanklee e .|1|1|3.50978102321</comment>
+  </comments>
+</alpino_ds>

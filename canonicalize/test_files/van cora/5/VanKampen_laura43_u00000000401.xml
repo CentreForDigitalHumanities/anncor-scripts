@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="8" id="0" rel="top">
+    <node begin="1" end="2" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="7" id="2" rel="--">
+      <node begin="0" end="1" frame="adv_tag" id="3" lcat="advp" lemma="nou" pos="tag" postag="BW()" pt="bw" rel="tag" root="nou" sense="nou" word="nou"/>
+      <node begin="2" cat="whq" end="7" id="4" rel="nucl">
+        <node begin="2" case="both" def="indef" end="3" frame="pronoun(ywh,thi,sg,het,both,indef,nparg)" gen="het" getal="ev" id="5" index="1" lcat="np" lemma="wat" naamval="stan" num="sg" pdtype="pron" per="thi" persoon="3o" pos="pron" postag="VNW(vb,pron,stan,vol,3o,ev)" pt="vnw" rel="whd" rnum="sg" root="wat" sense="wat" special="nparg" status="vol" vwtype="vb" wh="ywh" word="wat"/>
+        <node begin="2" cat="sv1" end="7" id="6" rel="body">
+          <node begin="3" end="4" frame="verb(hebben,modal_not_u,modifier(aux(inf)))" id="7" infl="modal_not_u" lcat="sv1" lemma="willen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="wil" sc="modifier(aux(inf))" sense="wil" stype="whquestion" tense="present" word="wil" wvorm="pv"/>
+          <node begin="4" case="both" def="def" end="5" frame="pronoun(nwh,je,sg,de,both,def,wkpro)" gen="de" getal="ev" id="8" index="2" lcat="np" lemma="je" naamval="nomin" num="sg" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,nomin,red,2v,ev)" pt="vnw" rel="su" rnum="sg" root="je" sense="je" special="wkpro" status="red" vwtype="pers" wh="nwh" word="je"/>
+          <node begin="2" cat="inf" end="7" id="9" rel="vc">
+            <node begin="2" end="3" id="10" index="1" rel="obj1"/>
+            <node begin="4" end="5" id="11" index="2" rel="su"/>
+            <node begin="5" end="6" frame="adverb" id="12" lcat="advp" lemma="nou" pos="adv" postag="BW()" pt="bw" rel="mod" root="nou" sense="nou" word="nou"/>
+            <node begin="6" buiging="zonder" end="7" frame="verb(hebben,inf(no_e),transitive_ndev)" id="13" infl="inf(no_e)" lcat="inf" lemma="doen" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="doe" sc="transitive_ndev" sense="doe" word="doen" wvorm="inf"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node begin="7" end="8" frame="punct(vraag)" id="14" lcat="punct" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence>nou , wat wil je nou doen ?</sentence>
+  <comments>
+    <comment>Q#1|nou , wat wil je nou doen ?|1|1|-5.246991049590001</comment>
+  </comments>
+</alpino_ds>
