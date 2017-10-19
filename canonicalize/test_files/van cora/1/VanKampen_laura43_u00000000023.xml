@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="8" id="0" rel="top">
+    <node begin="1" end="2" id="1" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," word=","/>
+    <node begin="3" end="4" id="2" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," word=","/>
+    <node begin="0" cat="du" end="7" id="3" rel="--">
+      <node begin="0" cat="du" end="3" id="4" rel="dp">
+        <node begin="0" conjtype="neven" end="1" id="5" lemma="en" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="en" word="en"/>
+        <node begin="2" end="3" id="6" lemma="hee" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="hee" word="hee"/>
+      </node>
+      <node begin="4" cat="smain" end="7" id="7" rel="dp">
+        <node begin="4" end="5" getal="getal" id="8" lemma="die" naamval="stan" pdtype="pron" persoon="3" pos="pron" postag="VNW(aanw,pron,stan,vol,3,getal)" pt="vnw" rel="obj1" root="die" status="vol" vwtype="aanw" word="die"/>
+        <node begin="5" end="6" id="9" lemma="hebben" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="heb" word="heb" wvorm="pv"/>
+        <node begin="6" end="7" genus="zijd" getal="ev" graad="basis" id="10" lemma="anne" naamval="stan" ntype="soort" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="su" root="anne" word="anne"/>
+      </node>
+    </node>
+    <node begin="7" end="8" id="11" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." word="."/>
+  </node>
+  <sentence>en , hee , die heb anne .</sentence>
+  <comments>
+    <comment>#IC_C geanalyseerd als &apos;die&apos;= object en &apos;Anne&apos;= subject</comment>
+    <comment>Q#1|en , hee , die heb anne .|1|2|11.173630770009996</comment>
+  </comments>
+</alpino_ds>

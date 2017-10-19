@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node rel="top" cat="top">
+    <node rel="--" pos="verb" root="doe" postag="WW(pv,tgw,met-t)" pt="ww" wvorm="pv" pvtijd="tgw" pvagr="met-t" lemma="doen" word="doet" begin="4" end="5"/>
+    <node rel="--" pos="punct" root="," postag="LET()" pt="let" lemma="," word="," begin="1" end="2"/>
+    <node rel="--" cat="du">
+      <node rel="tag" pos="tag" root="nee" postag="TSW()" pt="tsw" lemma="nee" word="nee" begin="0" end="1"/>
+      <node rel="nucl" cat="sv1">
+        <node rel="hd" pos="verb" root="doe" postag="WW(pv,tgw,met-t)" pt="ww" wvorm="pv" pvtijd="tgw" pvagr="met-t" lemma="doen" word="doet" begin="2" end="3"/>
+        <node rel="su" pos="pron" root="hij" postag="VNW(pers,pron,nomin,vol,3,ev,masc)" pt="vnw" vwtype="pers" pdtype="pron" naamval="nomin" status="vol" persoon="3" getal="ev" genus="masc" lemma="hij" word="tie" begin="3" end="4"/>
+      </node>
+    </node>
+    <node rel="--" pos="punct" root="." postag="LET()" pt="let" lemma="." word="." begin="4" end="5"/>
+  </node>
+  <sentence>nee , doet tie doet .</sentence>
+  <comments>
+    <comment>Q#1|nee , doettie doet .|1|1|3.2748658608500003</comment>
+  </comments>
+</alpino_ds>

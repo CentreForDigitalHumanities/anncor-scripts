@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="5" id="0" rel="top">
+    <node begin="0" cat="np" end="4" id="1" rel="--">
+      <node begin="0" buiging="zonder" end="1" frame="modal_adverb(adv_noun_prep)" graad="basis" id="2" lcat="advp" lemma="heel" pos="adv" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="mod" root="heel" sc="adv_noun_prep" sense="heel" word="heel"/>
+      <node begin="1" buiging="zonder" end="2" frame="determiner(het,nwh,nmod,pro,nparg)" id="3" infl="het" lcat="detp" lemma="dat" naamval="stan" npagr="evon" pdtype="det" pos="det" positie="prenom" postag="VNW(aanw,det,stan,prenom,zonder,evon)" pt="vnw" rel="det" root="dat" sense="dat" vwtype="aanw" wh="nwh" word="dat"/>
+      <node aform="base" begin="2" buiging="met-e" end="3" frame="adjective(e)" graad="basis" id="4" infl="e" lcat="ap" lemma="zuur" naamval="stan" pos="adj" positie="prenom" postag="ADJ(prenom,basis,met-e,stan)" pt="adj" rel="mod" root="zuur" sense="zuur" vform="adj" word="zure"/>
+      <node begin="3" end="4" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="basis" id="5" lcat="np" lemma="spul" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,onz,stan)" pt="n" rel="hd" rnum="sg" root="spul" sense="spul" word="spul"/>
+    </node>
+    <node begin="4" end="5" frame="punct(punt)" id="6" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>heel dat zure spul .</sentence>
+  <comments>
+    <comment>Q#1|heel dat zure spul .|1|1|1.52771956608</comment>
+  </comments>
+</alpino_ds>

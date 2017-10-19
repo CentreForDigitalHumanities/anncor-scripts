@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="4" id="0" rel="top">
+    <node begin="1" end="2" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="3" id="2" rel="--">
+      <node begin="0" end="1" frame="er_loc_adverb" getal="getal" id="3" lcat="advp" lemma="hier" naamval="obl" pdtype="adv-pron" persoon="3o" pos="adv" postag="VNW(aanw,adv-pron,obl,vol,3o,getal)" pt="vnw" rel="dp" root="hier" sense="hier" special="er_loc" status="vol" vwtype="aanw" word="hier"/>
+      <node begin="2" end="3" frame="adverb" id="4" lcat="advp" lemma="zo" pos="adv" postag="BW()" pt="bw" rel="dp" root="zo" sense="zo" word="zo"/>
+    </node>
+    <node begin="3" end="4" frame="punct(punt)" id="5" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>hier , zo .</sentence>
+  <comments>
+    <comment>Q#1|hier , zo .|1|1|0.9927566888799998</comment>
+  </comments>
+</alpino_ds>

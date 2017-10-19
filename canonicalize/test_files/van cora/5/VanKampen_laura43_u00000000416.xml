@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="4" id="0" rel="top">
+    <node begin="1" end="2" id="1" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," word=","/>
+    <node begin="0" cat="du" end="3" id="2" rel="--">
+      <node begin="0" end="1" id="3" lemma="ja" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="ja" word="ja"/>
+      <node begin="2" end="3" genus="onz" getal="ev" graad="dim" id="4" lemma="kinderpoes" naamval="stan" ntype="soort" pos="noun" postag="N(soort,ev,dim,onz,stan)" pt="n" rel="nucl" root="kinderpoes_DIM" word="kinderpoesje"/>
+    </node>
+    <node begin="3" end="4" id="5" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." word="."/>
+  </node>
+  <sentence>ja , kinderpoesje .</sentence>
+  <comments>
+    <comment>Q#1|ja , kinderpoesje .|1|1|1.4582718746100005</comment>
+  </comments>
+</alpino_ds>

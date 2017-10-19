@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="5" id="0" rel="top">
+    <node begin="2" end="3" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="4" id="2" rel="--">
+      <node begin="0" cat="sv1" end="2" id="3" rel="nucl">
+        <node begin="0" end="1" frame="verb(unacc,sg_heeft,copula)" id="4" infl="sg_heeft" lcat="sv1" lemma="zijn" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="ben" sc="copula" sense="ben" stype="topic_drop" tense="present" word="is" wvorm="pv"/>
+        <node aform="base" begin="1" buiging="zonder" end="2" frame="adjective(no_e(adv))" graad="basis" id="5" infl="no_e" lcat="ap" lemma="vies" pos="adj" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="predc" root="vies" sense="vies" vform="adj" word="vies"/>
+      </node>
+      <node begin="3" end="4" frame="tag" id="6" lcat="advp" lemma="ja" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="ja" sense="ja" word="ja"/>
+    </node>
+    <node begin="4" end="5" frame="punct(punt)" id="7" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>is vies , ja .</sentence>
+  <comments>
+    <comment>Q#1|is vies , ja .|1|1|-0.14598437763999977</comment>
+  </comments>
+</alpino_ds>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="3" id="0" rel="top">
+    <node begin="0" cat="np" end="2" id="1" rel="--">
+      <node begin="0" end="1" id="2" lemma="naar" pos="pp" postag="VZ(init)" pt="vz" rel="ld" root="naar" vztype="init" word="naar"/>
+      <node begin="1" end="2" genus="onz" getal="ev" graad="basis" id="3" lemma="bed" naamval="stan" ntype="soort" pos="noun" postag="N(soort,ev,basis,onz,stan)" pt="n" rel="hd" root="bed" word="bed"/>
+    </node>
+    <node begin="2" end="3" id="4" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." word="."/>
+  </node>
+  <sentence>naar bed .</sentence>
+  <comments>
+    <comment>Q#1|naar bed .|1|1|1.3638304778599992</comment>
+  </comments>
+</alpino_ds>

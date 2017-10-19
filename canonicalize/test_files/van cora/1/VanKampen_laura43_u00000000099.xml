@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="3" id="0" rel="top">
+    <node begin="0" cat="sv1" end="2" id="1" rel="--">
+      <node begin="0" end="1" frame="verb(hebben,modal_not_u,intransitive)" id="2" infl="modal_not_u" lcat="sv1" lemma="kunnen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="kan" sc="intransitive" sense="kan" stype="imparative" tense="present" word="kan" wvorm="pv"/>
+      <node begin="1" end="2" frame="adverb" id="3" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+    </node>
+    <node begin="2" end="3" frame="punct(punt)" id="4" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>kan niet .</sentence>
+  <comments>
+    <comment>Q#1|kan niet .|1|1|2.39538789111</comment>
+  </comments>
+</alpino_ds>

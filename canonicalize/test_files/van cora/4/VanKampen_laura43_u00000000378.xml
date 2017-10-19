@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="10" id="0" rel="top">
+    <node begin="0" cat="smain" end="9" id="1" rel="--">
+      <node begin="0" case="nom" def="def" end="1" frame="pronoun(nwh,fir,pl,de,nom,def,wkpro)" gen="de" getal="mv" id="2" index="1" lcat="np" lemma="we" naamval="nomin" num="pl" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,red,1,mv)" pt="vnw" rel="su" rnum="pl" root="we" sense="we" special="wkpro" status="red" vwtype="pers" wh="nwh" word="we"/>
+      <node begin="1" end="2" frame="verb(&apos;hebben/zijn&apos;,pl,aux(inf))" id="3" infl="pl" lcat="smain" lemma="kunnen" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="kan" sc="aux(inf)" sense="kan" stype="declarative" tense="present" word="kunnen" wvorm="pv"/>
+      <node begin="0" cat="inf" end="9" id="4" rel="vc">
+        <node begin="0" end="1" id="5" index="1" rel="su"/>
+        <node begin="6" buiging="zonder" end="7" frame="verb(zijn,inf(no_e),aux(inf))" id="6" infl="inf(no_e)" lcat="inf" lemma="gaan" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="ga" sc="aux(inf)" sense="ga" word="gaan" wvorm="inf"/>
+        <node begin="0" cat="inf" end="9" id="7" rel="vc">
+          <node begin="0" end="1" id="8" index="1" rel="su"/>
+          <node aform="base" begin="2" buiging="zonder" end="3" frame="adjective(no_e(sentadv))" graad="basis" id="9" infl="no_e" lcat="ap" lemma="natuurlijk" pos="adj" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="mod" root="natuurlijk" sense="natuurlijk" vform="adj" word="natuurlijk"/>
+          <node begin="3" end="4" frame="sentence_adverb" id="10" lcat="advp" lemma="ook" pos="adv" postag="BW()" pt="bw" rel="mod" root="ook" sense="ook" special="sentence" word="ook"/>
+          <node begin="4" cat="np" end="6" id="11" rel="mod">
+            <node begin="4" end="5" frame="determiner(een)" id="12" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+            <node begin="5" end="6" frame="meas_mod_noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="basis" id="13" lcat="np" lemma="eindje" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,onz,stan)" pt="n" rel="hd" rnum="sg" root="eindje" sense="eindje" special="meas_mod" word="eindje"/>
+          </node>
+          <node begin="7" buiging="zonder" end="8" frame="verb(hebben,inf,intransitive)" id="14" infl="inf" lcat="inf" lemma="wandelen" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="wandel" sc="intransitive" sense="wandel" word="wandelen" wvorm="inf"/>
+          <node begin="8" end="9" frame="tmp_adverb" id="15" lcat="advp" lemma="vanmiddag" pos="adv" postag="BW()" pt="bw" rel="mod" root="vanmiddag" sense="vanmiddag" special="tmp" word="vanmiddag"/>
+        </node>
+      </node>
+    </node>
+    <node begin="9" end="10" frame="punct(punt)" id="16" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>we kunnen natuurlijk ook een eindje gaan wandelen vanmiddag .</sentence>
+  <comments>
+    <comment>Q#1|we kunnen natuurlijk ook een eindje gaan wandelen vanmiddag .|1|1|-7.211897725659998</comment>
+  </comments>
+</alpino_ds>

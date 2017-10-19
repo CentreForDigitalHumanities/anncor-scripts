@@ -19,8 +19,14 @@ first_round = "./selection/data/first_round"
 second_round = "./selection/data/second_round"
 
 line_scores = get_line_score(cha_files, first_round, second_round)
+laura_43 = [line_score for line_score in line_scores if line_score[0] == "laura43"]
 selection = get_file_selection(line_scores, percentage)
+laura_43 = [line_score for line_score in selection if line_score[0] == "laura43"]
 
+total_score_files = [sum([score[1] for score in file[1]]) for file in line_scores]
+print(len(total_score_files))
+total_score_files = sorted(total_score_files, reverse=True)
+print(len(list(filter(lambda x: x > 0, total_score_files))))
 
 def get_nr_to_check(selection, line_scores):
     """
@@ -38,11 +44,28 @@ def get_nr_to_check(selection, line_scores):
         maximum_checks += max_score
     return maximum_checks - total_checks
 
+def get_zero_checked(selection, scores):
+    result = []
+    for (name, lines), (name2, line_scores) in zip(selection, scores):
+        zero_checked = [line for (line, score) in line_scores if line in lines and score==0]
+        result.append((name, zero_checked))
+    return result
 
-print("Number of checks to perform: {}".format(get_nr_to_check(selection, line_scores)))
+def get_checked(selection, scores):
+    result = []
+    for (name, lines), (name2, line_scores) in zip(selection, scores):
+        zero_checked = [line for (line, score) in line_scores if line in lines and score!=0]
+        result += zero_checked
+    return result
 
+
+zero_checked = get_zero_checked(selection, line_scores)
+print("Zero times checked: {}".format(len(zero_checked)))
+print("checked: {}".format(len(get_checked(selection, line_scores))))
+print(selection[0])
+print(zero_checked)
 # Sorting the selection for convenience
-selection = sorted(selection, key=lambda name_lines: name_lines[0])
+selection = sorted(zero_checked, key=lambda name_lines: name_lines[0])
 
 # Storing the names of the files the names to a file
 file_names = []

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="7" id="0" rel="top">
+    <node begin="1" end="2" id="1" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," word=","/>
+    <node begin="0" cat="du" end="5" id="2" rel="--">
+      <node begin="0" end="1" id="3" lemma="maar" pos="tag" postag="TSW()" pt="tsw" rel="dlink" root="maar" word="ma"/>
+      <node begin="1" cat="smain" end="5" id="4" rel="nucl">
+        <node begin="1" end="2" id="5" lemma="nu" pos="adv" postag="BW()" pt="bw" rel="dp" root="nu" word="nu"/>
+        <node begin="2" end="3" id="6" lemma="mogen" pos="verb" postag="WW((pv,tgw,ev)" pt="ww" rel="hd" root="mag" word="mas"/>
+        <node begin="3" end="4" getal="ev" id="7" lemma="ik" naamval="nomin" pdtype="pron" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" root="ik" status="vol" vwtype="pers" word="ik"/>
+        <node begin="4" end="5" genus="zijd" getal="ev" graad="basis" id="8" lemma="sap" naamval="stan" ntype="soort" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="obj1" root="sap" word="sap"/>
+      </node>
+    </node>
+    <node begin="6" end="7" id="9" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." word="."/>
+  </node>
+  <sentence>ma , nu mas ik sap .</sentence>
+  <comments>
+    <comment>Q#1|ma , nu mas ik sap .|1|2|10.277069314299998</comment>
+  </comments>
+</alpino_ds>
