@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="7" id="0" rel="top">
+    <node begin="1" end="2" id="1" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," word=","/>
+    <node begin="0" cat="du" end="6" id="2" rel="--">
+      <node begin="0" end="1" id="3" lemma="ja" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="ja" word="ja"/>
+      <node begin="2" cat="pp" end="5" id="4" rel="nucl">
+        <node begin="2" end="3" id="5" lemma="aan" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="aan" vztype="init" word="aan"/>
+        <node begin="3" cat="np" end="5" id="6" rel="obj1">
+          <node begin="3" end="4" id="7" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" word="een"/>
+          <node begin="4" end="5" genus="onz" getal="ev" graad="basis" id="8" lemma="blik" naamval="stan" ntype="soort" pos="noun" postag="N(soort,ev,basis,onz,stan)" pt="n" rel="hd" root="blik" word="blik"/>
+        </node>
+      </node>
+      <node begin="5" end="6" id="9" lemma="ja" pos="tag" postag="TSW()" pt="tsw" rel="mod" root="ja" word="ja"/>
+    </node>
+    <node begin="6" end="7" id="10" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." word="."/>
+  </node>
+  <sentence>ja , aan een blik ja .</sentence>
+  <comments>
+    <comment>Q#1|ja , aan een blik ja .|1|1|3.63921604022</comment>
+  </comments>
+</alpino_ds>

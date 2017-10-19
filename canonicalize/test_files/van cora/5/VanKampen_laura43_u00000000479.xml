@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="7" id="0" rel="top">
+    <node begin="0" cat="smain" end="6" id="1" rel="--">
+      <node begin="0" cat="conj" end="5" id="2" rel="su">
+        <node begin="0" cat="np" end="3" id="3" rel="cnj">
+          <node begin="0" buiging="zonder" end="1" frame="determiner(het,nwh,nmod,pro,nparg)" id="4" infl="het" lcat="detp" lemma="dit" naamval="stan" npagr="evon" pdtype="det" pos="det" positie="prenom" postag="VNW(aanw,det,stan,prenom,zonder,evon)" pt="vnw" rel="det" root="dit" sense="dit" vwtype="aanw" wh="nwh" word="dit"/>
+          <node begin="1" end="2" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="basis" id="5" lcat="np" lemma="want" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,onz,stan)" pt="n" rel="hd" rnum="sg" root="want" sense="want" word="want"/>
+          <node begin="2" end="3" frame="proper_name(sg,&apos;PER&apos;)" genus="zijd" getal="ev" graad="basis" id="6" lcat="np" lemma="Wes" naamval="stan" neclass="PER" ntype="eigen" num="sg" pos="name" postag="N(eigen,ev,basis,zijd,stan)" pt="n" rel="app" rnum="sg" root="Wes" sense="Wes" word="wes"/>
+        </node>
+        <node begin="3" conjtype="neven" end="4" frame="conj(en)" id="7" lcat="vg" lemma="en" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="en" sense="en" word="en"/>
+        <node begin="4" end="5" frame="meas_mod_noun(het,mass,sg)" gen="het" getal="ev" id="8" lcat="np" lemma="niets" naamval="stan" num="sg" pdtype="pron" persoon="3o" pos="noun" postag="VNW(onbep,pron,stan,vol,3o,ev)" pt="vnw" rel="cnj" rnum="sg" root="niets" sense="niets" special="meas_mod" status="vol" vwtype="onbep" word="niks"/>
+      </node>
+      <node begin="5" end="6" frame="verb(hebben,subjunctive,intransitive)" id="9" infl="subjunctive" lcat="smain" lemma="kijken" pos="verb" postag="WW(pv,conj,ev)" pt="ww" pvagr="ev" pvtijd="conj" rel="hd" root="kijk" sc="intransitive" sense="kijk" stype="declarative" tense="subjunctive" word="kijke" wvorm="pv"/>
+    </node>
+    <node begin="6" end="7" frame="punct(uitroep)" id="10" lcat="punct" lemma="!" pos="punct" postag="LET()" pt="let" rel="--" root="!" sense="!" special="uitroep" word="!"/>
+  </node>
+  <sentence>dit want wes en niks kijke !</sentence>
+  <comments>
+    <comment>Q#1|dit want wes en niks kijke !|1|1|6.282566747669998</comment>
+  </comments>
+</alpino_ds>

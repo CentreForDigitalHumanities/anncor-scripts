@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="3" id="0" rel="top">
+    <node begin="0" cat="rel" end="2" id="1" rel="--">
+      <node begin="0" case="no_obl" end="1" frame="rel_pronoun(de,no_obl)" gen="de" getal="getal" id="2" index="1" lcat="np" lemma="die" naamval="stan" pdtype="pron" persoon="persoon" pos="pron" postag="VNW(betr,pron,stan,vol,persoon,getal)" pt="vnw" rel="rhd" rnum="sg" root="die" sense="die" status="vol" vwtype="betr" wh="rel" word="die"/>
+      <node begin="0" cat="ssub" end="2" id="3" rel="body">
+        <node begin="0" end="1" id="4" index="1" rel="su"/>
+        <node begin="1" end="2" frame="verb(hebben,sg3,intransitive)" id="5" infl="sg3" lcat="ssub" lemma="kriebelen" pos="verb" postag="WW(pv,tgw,met-t)" pt="ww" pvagr="met-t" pvtijd="tgw" rel="hd" root="kriebel" sc="intransitive" sense="kriebel" tense="present" word="kriebelt" wvorm="pv"/>
+      </node>
+    </node>
+    <node begin="2" end="3" frame="punct(punt)" id="6" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>die kriebelt .</sentence>
+  <comments>
+    <comment>Q#1|die kriebelt .|1|1|1.1539868231600001</comment>
+  </comments>
+</alpino_ds>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="7" id="0" rel="top">
+    <node begin="0" cat="sv1" end="6" id="1" rel="--">
+      <node begin="0" end="1" frame="verb(hebben,pl,aux(inf))" id="2" infl="pl" lcat="sv1" lemma="zullen" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="zal" sc="aux(inf)" sense="zal" stype="ynquestion" tense="present" word="zullen" wvorm="pv"/>
+      <node begin="1" case="nom" def="def" end="2" frame="pronoun(nwh,fir,pl,de,nom,def,wkpro)" gen="de" getal="mv" id="3" index="1" lcat="np" lemma="we" naamval="nomin" num="pl" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,red,1,mv)" pt="vnw" rel="su" rnum="pl" root="we" sense="we" special="wkpro" status="red" vwtype="pers" wh="nwh" word="we"/>
+      <node begin="1" cat="inf" end="6" id="4" rel="vc">
+        <node begin="1" end="2" id="5" index="1" rel="su"/>
+        <node begin="2" end="3" frame="adverb" id="6" lcat="advp" lemma="nog" pos="adv" postag="BW()" pt="bw" rel="mod" root="nog" sense="nog" word="nog"/>
+        <node begin="3" cat="np" end="5" id="7" rel="obj1">
+          <node begin="3" end="4" frame="iets_noun" getal="ev" id="8" lcat="np" lemma="iets" naamval="stan" pdtype="pron" persoon="3o" pos="noun" postag="VNW(onbep,pron,stan,vol,3o,ev)" pt="vnw" rel="hd" rnum="sg" root="iets" sc="iets" sense="iets" status="vol" vwtype="onbep" word="iets"/>
+          <node aform="base" begin="4" buiging="met-s" end="5" frame="post_adjective(no_e)" graad="basis" id="9" iets="true" infl="no_e" lcat="ap" lemma="leuk" pos="adj" positie="postnom" postag="ADJ(postnom,basis,met-s)" pt="adj" rel="mod" root="leuk" sense="leuk" special="iets" vform="adj" word="leuks"/>
+        </node>
+        <node begin="5" buiging="zonder" end="6" frame="verb(hebben,inf(no_e),transitive_ndev)" id="10" infl="inf(no_e)" lcat="inf" lemma="doen" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="doe" sc="transitive_ndev" sense="doe" word="doen" wvorm="inf"/>
+      </node>
+    </node>
+    <node begin="6" end="7" frame="punct(vraag)" id="11" lcat="punct" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence>zullen we nog iets leuks doen ?</sentence>
+  <comments>
+    <comment>Q#1|zullen we nog iets leuks doen ?|1|1|-7.39638422061</comment>
+  </comments>
+</alpino_ds>

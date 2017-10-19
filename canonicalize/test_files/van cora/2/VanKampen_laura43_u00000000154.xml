@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="5" id="0" rel="top">
+    <node begin="0" cat="du" end="4" id="1" rel="--">
+      <node begin="0" conjtype="neven" end="1" frame="complementizer(root)" id="2" lcat="du" lemma="maar" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="maar" sc="root" sense="maar" word="maar"/>
+      <node begin="1" cat="whq" end="4" id="3" rel="nucl">
+        <node begin="1" end="2" frame="wh_adjective" id="4" index="1" lcat="ap" lemma="hoe" pos="adj" postag="BW()" pt="bw" rel="whd" root="hoe" sense="hoe" wh="ywh" word="hoe"/>
+        <node begin="1" cat="sv1" end="4" id="5" rel="body">
+          <node begin="1" end="2" id="6" index="1" rel="predc"/>
+          <node begin="2" end="3" frame="verb(hebben,sg,copula)" id="7" infl="sg" lcat="sv1" lemma="heten" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="heet" sc="copula" sense="heet" stype="whquestion" tense="present" word="heet" wvorm="pv"/>
+          <node begin="3" buiging="met-e" end="4" frame="determiner(de,nwh,nmod,pro,nparg)" getal-n="zonder-n" id="8" infl="de" lcat="np" lemma="deze" naamval="stan" pdtype="det" pos="det" positie="nom" postag="VNW(aanw,det,stan,nom,met-e,zonder-n)" pt="vnw" rel="su" rnum="sg" root="deze" sense="deze" vwtype="aanw" wh="nwh" word="deze"/>
+        </node>
+      </node>
+    </node>
+    <node begin="4" end="5" frame="punct(vraag)" id="9" lcat="punct" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence>maar hoe heet deze ?</sentence>
+  <comments>
+    <comment>Q#1|maar hoe heet deze ?|1|1|0.9576929432699998</comment>
+  </comments>
+</alpino_ds>

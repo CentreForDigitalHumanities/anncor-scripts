@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="6" id="0" rel="top">
+    <node begin="1" end="2" id="1" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," word=","/>
+    <node begin="0" cat="du" end="4" id="2" rel="--">
+      <node begin="0" end="1" id="3" lemma="nee" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="nee" word="nee"/>
+      <node begin="2" cat="np" end="4" id="4" rel="nucl">
+        <node begin="2" end="3" id="5" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" word="een"/>
+        <node begin="3" end="4" genus="zijd" getal="ev" graad="basis" id="6" lemma="sleutel" naamval="stan" ntype="soort" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" root="sleutel" word="sleu"/>
+      </node>
+    </node>
+    <node begin="4" end="5" id="7" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." word="."/>
+    <node begin="5" end="6" id="8" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." word="."/>
+  </node>
+  <sentence>nee , een sleu . .</sentence>
+  <comments>
+    <comment>Q#1|nee , een sleu . .|1|1|10.41314923608</comment>
+  </comments>
+</alpino_ds>

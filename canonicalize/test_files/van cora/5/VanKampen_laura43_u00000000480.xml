@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="7" id="0" rel="top">
+    <node begin="0" cat="conj" end="6" id="1" rel="--">
+      <node begin="0" cat="np" end="3" id="2" rel="cnj">
+        <node begin="0" buiging="zonder" end="1" frame="determiner(het,nwh,nmod,pro,nparg)" id="3" infl="het" lcat="detp" lemma="dit" naamval="stan" npagr="evon" pdtype="det" pos="det" positie="prenom" postag="VNW(aanw,det,stan,prenom,zonder,evon)" pt="vnw" rel="det" root="dit" sense="dit" vwtype="aanw" wh="nwh" word="dit"/>
+        <node begin="1" end="2" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="basis" id="4" lcat="np" lemma="want" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,onz,stan)" pt="n" rel="hd" rnum="sg" root="want" sense="want" word="want"/>
+        <node begin="2" end="3" frame="loc_adverb" id="5" lcat="advp" lemma="weg" pos="adv" postag="BW()" pt="bw" rel="mod" root="weg" sense="weg" special="loc" word="weg"/>
+      </node>
+      <node begin="3" conjtype="neven" end="4" frame="conj(en)" id="6" lcat="vg" lemma="en" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="en" sense="en" word="en"/>
+      <node begin="4" cat="np" end="6" id="7" rel="cnj">
+        <node begin="4" end="5" frame="meas_mod_noun(het,mass,sg)" gen="het" getal="ev" id="8" lcat="np" lemma="niets" naamval="stan" num="sg" pdtype="pron" persoon="3o" pos="noun" postag="VNW(onbep,pron,stan,vol,3o,ev)" pt="vnw" rel="mod" rnum="sg" root="niets" sense="niets" special="meas_mod" status="vol" vwtype="onbep" word="niks"/>
+        <node begin="5" buiging="zonder" end="6" frame="v_noun(intransitive)" getal-n="zonder-n" id="9" lcat="np" lemma="kijken" pos="verb" positie="nom" postag="WW(inf,nom,zonder,zonder-n)" pt="ww" rel="hd" rnum="sg" root="kijk" sc="intransitive" sense="kijk" special="v_noun" word="kijken" wvorm="inf"/>
+      </node>
+    </node>
+    <node begin="6" end="7" frame="punct(punt)" id="10" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence>dit want weg en niks kijken .</sentence>
+  <comments>
+    <comment>Q#1|dit want weg en niks kijken .|1|1|9.57871175701</comment>
+  </comments>
+</alpino_ds>

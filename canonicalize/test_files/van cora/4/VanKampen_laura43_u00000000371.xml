@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="3" id="0" rel="top">
+    <node begin="0" cat="du" end="2" id="1" rel="--">
+      <node begin="0" conjtype="neven" end="1" frame="complementizer(root)" id="2" lcat="du" lemma="of" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="of" sc="root" sense="of" word="of"/>
+      <node begin="1" end="2" frame="adverb" id="3" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="nucl" root="niet" sense="niet" word="niet"/>
+    </node>
+    <node begin="2" end="3" frame="punct(vraag)" id="4" lcat="punct" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence>of niet ?</sentence>
+  <comments>
+    <comment>Q#1|of niet ?|1|1|2.5157750372300005</comment>
+  </comments>
+</alpino_ds>

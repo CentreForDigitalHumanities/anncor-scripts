@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node begin="0" cat="top" end="5" id="0" rel="top">
+    <node begin="2" end="3" id="1" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," word=","/>
+    <node begin="0" cat="du" end="4" id="2" rel="--">
+      <node begin="0" cat="np" end="2" id="3" rel="nucl">
+        <node begin="0" buiging="zonder" end="1" graad="basis" id="4" lemma="vies" pos="adj" positie="prenom" postag="ADJ(prenom,basis,zonder)" pt="adj" rel="mod" root="vies" word="fies"/>
+        <node begin="1" end="2" genus="zijd" getal="ev" graad="basis" id="5" lemma="klei" naamval="stan" ntype="soort" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" root="klei" word="klei"/>
+      </node>
+      <node begin="3" end="4" id="6" lemma="he" pos="tag" postag="TSW()" pt="tsw" rel="dp" root="he" word="he"/>
+    </node>
+    <node begin="4" end="5" id="7" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." word="."/>
+  </node>
+  <sentence>fies klei , he .</sentence>
+  <comments>
+    <comment>#IC_C interpreted as &apos;vieze klei&apos;</comment>
+    <comment>Q#1|fies klei , he .|1|1|3.8455653454900003</comment>
+  </comments>
+</alpino_ds>
