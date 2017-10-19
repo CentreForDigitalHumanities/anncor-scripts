@@ -52,8 +52,6 @@ def find_duplicates(path, extension):
     duplicates = set()
     for file in files:
         if file in result:
-            print("duplicate")
-            print(file)
             duplicates.add(file)
         else:
             result.add(file)
