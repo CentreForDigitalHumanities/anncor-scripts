@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3">
+  <node rel="top" cat="top">
+    <node rel="--" pos="punct" root="," postag="LET()" pt="let" lemma="," word="," begin="1" end="2"/>
+    <node rel="--" cat="du">
+      <node rel="tag" pos="tag" root="nee" postag="TSW()" pt="tsw" lemma="nee" word="nee" begin="0" end="1"/>
+      <node rel="nucl" cat="sv1">
+        <node rel="hd" pos="verb" root="moet" postag="WW(pv,tgw,ev)" pt="ww" wvorm="pv" pvtijd="tgw" pvagr="ev" lemma="moeten" word="moet" begin="2" end="3"/>
+        <node rel="mod" pos="adv" root="niet" postag="BW()" pt="bw" lemma="niet" word="niet" begin="3" end="4"/>
+        <node rel="vc" cat="inf">
+          <node rel="su" index="1"/>
+          <node rel="obj1" pos="noun" root="geld" postag="N(soort,ev,basis,onz,stan)" pt="n" ntype="soort" getal="ev" graad="basis" genus="onz" naamval="stan" lemma="geld" word="sgeld" begin="4" end="5"/>
+          <node rel="hd" pos="name" root="betaal" postag="WW(inf,vrij,zonder)" pt="ww" wvorm="inf" positie="vrij" buiging="zonder" lemma="betalen" word="spale" begin="5" end="6"/>
+        </node>
+      </node>
+    </node>
+    <node rel="--" pos="punct" root="." postag="LET()" pt="let" lemma="." word="." begin="6" end="7"/>
+  </node>
+  <sentence>nee , moet niet sgeld spale .</sentence>
+  <comments>
+    <comment>#IC_C interpreted as 'nee, moet niet geld betalen'</comment>
+    <comment>Q#1|nee , moet niet sgeld spale .|1|1|3.9097731667399995</comment>
+  </comments>
+</alpino_ds>

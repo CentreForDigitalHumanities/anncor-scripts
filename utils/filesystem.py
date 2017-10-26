@@ -39,6 +39,19 @@ def list_all_files_with_extension(path, extension, do_unzip=True):
             files = files + list_all_files_with_extension(os.path.join(path, file), extension)
     return files
 
+def list_files(path, criteria=None):
+    files = []
+    for file in os.listdir(path):
+        file_path = os.path.join(path, file)
+        if os.path.isfile(file_path):
+            if criteria:
+                if criteria(file_path):
+                    files.append(file_path)
+            else:
+                files.append(file_path)
+        if os.path.isdir(file_path):
+            files = files + list_files(file_path, criteria)
+    return files
 
 def find_duplicates(path, extension):
     """
@@ -56,3 +69,37 @@ def find_duplicates(path, extension):
         else:
             result.add(file)
     return duplicates
+
+
+def list_splited_paths(dir_ref, criteria=None):
+    """
+        lists all files in the dir_ref that pass the criteria function into splited paths
+    :param dir_ref: Reference to the directory to list the files
+    :param criteria: a function that returns true if a file needs to be included into the list
+    :return:
+    """
+    files = list_files(dir_ref, criteria)
+    return split_paths(files)
+
+
+def split_paths(paths):
+    """
+    Splits all the given path into the path to the dest folder and the actual file name
+    :param paths:
+    :return:
+    """
+    results = []
+    for path in paths:
+        results.append(os.path.split(path))
+    return results
+
+def sort_splited_paths_on_filename(splited_paths):
+    return sorted(splited_paths, key=lambda split_path: split_path[1])
+
+def print_list_to_file(file_ref, list):
+    with open(file_ref, "w+") as f:
+        for item in list:
+            f.write("{}\n".format(item))
+
+
+
