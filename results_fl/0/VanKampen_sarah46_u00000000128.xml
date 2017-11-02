@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-5727.xml">
+  <node begin="0" cat="top" end="17" id="0" rel="top">
+    <node begin="6" end="7" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="8" end="9" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="12" end="13" frame="punct(komma)" id="3" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="conj" end="17" id="4" rel="--">
+      <node begin="0" cat="smain" end="8" id="5" rel="cnj">
+        <node begin="0" case="both" def="indef" end="1" frame="pronoun(nwh,thi,sg,both,both,indef,strpro)" gen="both" id="6" lcat="np" lemma="één" num="sg" numtype="hoofd" per="thi" pos="pron" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="su" rnum="sg" root="één" sense="één" special="strpro" wh="nwh" word="een"/>
+        <node begin="1" end="2" frame="verb(hebben,past(sg),ld_pp)" id="7" infl="sg" lcat="smain" lemma="kloppen" pos="verb" postag="WW(pv,verl,ev)" pt="ww" pvagr="ev" pvtijd="verl" rel="hd" root="klop" sc="ld_pp" sense="klop" stype="declarative" tense="past" word="klopte" wvorm="pv"/>
+        <node begin="2" end="3" frame="er_loc_adverb" getal="getal" id="8" lcat="advp" lemma="daar" naamval="obl" pdtype="adv-pron" persoon="3o" pos="adv" postag="VNW(aanw,adv-pron,obl,vol,3o,getal)" pt="vnw" rel="mod" root="daar" sense="daar" special="er_loc" status="vol" vwtype="aanw" word="daar"/>
+        <node begin="3" cat="pp" end="6" id="9" rel="ld">
+          <node begin="3" end="4" frame="preposition(op,[af,na])" id="10" lcat="pp" lemma="op" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="op" sense="op" vztype="init" word="op"/>
+          <node begin="4" cat="np" end="6" id="11" rel="obj1">
+            <node begin="4" end="5" frame="determiner(de)" id="12" infl="de" lcat="detp" lemma="de" lwtype="bep" naamval="stan" npagr="rest" pos="det" postag="LID(bep,stan,rest)" pt="lid" rel="det" root="de" sense="de" word="de"/>
+            <node begin="5" end="6" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="13" lcat="np" lemma="deur" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="deur" sense="deur" word="deur"/>
+          </node>
+        </node>
+        <node begin="7" end="8" frame="er_loc_adverb" getal="getal" id="14" lcat="advp" lemma="hier" naamval="obl" pdtype="adv-pron" persoon="3o" pos="adv" postag="VNW(aanw,adv-pron,obl,vol,3o,getal)" pt="vnw" rel="mod" root="hier" sense="hier" special="er_loc" status="vol" vwtype="aanw" word="hier"/>
+      </node>
+      <node begin="9" cat="smain" end="12" id="15" rel="cnj">
+        <node begin="9" case="both" def="indef" end="10" frame="pronoun(nwh,thi,sg,both,both,indef,strpro)" gen="both" id="16" lcat="np" lemma="één" num="sg" numtype="hoofd" per="thi" pos="pron" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="su" rnum="sg" root="één" sense="één" special="strpro" wh="nwh" word="een"/>
+        <node begin="10" end="11" frame="verb(hebben,past(sg),intransitive)" id="17" infl="sg" lcat="smain" lemma="kloppen" pos="verb" postag="WW(pv,verl,ev)" pt="ww" pvagr="ev" pvtijd="verl" rel="hd" root="klop" sc="intransitive" sense="klop" stype="declarative" tense="past" word="klopte" wvorm="pv"/>
+        <node begin="11" end="12" frame="er_loc_adverb" getal="getal" id="18" lcat="advp" lemma="daar" naamval="obl" pdtype="adv-pron" persoon="3o" pos="adv" postag="VNW(aanw,adv-pron,obl,vol,3o,getal)" pt="vnw" rel="mod" root="daar" sense="daar" special="er_loc" status="vol" vwtype="aanw" word="daar"/>
+      </node>
+      <node begin="13" conjtype="neven" end="14" frame="conj(en)" id="19" lcat="vg" lemma="en" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="en" sense="en" word="en"/>
+      <node begin="14" cat="smain" end="17" id="20" rel="cnj">
+        <node begin="14" case="both" def="indef" end="15" frame="pronoun(nwh,thi,sg,both,both,indef,strpro)" gen="both" id="21" lcat="np" lemma="één" num="sg" numtype="hoofd" per="thi" pos="pron" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="su" rnum="sg" root="één" sense="één" special="strpro" wh="nwh" word="een"/>
+        <node begin="15" end="16" frame="verb(hebben,past(sg),intransitive)" id="22" infl="sg" lcat="smain" lemma="kloppen" pos="verb" postag="WW(pv,verl,ev)" pt="ww" pvagr="ev" pvtijd="verl" rel="hd" root="klop" sc="intransitive" sense="klop" stype="declarative" tense="past" word="klopte" wvorm="pv"/>
+        <node begin="16" end="17" frame="er_loc_adverb" getal="getal" id="23" lcat="advp" lemma="daar" naamval="obl" pdtype="adv-pron" persoon="3o" pos="adv" postag="VNW(aanw,adv-pron,obl,vol,3o,getal)" pt="vnw" rel="mod" root="daar" sense="daar" special="er_loc" status="vol" vwtype="aanw" word="daar."/>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="5727">een klopte daar op de deur , hier , een klopte daar , en een klopte daar.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022446-1"/>
+    <meta type="date" name="date" value="1994-01-30"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="een [= one] klopte daar op de deur , hier , een [= one] klopte daar , en een [= one] klopte daar."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="128"/>
+    <meta type="int" name="months" value="56"/>
+    <meta type="text" name="age" value="4;8.03"/>
+  </metadata>
+</alpino_ds>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-6760.xml">
+  <node begin="0" cat="top" end="6" id="0" rel="top">
+    <node begin="1" end="2" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="5" id="2" rel="--">
+      <node begin="0" end="1" frame="tag" id="3" lcat="advp" lemma="nee" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="nee" sense="nee" word="nee"/>
+      <node begin="2" cat="smain" end="5" id="4" rel="nucl">
+        <node begin="2" end="3" frame="determiner(het,nwh,nmod,pro,nparg)" getal="ev" id="5" infl="het" lcat="np" lemma="dat" naamval="stan" pdtype="pron" persoon="3o" pos="det" postag="VNW(aanw,pron,stan,vol,3o,ev)" pt="vnw" rel="su" rnum="sg" root="dat" sense="dat" status="vol" vwtype="aanw" wh="nwh" word="dat"/>
+        <node begin="3" end="4" frame="verb(hebben,sg,intransitive)" id="6" infl="sg" lcat="smain" lemma="mogen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="mag" sc="intransitive" sense="mag" stype="declarative" tense="present" word="mag" wvorm="pv"/>
+        <node begin="4" end="5" frame="adverb" id="7" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+      </node>
+    </node>
+    <node begin="5" end="6" frame="punct(punt)" id="8" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence sentid="6760">nee , dat mag niet .</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022447-1"/>
+    <meta type="date" name="date" value="1994-02-15"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="JAC and SAR are going to make a puzzle"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="nee , &lt;dat mag niet&gt; [&gt;]."/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="293"/>
+  </metadata>
+</alpino_ds>

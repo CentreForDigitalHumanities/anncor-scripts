@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-5692.xml">
+  <node begin="0" cat="top" end="9" id="0" rel="top">
+    <node begin="6" end="7" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="9" id="2" rel="--">
+      <node begin="0" cat="smain" end="3" id="3" rel="dp">
+        <node begin="0" case="nom" def="def" end="1" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="4" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+        <node begin="1" end="2" frame="verb(hebben,sg,intransitive)" id="5" infl="sg" lcat="smain" lemma="praten" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="praat" sc="intransitive" sense="praat" stype="declarative" tense="present" word="praat" wvorm="pv"/>
+        <node begin="2" end="3" frame="adverb" id="6" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+      </node>
+      <node begin="3" cat="du" end="9" id="7" rel="dp">
+        <node begin="3" cat="smain" end="6" id="8" rel="dp">
+          <node begin="3" case="nom" def="def" end="4" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="9" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+          <node begin="4" end="5" frame="verb(hebben,sg,intransitive)" id="10" infl="sg" lcat="smain" lemma="praten" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="praat" sc="intransitive" sense="praat" stype="declarative" tense="present" word="praat" wvorm="pv"/>
+          <node begin="5" end="6" frame="adverb" id="11" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+        </node>
+        <node begin="7" cat="smain" end="9" id="12" rel="dp">
+          <node begin="7" case="nom" def="def" end="8" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="13" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+          <node begin="8" end="9" frame="verb(hebben,sg1,intransitive)" id="14" infl="sg1" lcat="smain" lemma="luisteren" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="luister" sc="intransitive" sense="luister" stype="declarative" tense="present" word="luister." wvorm="pv"/>
+        </node>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="5692">ik praat niet ik praat niet , ik luister.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022446-1"/>
+    <meta type="date" name="date" value="1994-01-30"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="&lt;ik praat niet ik praat niet&gt; [&lt;] , ik luister."/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="93"/>
+  </metadata>
+</alpino_ds>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-54501.xml">
+  <node begin="0" cat="top" end="12" id="0" rel="top">
+    <node begin="2" end="3" frame="determiner(de)" id="1" infl="de" lcat="--" lemma="de" lwtype="bep" naamval="stan" npagr="rest" pos="det" postag="LID(bep,stan,rest)" pt="lid" rel="--" root="de" sense="de" word="de"/>
+    <node begin="8" end="9" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="11" id="3" rel="--">
+      <node begin="0" cat="smain" end="2" id="4" rel="dp">
+        <node begin="0" case="nom" def="def" end="1" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="5" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+        <node begin="1" end="2" frame="verb(hebben,sg,intransitive)" id="6" infl="sg" lcat="smain" lemma="moeten" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="moet" sc="intransitive" sense="moet" stype="declarative" tense="present" word="moet" wvorm="pv"/>
+      </node>
+      <node begin="3" cat="du" end="11" id="7" rel="dp">
+        <node begin="3" cat="smain" end="8" id="8" rel="nucl">
+          <node begin="3" case="nom" def="def" end="4" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="9" index="1" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+          <node begin="4" end="5" frame="verb(zijn,sg1,aux(inf))" id="10" infl="sg1" lcat="smain" lemma="gaan" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="ga" sc="aux(inf)" sense="ga" stype="declarative" tense="present" word="ga" wvorm="pv"/>
+          <node begin="3" cat="inf" end="8" id="11" rel="vc">
+            <node begin="3" end="4" id="12" index="1" rel="su"/>
+            <node begin="5" cat="np" end="7" id="13" rel="obj1">
+              <node aform="base" begin="5" buiging="met-e" end="6" frame="adjective(e)" graad="basis" id="14" infl="e" lcat="ap" lemma="mooi" naamval="stan" pos="adj" positie="prenom" postag="ADJ(prenom,basis,met-e,stan)" pt="adj" rel="mod" root="mooi" sense="mooi" vform="adj" word="mooie"/>
+              <node begin="6" end="7" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="15" lcat="np" lemma="stoel" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="stoel" sense="stoel" word="stoel"/>
+            </node>
+            <node begin="7" buiging="zonder" end="8" frame="verb(hebben,inf,transitive)" id="16" infl="inf" lcat="inf" lemma="maken" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="maak" sc="transitive" sense="maak" word="maken" wvorm="inf"/>
+          </node>
+        </node>
+        <node begin="9" cat="np" end="11" id="17" rel="sat">
+          <node aform="base" begin="9" buiging="met-e" end="10" frame="adjective(ge_e)" id="18" infl="e" lcat="ppart" lemma="versierd" pos="adj" positie="prenom" postag="WW(vd,prenom,met-e)" pt="ww" rel="mod" root="versierd" sense="versierd" vform="psp" word="versierde" wvorm="vd"/>
+          <node begin="10" end="11" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="19" lcat="np" lemma="stoel" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="stoel" sense="stoel" word="stoel"/>
+        </node>
+      </node>
+    </node>
+    <node begin="11" end="12" frame="punct(punt)" id="20" lcat="--" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence sentid="54501">ik moet de ik ga mooie stoel maken , versierde stoel .</sentence>
+  <metadata>
+    <meta type="text" name="situation" value="LAU is going to paint a tshirt"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="date" name="date" value="1991-02-03"/>
+    <meta type="text" name="speaker" value="LAU"/>
+    <meta type="text" name="origutt" value="&lt;ik moet de&gt; [//] ik ga mooie stoel maken , versierde stoel."/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="name" value="Laura"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="vankampen"/>
+    <meta type="int" name="uttid" value="797"/>
+    <meta type="text" name="age" value="4;8.28"/>
+    <meta type="int" name="months" value="56"/>
+  </metadata>
+</alpino_ds>

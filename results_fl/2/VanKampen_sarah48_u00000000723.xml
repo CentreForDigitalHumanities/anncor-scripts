@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-7718.xml">
+  <node begin="0" cat="top" end="9" id="0" rel="top">
+    <node begin="0" cat="conj" end="9" id="1" rel="--">
+      <node begin="0" cat="np" end="2" id="2" rel="cnj">
+        <node begin="0" end="1" frame="determiner(een)" id="3" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+        <node aform="base" begin="1" buiging="met-e" end="2" frame="adjective(e)" getal-n="zonder-n" graad="basis" id="4" infl="e" lcat="np" lemma="slecht" naamval="stan" pos="adj" positie="nom" postag="ADJ(nom,basis,met-e,zonder-n,stan)" pt="adj" rel="hd" rnum="sg" root="slecht" sense="slecht" vform="adj" word="slechte"/>
+      </node>
+      <node begin="2" conjtype="neven" end="3" frame="conj(en)" id="5" lcat="vg" lemma="en" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="en" sense="en" word="en"/>
+      <node begin="3" cat="np" end="5" id="6" rel="cnj">
+        <node begin="3" end="4" frame="determiner(een)" id="7" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+        <node aform="base" begin="4" buiging="met-e" end="5" frame="adjective(e)" getal-n="zonder-n" graad="basis" id="8" infl="e" lcat="np" lemma="goed" naamval="stan" pos="adj" positie="nom" postag="ADJ(nom,basis,met-e,zonder-n,stan)" pt="adj" rel="hd" rnum="sg" root="goed" sense="goed" vform="adj" word="goeie"/>
+      </node>
+      <node begin="5" conjtype="neven" end="6" frame="conj(en)" id="9" lcat="vg" lemma="en" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="en" sense="en" word="en"/>
+      <node begin="6" cat="np" end="9" id="10" rel="cnj">
+        <node begin="6" end="7" frame="adverb" id="11" lcat="advp" lemma="nog" pos="adv" postag="BW()" pt="bw" rel="mod" root="nog" sense="nog" word="nog"/>
+        <node begin="7" end="8" frame="determiner(een)" id="12" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+        <node begin="8" end="9" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="13" lcat="np" lemma="dame" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="dame" sense="dame" word="dame."/>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="7718">een slechte en een goeie en nog een dame.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022448-1"/>
+    <meta type="date" name="date" value="1994-03-01"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to make a puzzle , of the Beauty and the Beast , which is also a movie"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="&lt;een [= one] slechte en een&gt; [&lt;] goeie en nog een dame."/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="723"/>
+  </metadata>
+</alpino_ds>

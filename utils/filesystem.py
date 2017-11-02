@@ -3,7 +3,9 @@
 """
 import os
 import zipfile
-
+import json
+from shutil import copyfile
+import ast
 
 def unzip(path):
     """
@@ -20,7 +22,7 @@ def unzip(path):
 
 def list_all_files_with_extension(path, extension, do_unzip=True):
     """"
-        Lists all the files in the path with the given extension, id do_unzip is true all the zip folders it encounters will be zipped and deleted
+        Lists all the files in the path with the given extension, id do_unzip is true all the zip folders it encounters will be zipped
         :param path: The path that we list all the files in, this includes the subfolders and zip files
         :param extension: The extension that we look at
         :return:the files in the path with the given extension
@@ -32,7 +34,6 @@ def list_all_files_with_extension(path, extension, do_unzip=True):
             files.append(file)
         if do_unzip and file.endswith(".zip"):
             new_path = unzip(os.path.join(path, file))
-            os.remove(os.path.join(path, file))
             files = files + list_all_files_with_extension(new_path, extension)
         # Dive into subfolders.
         if os.path.isdir(os.path.join(path, file)):
@@ -101,5 +102,44 @@ def print_list_to_file(file_ref, list):
         for item in list:
             f.write("{}\n".format(item))
 
+def read_lines_as_dict(file_location):
+    result = []
+    with open(file_location, "r") as f:
+
+        result = [ast.literal_eval(l) for l in f.readlines()]
+
+    return result
+
+
+def create_filelists(files, result_location, files_per_filelist=100):
+    """"
+     Creates filelists on the given result_location for the given files
+    """
+    count = 0
+    dir_count = 0
+    file = None
+    for (i, f) in enumerate(files):
+        s = os.path.split(f)
+        dir = os.path.join(result_location, "{}".format(dir_count))
+        if count == 0:
+            os.makedirs(dir)
+            file = open(os.path.join(dir, "{}.fl".format(dir_count)), "w")
+            file.write("{} \n".format(dir_count))
+
+        if not os.path.isdir(dir):
+            os.makedirs(dir)
+
+        file.write("{} \n".format(s[1]))
+        copyfile(f, os.path.join(dir, "{}".format(s[1])))
+
+
+        count += 1
+
+        if count >= files_per_filelist:
+            dir_count += 1
+            count = 0
+            file.close()
+
+    file.close()
 
 

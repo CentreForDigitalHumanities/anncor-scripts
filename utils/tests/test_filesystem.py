@@ -1,12 +1,13 @@
 import unittest
 from utils.filesystem import *
+import shutil
 
 
 class TestFileSystem(unittest.TestCase):
 
     def setUp(self):
         self.dir_ref = "./utils/tests/test_files_filesystem/list_splited_paths_test"
-
+        self.filelist_location = "./utils/tests/test_files_filesystem/file_lists"
     def test_sort_splited_paths(self):
         splited_paths = [
             ("/c", "b.xml"),
@@ -50,6 +51,18 @@ class TestFileSystem(unittest.TestCase):
         result = list_files(self.dir_ref, lambda x: x[len(x)-3:]=="txt")
         self.assertEqual(expected_refs, result)
 
+
+    def test_create_filelists(self):
+        files = sorted(list_files(self.dir_ref, lambda x: x[len(x)-3:]=="xml"))
+
+        create_filelists(files, self.filelist_location, 4)
+        dirs = [name for name in os.listdir(self.filelist_location)]
+        self.assertEqual(len(dirs), 2)
+
+
+    def tearDown(self):
+        if os.path.isdir(self.filelist_location):
+          shutil.rmtree(self.filelist_location)
 
 
 

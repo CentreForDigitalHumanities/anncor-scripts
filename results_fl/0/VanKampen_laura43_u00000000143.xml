@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year3-34326.xml">
+  <node begin="0" cat="top" end="8" id="0" rel="top">
+    <node begin="0" cat="du" end="7" id="1" rel="--">
+      <node begin="0" end="1" frame="tmp_adverb" id="2" lcat="advp" lemma="nu" pos="adv" postag="BW()" pt="bw" rel="dp" root="nu" sense="nu" special="tmp" word="nu"/>
+      <node begin="1" cat="du" end="4" id="3" rel="dp">
+        <node begin="1" cat="sv1" end="3" id="4" rel="nucl">
+          <node begin="1" end="2" frame="verb(hebben,sg1,transitive_ndev)" id="5" infl="sg1" lcat="sv1" lemma="hebben" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="heb" sc="transitive_ndev" sense="heb" stype="topic_drop" tense="present" word="heb" wvorm="pv"/>
+          <node begin="2" case="nom" def="def" end="3" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="6" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+        </node>
+        <node begin="3" end="4" frame="tag" id="7" lcat="advp" lemma="he" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="he" sense="he" word="he"/>
+      </node>
+      <node begin="4" cat="np" end="7" id="8" rel="dp">
+        <node begin="4" buiging="zonder" end="5" frame="determiner(het,nwh,nmod,pro,nparg)" id="9" infl="het" lcat="detp" lemma="dat" naamval="stan" npagr="evon" pdtype="det" pos="det" positie="prenom" postag="VNW(aanw,det,stan,prenom,zonder,evon)" pt="vnw" rel="det" root="dat" sense="dat" vwtype="aanw" wh="nwh" word="dat"/>
+        <node begin="5" cat="mwu" end="7" id="10" mwu_root="annas opschete" mwu_sense="annas opschete" rel="hd">
+          <node begin="5" end="6" frame="proper_name(both)" id="11" lcat="np" lemma="annas" neclass="MISC" num="both" pos="name" postag="SPEC(deeleigen)" pt="spec" rel="mwp" rnum="sg" root="annas" sense="annas" spectype="deeleigen" word="annas"/>
+          <node begin="6" end="7" frame="proper_name(both)" id="12" lcat="np" lemma="opschete" neclass="MISC" num="both" pos="name" postag="SPEC(deeleigen)" pt="spec" rel="mwp" rnum="sg" root="opschete" sense="opschete" spectype="deeleigen" word="opschete"/>
+        </node>
+      </node>
+    </node>
+    <node begin="7" end="8" frame="punct(punt)" id="13" lcat="--" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence sentid="34326">nu heb ik he dat annas opschete .</sentence>
+  <metadata>
+    <meta type="text" name="transcriber" value="Christel de Heus"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="date" name="date" value="1989-12-03"/>
+    <meta type="text" name="speaker" value="LAU"/>
+    <meta type="text" name="origutt" value="nu heb ik he dat annas opschete."/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="name" value="Laura"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="vankampen"/>
+    <meta type="int" name="uttid" value="143"/>
+    <meta type="date" name="birth_of" value="1986-05-06"/>
+    <meta type="text" name="age" value="3;6.28"/>
+    <meta type="int" name="months" value="42"/>
+  </metadata>
+</alpino_ds>

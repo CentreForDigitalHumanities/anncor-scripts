@@ -18,11 +18,14 @@ ignore_characters = [
     "?",
     "|",
     "xxx",
-    " "
+    " ",
+    "'",
+    '"',
+    "\\",
 
 ]
 
-
+#Python does not like recursion, this increases the max recursion limit
 resource.setrlimit(resource.RLIMIT_STACK, (2**29,-1))
 sys.setrecursionlimit(10**6)
 

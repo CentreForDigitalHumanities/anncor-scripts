@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year3-34197.xml">
+  <node begin="0" cat="top" end="11" id="0" rel="top">
+    <node begin="2" end="3" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="10" id="2" rel="--">
+      <node begin="0" end="1" frame="tag" id="3" lcat="advp" lemma="ja" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="ja" sense="ja" word="ja"/>
+      <node begin="1" cat="du" end="10" id="4" rel="nucl">
+        <node begin="1" conjtype="neven" end="2" frame="complementizer(root)" id="5" lcat="du" lemma="maar" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="maar" sc="root" sense="maar" word="maar"/>
+        <node begin="3" cat="smain" end="10" id="6" rel="nucl">
+          <node begin="5" end="6" frame="verb(hebben,past(sg),aux_psp_hebben)" id="7" infl="sg" lcat="smain" lemma="hebben" pos="verb" postag="WW(pv,verl,ev)" pt="ww" pvagr="ev" pvtijd="verl" rel="hd" root="heb" sc="aux_psp_hebben" sense="heb" stype="declarative" tense="past" word="had" wvorm="pv"/>
+          <node begin="6" cat="mwu" end="8" id="8" index="1" mwu_root="Sinte Sinterklaas" mwu_sense="Sinte Sinterklaas" rel="su">
+            <node begin="6" end="7" frame="proper_name(both,'PER')" id="9" lcat="np" lemma="Sinte" neclass="PER" num="both" pos="name" postag="SPEC(deeleigen)" pt="spec" rel="mwp" rnum="sg" root="Sinte" sense="Sinte" spectype="deeleigen" word="Sinte"/>
+            <node begin="7" end="8" frame="proper_name(both,'PER')" id="10" lcat="np" lemma="Sinterklaas" neclass="PER" num="both" pos="name" postag="SPEC(deeleigen)" pt="spec" rel="mwp" rnum="sg" root="Sinterklaas" sense="Sinterklaas" spectype="deeleigen" word="Sinterklaas"/>
+          </node>
+          <node begin="3" cat="ppart" end="10" id="11" rel="vc">
+            <node begin="3" cat="cp" end="5" id="12" rel="mod">
+              <node begin="3" conjtype="onder" end="4" frame="complementizer(a)" id="13" lcat="cp" lemma="waar" pos="comp" postag="VG(onder)" pt="vg" rel="cmp" root="waar" sc="a" sense="waar" word="waar"/>
+              <node aform="base" begin="4" buiging="zonder" end="5" frame="adjective(no_e(nonadv))" graad="basis" id="14" infl="no_e" lcat="ap" lemma="waar" pos="adj" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="body" root="waar" sense="waar" vform="adj" word="waar"/>
+            </node>
+            <node begin="6" end="8" id="15" index="1" rel="su"/>
+            <node begin="8" end="9" frame="determiner(het,nwh,nmod,pro,nparg,wkpro)" genus="onz" getal="ev" id="16" infl="het" lcat="np" lemma="het" naamval="stan" pdtype="pron" persoon="3" pos="det" postag="VNW(pers,pron,stan,red,3,ev,onz)" pt="vnw" rel="obj1" rnum="sg" root="het" sense="het" status="red" vwtype="pers" wh="nwh" word="het"/>
+            <node begin="9" buiging="zonder" end="10" frame="verb(hebben,psp,transitive)" id="17" infl="psp" lcat="ppart" lemma="leggen" pos="verb" positie="vrij" postag="WW(vd,vrij,zonder)" pt="ww" rel="hd" root="leg" sc="transitive" sense="leg" word="gelegd" wvorm="vd"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node begin="10" end="11" frame="punct(vraag)" id="18" lcat="punct" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence sentid="34197">ja maar , waar waar had Sinte Sinterklaas het gelegd ?</sentence>
+  <metadata>
+    <meta type="text" name="transcriber" value="Christel de Heus"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="date" name="date" value="1989-12-03"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="ja maar , waar [/] waar had Sinte [//] Sinterklaas het gelegd?"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="vankampen"/>
+    <meta type="int" name="uttid" value="14"/>
+    <meta type="date" name="birth_of" value="1986-05-06"/>
+  </metadata>
+</alpino_ds>

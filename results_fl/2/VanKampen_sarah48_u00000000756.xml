@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-7751.xml">
+  <node begin="0" cat="top" end="17" id="0" rel="top">
+    <node begin="0" case="no_obl" end="1" frame="rel_pronoun(de,no_obl)" gen="de" getal="getal" id="1" lcat="--" lemma="die" naamval="stan" pdtype="pron" persoon="persoon" pos="pron" postag="VNW(betr,pron,stan,vol,persoon,getal)" pt="vnw" rel="--" root="die" sense="die" status="vol" vwtype="betr" wh="rel" word="die"/>
+    <node begin="4" end="5" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="1" cat="du" end="17" id="3" rel="--">
+      <node begin="1" cat="np" end="3" id="4" rel="dp">
+        <node begin="1" case="nom" def="def" end="2" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="5" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="hd" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+        <node begin="2" end="3" frame="er_loc_adverb" getal="getal" id="6" lcat="advp" lemma="hier" naamval="obl" pdtype="adv-pron" persoon="3o" pos="adv" postag="VNW(aanw,adv-pron,obl,vol,3o,getal)" pt="vnw" rel="mod" root="hier" sense="hier" special="er_loc" status="vol" vwtype="aanw" word="hier"/>
+      </node>
+      <node begin="3" cat="np" end="17" id="7" rel="dp">
+        <node begin="3" end="4" frame="noun(both,both,both)" gen="both" genus="zijd" getal="ev" graad="basis" id="8" lcat="np" lemma="neerle" naamval="stan" ntype="soort" num="both" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="neerle" sense="neerle" word="neerle"/>
+        <node begin="5" cat="rel" end="17" id="9" rel="mod">
+          <node begin="5" case="no_obl" end="6" frame="rel_pronoun(de,no_obl)" gen="de" getal="getal" id="10" index="1" lcat="np" lemma="die" naamval="stan" pdtype="pron" persoon="persoon" pos="pron" postag="VNW(betr,pron,stan,vol,persoon,getal)" pt="vnw" rel="rhd" rnum="sg" root="die" sense="die" status="vol" vwtype="betr" wh="rel" word="die"/>
+          <node begin="5" cat="ssub" end="17" id="11" rel="body">
+            <node begin="5" end="6" id="12" index="1" rel="obj2"/>
+            <node begin="6" end="7" frame="determiner(de,nwh,nmod,pro,nparg)" getal="getal" id="13" infl="de" lcat="np" lemma="die" naamval="stan" pdtype="pron" persoon="3" pos="det" postag="VNW(aanw,pron,stan,vol,3,getal)" pt="vnw" rel="su" rnum="pl" root="die" sense="die" status="vol" vwtype="aanw" wh="nwh" word="die"/>
+            <node begin="7" end="8" frame="determiner(de,nwh,nmod,pro,nparg)" getal="getal" id="14" infl="de" lcat="np" lemma="die" naamval="stan" pdtype="pron" persoon="3" pos="det" postag="VNW(aanw,pron,stan,vol,3,getal)" pt="vnw" rel="predc" rnum="sg" root="die" sense="die" status="vol" vwtype="aanw" wh="nwh" word="die"/>
+            <node begin="8" end="9" frame="verb(unacc,pl,so_copula)" id="15" infl="pl" lcat="ssub" lemma="zijn" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="ben" sc="so_copula" sense="ben" tense="present" word="zijn" wvorm="pv"/>
+            <node begin="9" cat="pp" end="17" id="16" rel="mod">
+              <node begin="9" end="10" frame="preposition(van,[af,uit,vandaan,[af,aan]])" id="17" lcat="pp" lemma="van" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="van" sense="van" vztype="init" word="van"/>
+              <node begin="10" cat="np" end="17" id="18" rel="obj1">
+                <node begin="10" buiging="zonder" end="11" frame="determiner(de,nwh,nmod,pro,nparg)" id="19" infl="de" lcat="detp" lemma="die" naamval="stan" npagr="rest" pdtype="det" pos="det" positie="prenom" postag="VNW(aanw,det,stan,prenom,zonder,rest)" pt="vnw" rel="det" root="die" sense="die" vwtype="aanw" wh="nwh" word="die"/>
+                <node begin="11" end="12" frame="noun(both,both,both)" gen="both" genus="zijd" getal="ev" graad="basis" id="20" lcat="np" lemma="va" naamval="stan" ntype="soort" num="both" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="va" sense="va" word="va"/>
+                <node begin="12" cat="conj" end="17" id="21" rel="mod">
+                  <node begin="12" cat="pp" end="14" id="22" rel="cnj">
+                    <node begin="12" end="13" frame="preposition(van,[af,uit,vandaan,[af,aan]])" id="23" lcat="pp" lemma="van" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="van" sense="van" vztype="init" word="van"/>
+                    <node begin="13" end="14" frame="proper_name(both,'LOC')" genus="onz" getal="ev" graad="basis" id="24" lcat="np" lemma="Morice" naamval="stan" neclass="LOC" ntype="eigen" num="both" pos="name" postag="N(eigen,ev,basis,onz,stan)" pt="n" rel="obj1" rnum="sg" root="Morice" sense="Morice" word="Morice"/>
+                  </node>
+                  <node begin="14" conjtype="neven" end="15" frame="conj(en)" id="25" lcat="vg" lemma="en" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="en" sense="en" word="en"/>
+                  <node begin="15" cat="pp" end="17" id="26" rel="cnj">
+                    <node begin="15" end="16" frame="preposition(van,[af,uit,vandaan,[af,aan]])" id="27" lcat="pp" lemma="van" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="van" sense="van" vztype="init" word="van"/>
+                    <node begin="16" end="17" frame="proper_name(sg,'PER')" genus="zijd" getal="ev" graad="basis" id="28" lcat="np" lemma="Gaston" naamval="stan" neclass="PER" ntype="eigen" num="sg" pos="name" postag="N(eigen,ev,basis,zijd,stan)" pt="n" rel="obj1" rnum="sg" root="Gaston" sense="Gaston" word="Gaston."/>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="7751">die ik hier neerle , die die die zijn van die va van Morice en van Gaston.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022448-1"/>
+    <meta type="date" name="date" value="1994-03-01"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to make a puzzle , of the Beauty and the Beast , which is also a movie"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="die ik hier neerle , &lt;die die&gt; [/] die zijn &lt;van die&gt; [//] va [//] van Morice en van Gaston."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="756"/>
+    <meta type="int" name="months" value="57"/>
+    <meta type="text" name="age" value="4;9.29"/>
+  </metadata>
+</alpino_ds>

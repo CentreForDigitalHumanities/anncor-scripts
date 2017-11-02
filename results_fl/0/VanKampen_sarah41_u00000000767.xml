@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-2767.xml">
+  <node begin="0" cat="top" end="7" id="0" rel="top">
+    <node begin="0" end="1" frame="wh_adjective(odet_adv)" id="1" lcat="--" lemma="hoeveel" numtype="hoofd" pos="adj" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="--" root="hoeveel" sense="hoeveel" wh="ywh" word="hoeveel"/>
+    <node begin="5" end="6" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="1" cat="whq" end="7" id="3" rel="--">
+      <node begin="1" cat="np" end="3" id="4" index="1" rel="whd">
+        <node begin="1" end="2" frame="wh_adjective(odet_adv)" id="5" lcat="ap" lemma="hoeveel" naamval="stan" numtype="hoofd" pos="adj" positie="prenom" postag="TW(hoofd,prenom,stan)" pt="tw" rel="det" root="hoeveel" sense="hoeveel" wh="ywh" word="hoeveel"/>
+        <node begin="2" end="3" frame="meas_mod_noun(het,count,pl)" gen="het" getal="mv" graad="dim" id="6" lcat="np" lemma="punt" ntype="soort" num="pl" pos="noun" postag="N(soort,mv,dim)" pt="n" rel="hd" rnum="pl" root="punt_DIM" sense="punt_DIM" special="meas_mod" word="puntjes"/>
+      </node>
+      <node begin="1" cat="sv1" end="7" id="7" rel="body">
+        <node begin="1" end="3" id="8" index="1" rel="su"/>
+        <node begin="3" end="4" frame="verb(unacc,pl,copula)" id="9" infl="pl" lcat="sv1" lemma="zijn" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="ben" sc="copula" sense="ben" stype="whquestion" tense="present" word="zijn" wvorm="pv"/>
+        <node begin="4" cat="np" end="7" id="10" rel="predc">
+          <node begin="4" end="5" frame="determiner(het,nwh,nmod,pro,nparg)" getal="ev" id="11" infl="het" lcat="np" lemma="dat" naamval="stan" pdtype="pron" persoon="3o" pos="det" postag="VNW(aanw,pron,stan,vol,3o,ev)" pt="vnw" rel="hd" rnum="sg" root="dat" sense="dat" status="vol" vwtype="aanw" wh="nwh" word="dat"/>
+          <node begin="6" end="7" frame="noun(het,mass,sg)" gen="het" id="12" lcat="np" lemma="ja" num="sg" pos="noun" postag="TSW()" pt="tsw" rel="app" rnum="sg" root="ja" sense="ja" word="ja?"/>
+        </node>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="2767">hoeveel hoeveel puntjes zijn dat , ja?</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022441-1"/>
+    <meta type="date" name="date" value="1993-08-06"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="&lt;hoeveel [/] hoeveel&gt; [&gt;] puntjes zijn dat , ja?"/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="767"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to play scrabble , SAR calls it the &lt;game for people&gt;"/>
+  </metadata>
+</alpino_ds>

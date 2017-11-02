@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-6932.xml">
+  <node begin="0" cat="top" end="13" id="0" rel="top">
+    <node begin="1" end="2" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="4" end="5" frame="tag" id="2" lcat="--" lemma="xxx" pos="tag" postag="TSW()" pt="tsw" rel="--" root="xxx" sense="xxx" word="xxx"/>
+    <node begin="0" cat="du" end="13" id="3" rel="--">
+      <node begin="0" cat="np" end="7" id="4" rel="dp">
+        <node begin="0" end="1" frame="noun(both,both,both)" gen="both" genus="zijd" getal="ev" graad="basis" id="5" lcat="np" lemma="boe" naamval="stan" ntype="soort" num="both" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="boe" sense="boe" word="boe"/>
+        <node begin="2" cat="np" end="7" id="6" rel="app">
+          <node begin="2" end="3" frame="determiner(een)" id="7" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+          <node begin="3" end="4" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="8" lcat="np" lemma="leeuw" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="leeuw" sense="leeuw" word="leeuw"/>
+          <node begin="5" cat="rel" end="7" id="9" rel="mod">
+            <node begin="5" case="no_obl" end="6" frame="rel_pronoun(de,no_obl)" gen="de" getal="getal" id="10" index="1" lcat="np" lemma="die" naamval="stan" pdtype="pron" persoon="persoon" pos="pron" postag="VNW(betr,pron,stan,vol,persoon,getal)" pt="vnw" rel="rhd" rnum="sg" root="die" sense="die" status="vol" vwtype="betr" wh="rel" word="die"/>
+            <node begin="5" cat="ssub" end="7" id="11" rel="body">
+              <node begin="5" end="6" id="12" index="1" rel="su"/>
+              <node begin="6" end="7" frame="verb(hebben,sg,intransitive)" id="13" infl="sg" lcat="ssub" lemma="eten" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="eet" sc="intransitive" sense="eet" tense="present" word="eet" wvorm="pv"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node begin="7" cat="du" end="13" id="14" rel="dp">
+        <node begin="7" cat="np" end="12" id="15" rel="dp">
+          <node begin="7" end="8" frame="proper_name(sg,'PER')" genus="zijd" getal="ev" graad="basis" id="16" lcat="np" lemma="Marjan" naamval="stan" neclass="PER" ntype="eigen" num="sg" pos="name" postag="N(eigen,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="Marjan" sense="Marjan" word="Marjan"/>
+          <node begin="8" cat="pp" end="12" id="17" rel="mod">
+            <node begin="8" end="9" frame="preposition(met,[mee,[en,al]])" id="18" lcat="pp" lemma="met" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="met" sense="met" vztype="init" word="met"/>
+            <node begin="9" cat="np" end="12" id="19" rel="obj1">
+              <node begin="9" end="10" frame="determiner(een)" id="20" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+              <node begin="10" end="11" frame="noun(de,count,sg,measure)" gen="de" genus="zijd" getal="ev" graad="basis" id="21" lcat="np" lemma="hap" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="hap" sc="measure" sense="hap" word="hap"/>
+              <node begin="11" end="12" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="22" lcat="np" lemma="o" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="mod" rnum="sg" root="o" sense="o" word="o"/>
+            </node>
+          </node>
+        </node>
+        <node begin="12" end="13" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="basis" id="23" lcat="np" lemma="opus" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,onz,stan)" pt="n" rel="dp" rnum="sg" root="opus" sense="opus" word="op."/>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="6932">boe , een leeuw xxx die eet Marjan met een hap o op.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022447-1"/>
+    <meta type="date" name="date" value="1994-02-15"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="JAC and SAR are going to make a puzzle"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="boe , een leeuw xxx die eet Marjan met een [= one] hap o [/] op."/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="465"/>
+  </metadata>
+</alpino_ds>

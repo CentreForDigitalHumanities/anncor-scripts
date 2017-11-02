@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-6775.xml">
+  <node begin="0" cat="top" end="29" id="0" rel="top">
+    <node begin="1" end="2" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="3" end="4" frame="verb(hebben,sg1,transitive_ndev)" id="2" infl="sg1" lcat="--" lemma="hebben" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="--" root="heb" sc="transitive_ndev" sense="heb" tense="present" word="heb" wvorm="pv"/>
+    <node begin="0" cat="du" end="29" id="3" rel="--">
+      <node begin="0" cat="du" end="3" id="4" rel="dp">
+        <node begin="0" end="1" frame="tag" id="5" lcat="advp" lemma="ja" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="ja" sense="ja" word="ja"/>
+        <node begin="2" end="3" frame="proper_name(sg,'PER')" genus="zijd" getal="ev" graad="basis" id="6" lcat="np" lemma="Elsje" naamval="stan" neclass="PER" ntype="eigen" num="sg" pos="name" postag="N(eigen,ev,basis,zijd,stan)" pt="n" rel="nucl" rnum="sg" root="Elsje" sense="Elsje" word="Elsje"/>
+      </node>
+      <node begin="4" cat="du" end="29" id="7" rel="dp">
+        <node begin="4" cat="sv1" end="10" id="8" rel="sat">
+          <node begin="4" end="5" frame="verb(hebben,sg3,transitive)" id="9" infl="sg3" lcat="sv1" lemma="bellen" pos="verb" postag="WW(pv,tgw,met-t)" pt="ww" pvagr="met-t" pvtijd="tgw" rel="hd" root="bel" sc="transitive" sense="bel" tense="present" word="belt" wvorm="pv"/>
+          <node begin="5" cat="np" end="7" id="10" rel="su">
+            <node begin="5" end="6" frame="determiner(de)" id="11" infl="de" lcat="detp" lemma="de" lwtype="bep" naamval="stan" npagr="rest" pos="det" postag="LID(bep,stan,rest)" pt="lid" rel="det" root="de" sense="de" word="de"/>
+            <node aform="base" begin="6" buiging="met-e" end="7" frame="adjective(e)" getal-n="zonder-n" graad="basis" id="12" infl="e" lcat="np" lemma="verkeerd" naamval="stan" pos="adj" positie="nom" postag="ADJ(nom,basis,met-e,zonder-n,stan)" pt="adj" rel="hd" rnum="sg" root="verkeerd" sense="verkeerd" vform="adj" word="verkeerde"/>
+          </node>
+          <node begin="7" cat="conj" end="10" id="13" rel="obj1">
+            <node begin="7" end="8" frame="meas_mod_noun(both,count,sg)" gen="both" genus="zijd" getal="ev" graad="basis" id="14" lcat="np" lemma="nummer" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="cnj" rnum="sg" root="nummer" sense="nummer" special="meas_mod" word="nummer"/>
+            <node begin="8" conjtype="neven" end="9" frame="conj(maar)" id="15" lcat="vg" lemma="maar" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="maar" sense="maar" word="maar"/>
+            <node begin="9" end="10" frame="determiner(het,nwh,nmod,pro,nparg)" getal="ev" id="16" infl="het" lcat="np" lemma="dat" naamval="stan" pdtype="pron" persoon="3o" pos="det" postag="VNW(aanw,pron,stan,vol,3o,ev)" pt="vnw" rel="cnj" rnum="sg" root="dat" sense="dat" status="vol" vwtype="aanw" wh="nwh" word="dat"/>
+          </node>
+        </node>
+        <node begin="10" cat="conj" end="29" id="17" rel="nucl">
+          <node begin="10" cat="sv1" end="18" id="18" rel="cnj">
+            <node begin="10" end="11" frame="verb(unacc,past(sg),pc_pp(van))" id="19" infl="sg" lcat="sv1" lemma="zijn" pos="verb" postag="WW(pv,verl,ev)" pt="ww" pvagr="ev" pvtijd="verl" rel="hd" root="ben" sc="pc_pp(van)" sense="ben-van" stype="topic_drop" tense="past" word="was" wvorm="pv"/>
+            <node begin="11" cat="np" end="13" id="20" rel="mod">
+              <node begin="11" end="12" frame="determiner(de)" id="21" infl="de" lcat="detp" lemma="de" lwtype="bep" naamval="stan" npagr="rest" pos="det" postag="LID(bep,stan,rest)" pt="lid" rel="det" root="de" sense="de" word="de"/>
+              <node begin="12" end="13" frame="meas_mod_noun(both,count,sg)" gen="both" genus="zijd" getal="ev" graad="basis" id="22" lcat="np" lemma="nummer" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="nummer" sense="nummer" special="meas_mod" word="nummer"/>
+            </node>
+            <node begin="13" end="14" frame="adverb" id="23" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+            <node begin="14" cat="pp" end="18" id="24" rel="pc">
+              <node begin="14" end="15" frame="preposition(van,[af,uit,vandaan],pp)" id="25" lcat="pp" lemma="van" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="van" sc="pp" sense="van" vztype="init" word="van"/>
+              <node begin="15" cat="pp" end="18" id="26" rel="obj1">
+                <node begin="15" end="16" frame="preposition(van,[af,uit,vandaan,[af,aan]])" id="27" lcat="pp" lemma="van" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="van" sense="van" vztype="init" word="van"/>
+                <node begin="16" cat="np" end="18" id="28" rel="obj1">
+                  <node begin="16" end="17" frame="determiner(de)" id="29" infl="de" lcat="detp" lemma="de" lwtype="bep" naamval="stan" npagr="rest" pos="det" postag="LID(bep,stan,rest)" pt="lid" rel="det" root="de" sense="de" word="de"/>
+                  <node begin="17" end="18" frame="noun(de,mass,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="30" lcat="np" lemma="politie" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="politie" sense="politie" word="politie"/>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node begin="18" conjtype="neven" end="19" frame="conj(maar)" id="31" lcat="vg" lemma="maar" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="maar" sense="maar" word="maar"/>
+          <node begin="19" cat="smain" end="29" id="32" rel="cnj">
+            <node begin="19" end="20" frame="determiner(het,nwh,nmod,pro,nparg)" getal="ev" id="33" infl="het" lcat="np" lemma="dat" naamval="stan" pdtype="pron" persoon="3o" pos="det" postag="VNW(aanw,pron,stan,vol,3o,ev)" pt="vnw" rel="su" rnum="sg" root="dat" sense="dat" status="vol" vwtype="aanw" wh="nwh" word="dat"/>
+            <node begin="20" end="21" frame="verb(unacc,past(sg),pc_pp(van))" id="34" infl="sg" lcat="smain" lemma="zijn" pos="verb" postag="WW(pv,verl,ev)" pt="ww" pvagr="ev" pvtijd="verl" rel="hd" root="ben" sc="pc_pp(van)" sense="ben-van" stype="declarative" tense="past" word="was" wvorm="pv"/>
+            <node begin="21" cat="pp" end="29" id="35" rel="pc">
+              <node begin="21" end="22" frame="preposition(van,[af,uit,vandaan,[af,aan]])" id="36" lcat="pp" lemma="van" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="van" sense="van" vztype="init" word="van"/>
+              <node begin="22" cat="np" end="29" id="37" rel="obj1">
+                <node begin="22" end="23" frame="determiner(de)" id="38" infl="de" lcat="detp" lemma="de" lwtype="bep" naamval="stan" npagr="rest" pos="det" postag="LID(bep,stan,rest)" pt="lid" rel="det" root="de" sense="de" word="de"/>
+                <node begin="23" end="24" frame="noun(de,count,bare_meas)" gen="de" genus="zijd" getal="ev" graad="basis" id="39" lcat="np" lemma="man" naamval="stan" ntype="soort" num="bare_meas" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="man" sense="man" word="man"/>
+                <node begin="24" cat="rel" end="29" id="40" rel="mod">
+                  <node begin="24" case="no_obl" end="25" frame="rel_pronoun(de,no_obl)" gen="de" getal="getal" id="41" index="1" lcat="np" lemma="die" naamval="stan" pdtype="pron" persoon="persoon" pos="pron" postag="VNW(betr,pron,stan,vol,persoon,getal)" pt="vnw" rel="rhd" rnum="sg" root="die" sense="die" status="vol" vwtype="betr" wh="rel" word="die"/>
+                  <node begin="24" cat="ssub" end="29" id="42" rel="body">
+                    <node begin="24" end="25" id="43" index="1" rel="su"/>
+                    <node begin="25" cat="pp" end="28" id="44" rel="ld">
+                      <node begin="25" end="26" frame="preposition(in,[])" id="45" lcat="pp" lemma="in" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="in" sense="in" vztype="init" word="in"/>
+                      <node begin="26" cat="np" end="28" id="46" rel="obj1">
+                        <node begin="26" end="27" frame="determiner(het,nwh,nmod,pro,nparg,wkpro)" id="47" infl="het" lcat="detp" lemma="het" lwtype="bep" naamval="stan" npagr="evon" pos="det" postag="LID(bep,stan,evon)" pt="lid" rel="det" root="het" sense="het" wh="nwh" word="het"/>
+                        <node begin="27" end="28" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="basis" id="48" lcat="np" lemma="bos" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,onz,stan)" pt="n" rel="hd" rnum="sg" root="bos" sense="bos" word="bos"/>
+                      </node>
+                    </node>
+                    <node begin="28" end="29" frame="verb(hebben,past(sg),ld_pp)" id="49" infl="sg" lcat="ssub" lemma="wonen" pos="verb" postag="WW(pv,verl,ev)" pt="ww" pvagr="ev" pvtijd="verl" rel="hd" root="woon" sc="ld_pp" sense="woon" tense="past" word="woonde." wvorm="pv"/>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="6775">ja , Elsje heb belt de verkeerde nummer maar dat was de nummer niet van van de politie maar dat was van de man die in het bos woonde.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022447-1"/>
+    <meta type="date" name="date" value="1994-02-15"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="JAC and SAR are going to make a puzzle"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="ja , Elsje@q heb [/] belt de verkeerde nummer maar dat was de nummer niet van [/] van de politie maar dat was van de man die in het bos woonde."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="308"/>
+    <meta type="int" name="months" value="57"/>
+    <meta type="text" name="age" value="4;9.13"/>
+  </metadata>
+</alpino_ds>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-7017.xml">
+  <node begin="0" cat="top" end="17" id="0" rel="top">
+    <node begin="0" end="1" frame="tag" id="1" lcat="--" lemma="xxx" pos="tag" postag="TSW()" pt="tsw" rel="--" root="xxx" sense="xxx" word="xxx"/>
+    <node begin="9" end="10" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="13" end="14" frame="punct(komma)" id="3" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="15" end="16" frame="punct(komma)" id="4" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="1" cat="du" end="17" id="5" rel="--">
+      <node begin="1" cat="du" end="4" id="6" rel="dp">
+        <node begin="1" conjtype="neven" end="2" frame="complementizer(root)" id="7" lcat="du" lemma="en" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="en" sc="root" sense="en" word="en"/>
+        <node begin="2" cat="du" end="4" id="8" rel="nucl">
+          <node begin="2" end="3" frame="tmp_adverb" id="9" lcat="advp" lemma="dan" pos="adv" postag="BW()" pt="bw" rel="dp" root="dan" sense="dan" special="tmp" word="dan"/>
+          <node begin="3" end="4" frame="tmp_adverb" id="10" lcat="advp" lemma="dan" pos="adv" postag="BW()" pt="bw" rel="dp" root="dan" sense="dan" special="tmp" word="dan"/>
+        </node>
+      </node>
+      <node begin="4" cat="conj" end="8" id="11" rel="dp">
+        <node begin="4" cat="np" end="6" id="12" rel="cnj">
+          <node begin="4" end="5" frame="noun(both,both,both)" gen="both" genus="zijd" getal="ev" graad="basis" id="13" lcat="np" lemma="wi" naamval="stan" ntype="soort" num="both" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="wi" sense="wi" word="wi"/>
+          <node begin="5" end="6" frame="enumeration" id="14" lcat="np" lemma="e" pos="num" postag="SPEC(symb)" pt="spec" rel="app" root="e" sense="e" special="enumeration" spectype="symb" word="e"/>
+        </node>
+        <node begin="6" conjtype="neven" end="7" frame="conj(en)" id="15" lcat="vg" lemma="en" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="en" sense="en" word="en"/>
+        <node begin="7" end="8" frame="determiner(het,nwh,nmod,pro,nparg)" getal="ev" id="16" infl="het" lcat="np" lemma="dat" naamval="stan" pdtype="pron" persoon="3o" pos="det" postag="VNW(aanw,pron,stan,vol,3o,ev)" pt="vnw" rel="cnj" rnum="sg" root="dat" sense="dat" status="vol" vwtype="aanw" wh="nwh" word="dat"/>
+      </node>
+      <node begin="8" cat="du" end="17" id="17" rel="dp">
+        <node begin="8" cat="sv1" end="15" id="18" rel="nucl">
+          <node begin="8" end="9" frame="verb(unacc,sg_heeft,copula)" id="19" infl="sg_heeft" lcat="sv1" lemma="zijn" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="ben" sc="copula" sense="ben" stype="topic_drop" tense="present" word="is" wvorm="pv"/>
+          <node begin="10" cat="smain" end="13" id="20" rel="mod">
+            <node begin="10" end="11" frame="determiner(het,nwh,nmod,pro,nparg)" getal="ev" id="21" infl="het" lcat="np" lemma="dat" naamval="stan" pdtype="pron" persoon="3o" pos="det" postag="VNW(aanw,pron,stan,vol,3o,ev)" pt="vnw" rel="su" rnum="sg" root="dat" sense="dat" status="vol" vwtype="aanw" wh="nwh" word="dat"/>
+            <node begin="11" end="12" frame="verb(unacc,past(sg),copula)" id="22" infl="sg" lcat="smain" lemma="zijn" pos="verb" postag="WW(pv,verl,ev)" pt="ww" pvagr="ev" pvtijd="verl" rel="hd" root="ben" sc="copula" sense="ben" stype="declarative" tense="past" word="was" wvorm="pv"/>
+            <node begin="12" end="13" frame="determiner(het,nwh,nmod,pro,nparg,wkpro)" genus="onz" getal="ev" id="23" infl="het" lcat="np" lemma="het" naamval="stan" pdtype="pron" persoon="3" pos="det" postag="VNW(pers,pron,stan,red,3,ev,onz)" pt="vnw" rel="predc" rnum="sg" root="het" sense="het" status="red" vwtype="pers" wh="nwh" word="het"/>
+          </node>
+          <node begin="14" end="15" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="24" lcat="np" lemma="opname" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="predc" rnum="sg" root="opname" sense="opname" word="opname"/>
+        </node>
+        <node begin="16" end="17" frame="tag" id="25" lcat="advp" lemma="he" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="he" sense="he" word="he."/>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="7017">xxx en dan dan wi e en dat is , dat was het , opname , he.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022448-1"/>
+    <meta type="date" name="date" value="1994-03-01"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="JAC and SAR are talking about making a recording of SAR"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="xxx en dan [/] dan wi e [//] en dat is , dat was het , opname , he."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="22"/>
+    <meta type="int" name="months" value="57"/>
+    <meta type="text" name="age" value="4;9.29"/>
+  </metadata>
+</alpino_ds>

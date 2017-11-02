@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-7155.xml">
+  <node begin="0" cat="top" end="10" id="0" rel="top">
+    <node begin="8" end="9" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="10" id="2" rel="--">
+      <node begin="0" cat="du" end="8" id="3" rel="nucl">
+        <node begin="0" conjtype="neven" end="1" frame="complementizer(root)" id="4" lcat="du" lemma="maar" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="maar" sc="root" sense="maar" word="maar"/>
+        <node begin="1" cat="smain" end="8" id="5" rel="nucl">
+          <node begin="1" case="both" def="def" end="2" frame="pronoun(nwh,je,sg,de,both,def,wkpro)" gen="de" getal="ev" id="6" lcat="np" lemma="je" naamval="nomin" num="sg" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,nomin,red,2v,ev)" pt="vnw" rel="su" rnum="sg" root="je" sense="je" special="wkpro" status="red" vwtype="pers" wh="nwh" word="je"/>
+          <node begin="2" end="3" frame="verb(hebben,sg,intransitive)" id="7" infl="sg" lcat="smain" lemma="mogen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="mag" sc="intransitive" sense="mag" stype="declarative" tense="present" word="mag" wvorm="pv"/>
+          <node begin="3" cat="sv1" end="8" id="8" rel="mod">
+            <node begin="3" end="4" frame="verb(hebben,sg,modifier(aux(inf)))" id="9" infl="sg" lcat="sv1" lemma="mogen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="mag" sc="modifier(aux(inf))" sense="mag" tense="present" word="mag" wvorm="pv"/>
+            <node begin="5" cat="np" end="7" id="10" index="1" rel="su">
+              <node begin="5" end="6" frame="determiner(een)" id="11" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+              <node aform="compar" begin="6" buiging="met-e" end="7" frame="adjective(ere)" getal-n="zonder-n" graad="basis" id="12" infl="e" lcat="np" lemma="ander" naamval="stan" pos="adj" positie="nom" postag="ADJ(nom,basis,met-e,zonder-n,stan)" pt="adj" rel="hd" rnum="sg" root="ander" sense="ander" vform="adj" word="andere"/>
+            </node>
+            <node begin="4" cat="inf" end="8" id="13" rel="vc">
+              <node begin="4" end="5" frame="sentence_adverb" id="14" lcat="advp" lemma="ook" pos="adv" postag="BW()" pt="bw" rel="mod" root="ook" sense="ook" special="sentence" word="ook"/>
+              <node begin="5" end="7" id="15" index="1" rel="su"/>
+              <node begin="7" buiging="zonder" end="8" frame="verb(hebben,inf,intransitive)" id="16" infl="inf" lcat="inf" lemma="nemen" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="neem" sc="intransitive" sense="neem" word="nemen" wvorm="inf"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node begin="9" end="10" frame="tag" id="17" lcat="advp" lemma="he" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="he" sense="he" word="he."/>
+    </node>
+  </node>
+  <sentence sentid="7155">maar je mag mag ook een andere nemen , he.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022448-1"/>
+    <meta type="date" name="date" value="1994-03-01"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to play a game"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="maar je mag [/] mag ook een [= one] andere nemen , he."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="160"/>
+    <meta type="int" name="months" value="57"/>
+    <meta type="text" name="age" value="4;9.29"/>
+  </metadata>
+</alpino_ds>

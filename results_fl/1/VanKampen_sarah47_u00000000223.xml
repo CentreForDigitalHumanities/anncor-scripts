@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-6690.xml">
+  <node begin="0" cat="top" end="17" id="0" rel="top">
+    <node begin="0" cat="du" end="17" id="1" rel="--">
+      <node begin="0" cat="smain" end="7" id="2" rel="dp">
+        <node begin="0" cat="ppart" end="2" id="3" rel="mod">
+          <node aform="base" begin="0" buiging="zonder" end="1" frame="adjective(no_e(tmpadv))" graad="basis" id="4" infl="no_e" lcat="ap" lemma="lang" pos="adj" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="mod" root="lang" sense="lang" vform="adj" word="lang"/>
+          <node aform="base" begin="1" buiging="zonder" end="2" frame="adjective(ge_both(tmpadv))" id="5" infl="both" lcat="ppart" lemma="geleden" pos="adj" positie="vrij" postag="WW(vd,vrij,zonder)" pt="ww" rel="hd" root="geleden" sense="geleden" vform="psp" word="geleden" wvorm="vd"/>
+        </node>
+        <node begin="2" end="3" frame="verb(unacc,past(pl),intransitive)" id="6" infl="pl" lcat="smain" lemma="zijn" pos="verb" postag="WW(pv,verl,mv)" pt="ww" pvagr="mv" pvtijd="verl" rel="hd" root="ben" sc="intransitive" sense="ben" stype="declarative" tense="past" word="waren" wvorm="pv"/>
+        <node begin="3" end="4" frame="er_vp_adverb" getal="getal" id="7" lcat="advp" lemma="er" naamval="stan" pdtype="adv-pron" persoon="3" pos="adv" postag="VNW(aanw,adv-pron,stan,red,3,getal)" pt="vnw" rel="mod" root="er" sense="er" special="er" status="red" vwtype="aanw" word="er"/>
+        <node begin="4" cat="np" end="7" id="8" rel="su">
+          <node begin="4" end="5" frame="adverb" id="9" lcat="advp" lemma="nou" pos="adv" postag="BW()" pt="bw" rel="mod" root="nou" sense="nou" word="nou"/>
+          <node begin="5" end="6" frame="adverb" id="10" lcat="advp" lemma="nou" pos="adv" postag="BW()" pt="bw" rel="mod" root="nou" sense="nou" word="nou"/>
+          <node aform="base" begin="6" buiging="met-e" end="7" frame="adjective(e)" getal-n="zonder-n" graad="basis" id="11" infl="e" lcat="np" lemma="gewoon" naamval="stan" pos="adj" positie="nom" postag="ADJ(nom,basis,met-e,zonder-n,stan)" pt="adj" rel="hd" rnum="pl" root="gewoon" sense="gewoon" vform="adj" word="gewone"/>
+        </node>
+      </node>
+      <node begin="7" cat="du" end="17" id="12" rel="dp">
+        <node begin="7" end="8" frame="tag" id="13" lcat="advp" lemma="i" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="i" sense="i" word="i"/>
+        <node begin="8" cat="smain" end="17" id="14" rel="nucl">
+          <node begin="8" case="nom" def="def" end="9" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="15" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+          <node begin="9" end="10" frame="verb(hebben,sg1,fixed([{[ap_pred,pc(over)]}],imp_passive))" id="16" infl="sg1" lcat="smain" lemma="doen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="doe" sc="fixed([{[ap_pred,pc(over)]}],imp_passive)" sense="doe-over" stype="declarative" tense="present" word="doe" wvorm="pv"/>
+          <node aform="base" begin="10" buiging="zonder" end="11" frame="adjective(no_e(adv))" graad="basis" id="17" infl="no_e" lcat="ap" lemma="gewoon" pos="adj" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="predc" root="gewoon" sense="gewoon" vform="adj" word="gewoon"/>
+          <node begin="11" end="12" frame="adverb" id="18" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+          <node begin="12" cat="conj" end="17" id="19" rel="pc">
+            <node begin="13" conjtype="neven" end="14" frame="conj(maar)" id="20" lcat="vg" lemma="maar" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="maar" sense="maar" word="maar"/>
+            <node begin="12" cat="pp" end="17" id="21" rel="cnj">
+              <node begin="12" end="13" frame="preposition(over,[heen])" id="22" lcat="pp" lemma="over" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="over" sense="over" vztype="init" word="over"/>
+              <node begin="16" end="17" frame="noun(het,count,pl)" gen="het" getal="mv" graad="basis" id="23" index="1" lcat="np" lemma="dier" ntype="soort" num="pl" pos="noun" postag="N(soort,mv,basis)" pt="n" rel="obj1" rnum="pl" root="dier" sense="dier" word="dieren."/>
+            </node>
+            <node begin="14" cat="pp" end="17" id="24" rel="cnj">
+              <node aform="base" begin="14" buiging="zonder" end="15" frame="adjective(no_e(adv))" graad="basis" id="25" infl="no_e" lcat="ap" lemma="gewoon" pos="adj" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="mod" root="gewoon" sense="gewoon" vform="adj" word="gewoon"/>
+              <node begin="15" end="16" frame="preposition(over,[heen])" id="26" lcat="pp" lemma="over" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="over" sense="over" vztype="init" word="over"/>
+              <node begin="16" end="17" id="27" index="1" rel="obj1"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="6690">lang geleden waren er nou nou gewone i ik doe gewoon niet over maar gewoon over dieren.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022447-1"/>
+    <meta type="date" name="date" value="1994-02-15"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="JAC and SAR are going to make a puzzle"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="lang geleden waren er nou [/] nou gewone i [//] ik doe gewoon niet over maar gewoon over dieren."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="223"/>
+    <meta type="int" name="months" value="57"/>
+    <meta type="text" name="age" value="4;9.13"/>
+  </metadata>
+</alpino_ds>

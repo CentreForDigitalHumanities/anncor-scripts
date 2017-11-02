@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-54368.xml">
+  <node begin="0" cat="top" end="9" id="0" rel="top">
+    <node begin="0" case="no_obl" end="1" frame="rel_pronoun(de,no_obl)" gen="de" getal="getal" id="1" lcat="--" lemma="die" naamval="stan" pdtype="pron" persoon="persoon" pos="pron" postag="VNW(betr,pron,stan,vol,persoon,getal)" pt="vnw" rel="--" root="die" sense="die" status="vol" vwtype="betr" wh="rel" word="die"/>
+    <node begin="1" cat="np" end="8" id="2" rel="--">
+      <node begin="1" buiging="zonder" end="2" frame="determiner(de,nwh,nmod,pro,nparg)" id="3" infl="de" lcat="detp" lemma="die" naamval="stan" npagr="rest" pdtype="det" pos="det" positie="prenom" postag="VNW(aanw,det,stan,prenom,zonder,rest)" pt="vnw" rel="det" root="die" sense="die" vwtype="aanw" wh="nwh" word="die"/>
+      <node begin="2" end="3" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="4" lcat="np" lemma="meneer" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="meneer" sense="meneer" word="meneer"/>
+      <node begin="3" cat="rel" end="8" id="5" rel="mod">
+        <node begin="3" case="no_obl" end="4" frame="rel_pronoun(de,no_obl)" gen="de" getal="getal" id="6" index="1" lcat="np" lemma="die" naamval="stan" pdtype="pron" persoon="persoon" pos="pron" postag="VNW(betr,pron,stan,vol,persoon,getal)" pt="vnw" rel="rhd" rnum="sg" root="die" sense="die" status="vol" vwtype="betr" wh="rel" word="die"/>
+        <node begin="3" cat="ssub" end="8" id="7" rel="body">
+          <node begin="3" end="4" id="8" index="1" rel="su"/>
+          <node begin="6" end="7" frame="verb(hebben,modal_not_u,modifier(aux(inf)))" id="9" infl="modal_not_u" lcat="ssub" lemma="willen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="wil" sc="modifier(aux(inf))" sense="wil" tense="present" word="wil" wvorm="pv"/>
+          <node begin="3" cat="inf" end="8" id="10" rel="vc">
+            <node begin="3" end="4" id="11" index="1" rel="su"/>
+            <node begin="4" cat="np" end="6" id="12" rel="predc">
+              <node begin="4" buiging="zonder" end="5" frame="determiner(de,nwh,nmod,pro,nparg)" id="13" infl="de" lcat="detp" lemma="die" naamval="stan" npagr="rest" pdtype="det" pos="det" positie="prenom" postag="VNW(aanw,det,stan,prenom,zonder,rest)" pt="vnw" rel="det" root="die" sense="die" vwtype="aanw" wh="nwh" word="die"/>
+              <node begin="5" end="6" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="14" lcat="np" lemma="meester" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="meester" sense="meester" word="meester"/>
+            </node>
+            <node begin="7" buiging="zonder" end="8" frame="verb(unacc,inf,copula)" id="15" infl="inf" lcat="inf" lemma="worden" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="word" sc="copula" sense="word" word="worden" wvorm="inf"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node begin="8" end="9" frame="punct(vraag)" id="16" lcat="--" lemma="?" pos="punct" postag="LET()" pt="let" rel="--" root="?" sense="?" special="vraag" word="?"/>
+  </node>
+  <sentence sentid="54368">die die meneer die die meester wil worden ?</sentence>
+  <metadata>
+    <meta type="text" name="situation" value="LAU is going to paint a tshirt"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="date" name="date" value="1991-02-03"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="die [/] die meneer die [/] die meester wil worden?"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="vankampen"/>
+    <meta type="int" name="uttid" value="664"/>
+  </metadata>
+</alpino_ds>

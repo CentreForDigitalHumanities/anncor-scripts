@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-6955.xml">
+  <node begin="0" cat="top" end="10" id="0" rel="top">
+    <node begin="8" end="9" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="10" id="2" rel="--">
+      <node begin="0" cat="du" end="2" id="3" rel="dp">
+        <node begin="0" conjtype="neven" end="1" frame="complementizer(root)" id="4" lcat="du" lemma="en" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="en" sc="root" sense="en" word="en"/>
+        <node begin="1" end="2" frame="er_adverb(om)" id="5" lcat="pp" lemma="daarom" pos="pp" postag="BW()" pt="bw" rel="nucl" root="daarom" sense="daarom" special="er" word="daarom"/>
+      </node>
+      <node begin="2" end="3" frame="verb(unacc,sg_heeft,intransitive)" id="6" infl="sg_heeft" lcat="sv1" lemma="zijn" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="dp" root="ben" sc="intransitive" sense="ben" stype="topic_drop" tense="present" word="is" wvorm="pv"/>
+      <node begin="3" cat="du" end="10" id="7" rel="dp">
+        <node begin="3" cat="smain" end="8" id="8" rel="nucl">
+          <node begin="3" end="4" frame="er_adverb(om)" id="9" lcat="pp" lemma="daarom" pos="pp" postag="BW()" pt="bw" rel="mod" root="daarom" sense="daarom" special="er" word="daarom"/>
+          <node begin="4" end="5" frame="verb(hebben,sg_heeft,transitive_ndev)" id="10" infl="sg_heeft" lcat="smain" lemma="hebben" pos="verb" postag="WW(pv,tgw,met-t)" pt="ww" pvagr="met-t" pvtijd="tgw" rel="hd" root="heb" sc="transitive_ndev" sense="heb" stype="declarative" tense="present" word="heeft" wvorm="pv"/>
+          <node begin="5" end="6" frame="determiner(de,nwh,nmod,pro,nparg)" getal="getal" id="11" infl="de" lcat="np" lemma="die" naamval="stan" pdtype="pron" persoon="3" pos="det" postag="VNW(aanw,pron,stan,vol,3,getal)" pt="vnw" rel="su" rnum="sg" root="die" sense="die" status="vol" vwtype="aanw" wh="nwh" word="die"/>
+          <node begin="6" end="7" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="dim" id="12" lcat="np" lemma="vriend" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,dim,onz,stan)" pt="n" rel="obj1" rnum="sg" root="vriend_DIM" sense="vriend_DIM" word="vriendje"/>
+          <node begin="7" end="8" frame="adverb" id="13" lcat="advp" lemma="weer" pos="adv" postag="BW()" pt="bw" rel="mod" root="weer" sense="weer" word="weer"/>
+        </node>
+        <node begin="9" end="10" frame="tag" id="14" lcat="advp" lemma="he" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="he" sense="he" word="he."/>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="6955">en daarom is daarom heeft die vriendje weer , he.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022447-1"/>
+    <meta type="date" name="date" value="1994-02-15"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="JAC and SAR are going to make a puzzle"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="en &lt;daarom is&gt; [//] daarom heeft &lt;die vriendje weer&gt; [?] , he."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="488"/>
+    <meta type="int" name="months" value="57"/>
+    <meta type="text" name="age" value="4;9.13"/>
+  </metadata>
+</alpino_ds>

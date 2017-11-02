@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year3-34504.xml">
+  <node begin="0" cat="top" end="15" id="0" rel="top">
+    <node begin="7" end="8" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="14" id="2" rel="--">
+      <node begin="0" conjtype="neven" end="1" frame="complementizer(root)" id="3" lcat="du" lemma="maar" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="maar" sc="root" sense="maar" word="maar"/>
+      <node begin="1" cat="du" end="14" id="4" rel="nucl">
+        <node begin="1" cat="smain" end="7" id="5" rel="dp">
+          <node begin="1" end="2" frame="tmp_adverb" id="6" lcat="advp" lemma="dan" pos="adv" postag="BW()" pt="bw" rel="mod" root="dan" sense="dan" special="tmp" word="dan"/>
+          <node begin="2" end="3" frame="verb(hebben,sg1,transitive_ndev)" id="7" infl="sg1" lcat="smain" lemma="hebben" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="heb" sc="transitive_ndev" sense="heb" stype="declarative" tense="present" word="heb" wvorm="pv"/>
+          <node begin="3" case="both" def="def" end="4" frame="pronoun(nwh,je,sg,de,both,def,wkpro)" gen="de" getal="ev" id="8" lcat="np" lemma="je" naamval="nomin" num="sg" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,nomin,red,2v,ev)" pt="vnw" rel="su" rnum="sg" root="je" sense="je" special="wkpro" status="red" vwtype="pers" wh="nwh" word="je"/>
+          <node aform="base" begin="4" end="5" frame="adjective(pred(adv))" id="9" infl="pred" lcat="ap" lemma="wel" pos="adj" postag="BW()" pt="bw" rel="mod" root="wel" sense="wel" vform="adj" word="wel"/>
+          <node begin="5" cat="np" end="7" id="10" rel="obj1">
+            <node begin="5" end="6" frame="determiner(een)" id="11" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+            <node begin="6" end="7" frame="mod_noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="dim" id="12" lcat="np" lemma="beet" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,dim,onz,stan)" pt="n" rel="hd" rnum="sg" root="beet_DIM" sense="beet_DIM" special="mod" word="beetje"/>
+          </node>
+        </node>
+        <node begin="8" cat="sv1" end="14" id="13" rel="dp">
+          <node begin="8" end="9" frame="verb(hebben,sg,subj_control(wk_te))" id="14" infl="sg" lcat="sv1" lemma="zitten" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="zit" sc="subj_control(wk_te)" sense="zit" tense="present" word="zit" wvorm="pv"/>
+          <node begin="9" case="both" def="def" end="10" frame="pronoun(nwh,je,sg,de,both,def,wkpro)" gen="de" getal="ev" id="15" index="1" lcat="np" lemma="je" naamval="nomin" num="sg" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,nomin,red,2v,ev)" pt="vnw" rel="su" rnum="sg" root="je" sense="je" special="wkpro" status="red" vwtype="pers" wh="nwh" word="je"/>
+          <node begin="9" cat="ti" end="14" id="16" rel="vc">
+            <node begin="12" end="13" frame="complementizer(te)" id="17" lcat="ti" lemma="te" pos="comp" postag="VZ(init)" pt="vz" rel="cmp" root="te" sc="te" sense="te" vztype="init" word="te"/>
+            <node begin="9" cat="inf" end="14" id="18" rel="body">
+              <node begin="9" end="10" id="19" index="1" rel="su"/>
+              <node begin="10" cat="np" end="12" id="20" rel="obj1">
+                <node begin="10" end="11" frame="determiner(het,nwh,nmod,pro,nparg,wkpro)" id="21" infl="het" lcat="detp" lemma="het" lwtype="bep" naamval="stan" npagr="evon" pos="det" postag="LID(bep,stan,evon)" pt="lid" rel="det" root="het" sense="het" wh="nwh" word="het"/>
+                <node begin="11" end="12" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="dim" id="22" lcat="np" lemma="boek" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,dim,onz,stan)" pt="n" rel="hd" rnum="sg" root="boek_DIM" sense="boek_DIM" word="boekje"/>
+              </node>
+              <node begin="13" buiging="zonder" end="14" frame="verb(hebben,inf,transitive)" id="23" infl="inf" lcat="inf" lemma="kreukelen" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="kreukeel" sc="transitive" sense="kreukeel" word="kreukelen" wvorm="inf"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node begin="14" end="15" frame="punct(punt)" id="24" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence sentid="34504">maar dan heb je wel een beetje , zit je het boekje te kreukelen .</sentence>
+  <metadata>
+    <meta type="text" name="transcriber" value="Christel de Heus"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="date" name="date" value="1989-12-03"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="maar dan &lt;heb je wel een beetje&gt; [//] , zit je het boekje te kreukelen."/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="vankampen"/>
+    <meta type="int" name="uttid" value="321"/>
+    <meta type="date" name="birth_of" value="1986-05-06"/>
+  </metadata>
+</alpino_ds>

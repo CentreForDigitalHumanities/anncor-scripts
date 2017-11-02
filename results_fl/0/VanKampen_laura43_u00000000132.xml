@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year3-34315.xml">
+  <node begin="0" cat="top" end="18" id="0" rel="top">
+    <node begin="0" end="1" frame="determiner(een)" id="1" infl="een" lcat="--" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="--" root="een" sense="een" word="een"/>
+    <node begin="2" end="3" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="5" end="6" frame="punct(komma)" id="3" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="8" end="9" frame="punct(komma)" id="4" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="10" end="11" frame="--" id="5" lcat="--" lemma="eh" pos="--" postag="NA()" rel="--" root="eh" sense="eh" word="eh"/>
+    <node begin="11" end="12" frame="--" id="6" lcat="--" lemma="eh" pos="--" postag="NA()" rel="--" root="eh" sense="eh" word="eh"/>
+    <node begin="12" end="13" frame="--" id="7" lcat="--" lemma="eh" pos="--" postag="NA()" rel="--" root="eh" sense="eh" word="eh"/>
+    <node begin="13" end="14" frame="punct(komma)" id="8" lcat="--" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="14" end="15" frame="determiner(een)" id="9" infl="een" lcat="--" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="--" root="een" sense="een" word="een"/>
+    <node begin="1" cat="du" end="17" id="10" rel="--">
+      <node begin="1" cat="np" end="4" id="11" rel="dp">
+        <node begin="1" case="both" def="indef" end="2" frame="pronoun(nwh,thi,sg,both,both,indef,strpro)" gen="both" id="12" lcat="np" lemma="één" num="sg" numtype="hoofd" per="thi" pos="pron" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="hd" rnum="sg" root="één" sense="één" special="strpro" wh="nwh" word="een"/>
+        <node begin="3" case="both" def="indef" end="4" frame="pronoun(nwh,thi,sg,both,both,indef,strpro)" gen="both" id="13" lcat="np" lemma="één" num="sg" numtype="hoofd" per="thi" pos="pron" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="app" rnum="sg" root="één" sense="één" special="strpro" wh="nwh" word="een"/>
+      </node>
+      <node begin="4" cat="np" end="7" id="14" rel="dp">
+        <node begin="4" case="both" def="indef" end="5" frame="pronoun(nwh,thi,sg,both,both,indef,strpro)" gen="both" id="15" lcat="np" lemma="één" num="sg" numtype="hoofd" per="thi" pos="pron" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="hd" rnum="sg" root="één" sense="één" special="strpro" wh="nwh" word="een"/>
+        <node begin="6" case="both" def="indef" end="7" frame="pronoun(nwh,thi,sg,both,both,indef,strpro)" gen="both" id="16" lcat="np" lemma="één" num="sg" numtype="hoofd" per="thi" pos="pron" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="app" rnum="sg" root="één" sense="één" special="strpro" wh="nwh" word="een"/>
+      </node>
+      <node begin="7" cat="np" end="10" id="17" rel="dp">
+        <node begin="7" case="both" def="indef" end="8" frame="pronoun(nwh,thi,sg,both,both,indef,strpro)" gen="both" id="18" lcat="np" lemma="één" num="sg" numtype="hoofd" per="thi" pos="pron" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="hd" rnum="sg" root="één" sense="één" special="strpro" wh="nwh" word="een"/>
+        <node begin="9" case="both" def="indef" end="10" frame="pronoun(nwh,thi,sg,both,both,indef,strpro)" gen="both" id="19" lcat="np" lemma="één" num="sg" numtype="hoofd" per="thi" pos="pron" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="app" rnum="sg" root="één" sense="één" special="strpro" wh="nwh" word="een"/>
+      </node>
+      <node begin="15" cat="np" end="17" id="20" rel="dp">
+        <node begin="15" end="16" frame="determiner(een)" id="21" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+        <node begin="16" end="17" frame="noun(both,both,both)" gen="both" genus="zijd" getal="ev" graad="basis" id="22" lcat="np" lemma="scha" naamval="stan" ntype="soort" num="both" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="scha" sense="scha" word="scha"/>
+      </node>
+    </node>
+    <node begin="17" end="18" frame="punct(punt)" id="23" lcat="--" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence sentid="34315">een een , een een , een een , een eh eh eh , een een scha .</sentence>
+  <metadata>
+    <meta type="text" name="transcriber" value="Christel de Heus"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="date" name="date" value="1989-12-03"/>
+    <meta type="text" name="speaker" value="LAU"/>
+    <meta type="text" name="origutt" value="&lt;een een , een een , een een&gt; [/] , een &lt;eh eh&gt; [/] eh , een [/] een scha +..."/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="name" value="Laura"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="vankampen"/>
+    <meta type="int" name="uttid" value="132"/>
+    <meta type="date" name="birth_of" value="1986-05-06"/>
+    <meta type="text" name="age" value="3;6.28"/>
+    <meta type="int" name="months" value="42"/>
+  </metadata>
+</alpino_ds>

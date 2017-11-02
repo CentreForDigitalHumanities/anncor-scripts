@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year3-34286.xml">
+  <node begin="0" cat="top" end="5" id="0" rel="top">
+    <node begin="0" cat="sv1" end="4" id="1" rel="--">
+      <node begin="0" end="1" frame="verb(hebben,modal_not_u,part_transitive(op))" id="2" infl="modal_not_u" lcat="sv1" lemma="op_kunnen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="kan_op" sc="part_transitive(op)" sense="kan_op" stype="topic_drop" tense="present" word="kan" wvorm="pv"/>
+      <node begin="1" end="2" frame="noun(both,both,both)" gen="both" genus="zijd" getal="ev" graad="basis" id="3" lcat="np" lemma="sij" naamval="stan" ntype="soort" num="both" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="obj1" rnum="sg" root="sij" sense="sij" word="sij"/>
+      <node begin="2" end="3" frame="adverb" id="4" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+      <node begin="3" end="4" frame="particle(op)" id="5" lcat="part" lemma="op" pos="part" postag="VZ(fin)" pt="vz" rel="svp" root="op" sense="op" vztype="fin" word="op"/>
+    </node>
+    <node begin="4" end="5" frame="punct(punt)" id="6" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence sentid="34286">kan sij niet op .</sentence>
+  <metadata>
+    <meta type="text" name="transcriber" value="Christel de Heus"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="date" name="date" value="1989-12-03"/>
+    <meta type="text" name="speaker" value="LAU"/>
+    <meta type="text" name="origutt" value="kan sij niet op."/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="name" value="Laura"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="vankampen"/>
+    <meta type="int" name="uttid" value="103"/>
+    <meta type="date" name="birth_of" value="1986-05-06"/>
+    <meta type="text" name="age" value="3;6.28"/>
+    <meta type="int" name="months" value="42"/>
+  </metadata>
+</alpino_ds>

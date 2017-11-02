@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-7141.xml">
+  <node begin="0" cat="top" end="21" id="0" rel="top">
+    <node begin="6" end="7" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="14" end="15" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="17" end="18" frame="reflexive(je,both)" getal="ev" id="3" lcat="--" lemma="je" naamval="nomin" num="both" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,nomin,red,2v,ev)" pt="vnw" refl="refl" rel="--" root="je" sense="je" status="red" vwtype="pers" word="je"/>
+    <node begin="0" cat="du" end="21" id="4" rel="--">
+      <node begin="0" cat="cp" end="17" id="5" rel="dp">
+        <node begin="0" conjtype="onder" end="1" frame="complementizer(als)" id="6" lcat="cp" lemma="als" pos="comp" postag="VG(onder)" pt="vg" rel="cmp" root="als" sc="als" sense="als" word="als"/>
+        <node begin="1" cat="ssub" end="17" id="7" rel="body">
+          <node begin="1" cat="np" end="16" id="8" rel="su">
+            <node begin="1" case="both" def="def" end="2" frame="pronoun(nwh,je,sg,de,both,def,wkpro)" gen="de" getal="ev" id="9" lcat="np" lemma="je" naamval="nomin" num="sg" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,nomin,red,2v,ev)" pt="vnw" rel="hd" rnum="sg" root="je" sense="je" special="wkpro" status="red" vwtype="pers" wh="nwh" word="je"/>
+            <node begin="2" cat="du" end="16" id="10" rel="mod">
+              <node begin="2" cat="cp" end="14" id="11" rel="tag">
+                <node begin="2" conjtype="onder" end="3" frame="complementizer(als)" id="12" lcat="cp" lemma="als" pos="comp" postag="VG(onder)" pt="vg" rel="cmp" root="als" sc="als" sense="als" word="als"/>
+                <node begin="3" cat="ssub" end="14" id="13" rel="body">
+                  <node begin="3" case="both" def="def" end="4" frame="pronoun(nwh,je,sg,de,both,def,wkpro)" gen="de" getal="ev" id="14" lcat="np" lemma="je" naamval="nomin" num="sg" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,nomin,red,2v,ev)" pt="vnw" rel="su" rnum="sg" root="je" sense="je" special="wkpro" status="red" vwtype="pers" wh="nwh" word="je"/>
+                  <node aform="base" begin="4" buiging="zonder" end="5" frame="adjective(no_e(adv))" graad="basis" id="15" infl="no_e" lcat="ap" lemma="goed" pos="adj" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="mod" root="goed" sense="goed" vform="adj" word="goed"/>
+                  <node begin="5" end="6" frame="verb(hebben,sg_hebt,fixed([als_pred,sbar],no_passive))" id="16" infl="sg_hebt" lcat="ssub" lemma="hebben" pos="verb" postag="WW(pv,tgw,met-t)" pt="ww" pvagr="met-t" pvtijd="tgw" rel="hd" root="heb" sc="fixed([als_pred,sbar],no_passive)" sense="heb" tense="present" word="hebt" wvorm="pv"/>
+                  <node begin="7" cat="cp" end="14" id="17" rel="mod">
+                    <node begin="7" conjtype="onder" end="8" frame="complementizer(als)" id="18" lcat="cp" lemma="als" pos="comp" postag="VG(onder)" pt="vg" rel="cmp" root="als" sc="als" sense="als" word="als"/>
+                    <node begin="8" cat="ssub" end="14" id="19" rel="body">
+                      <node begin="8" case="nom" def="def" end="9" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="20" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+                      <node begin="9" cat="cp" end="11" id="21" rel="predm">
+                        <node begin="9" end="10" frame="complementizer(als)" id="22" lcat="cp" lemma="als" pos="comp" postag="VZ(init)" pt="vz" rel="cmp" root="als" sc="als" sense="als" vztype="init" word="als"/>
+                        <node begin="10" case="nom" def="def" end="11" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="23" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="body" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+                      </node>
+                      <node begin="11" end="12" frame="er_vp_adverb" getal="getal" id="24" lcat="advp" lemma="er" naamval="stan" pdtype="adv-pron" persoon="3" pos="adv" postag="VNW(aanw,adv-pron,stan,red,3,getal)" pt="vnw" rel="mod" root="er" sense="er" special="er" status="red" vwtype="aanw" word="er"/>
+                      <node begin="12" case="both" def="indef" end="13" frame="pronoun(nwh,thi,sg,de,both,indef,strpro)" gen="de" getal="ev" id="25" lcat="np" lemma="eentje" naamval="stan" num="sg" pdtype="pron" per="thi" persoon="3p" pos="pron" postag="VNW(onbep,pron,stan,vol,3p,ev)" pt="vnw" rel="obj1" rnum="sg" root="eentje" sense="eentje" special="strpro" status="vol" vwtype="onbep" wh="nwh" word="eentje"/>
+                      <node begin="13" end="14" frame="verb(hebben,sg1,transitive_ndev)" id="26" infl="sg1" lcat="ssub" lemma="hebben" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="heb" sc="transitive_ndev" sense="heb" tense="present" word="heb" wvorm="pv"/>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node begin="15" end="16" frame="tmp_adverb" id="27" lcat="advp" lemma="dan" pos="adv" postag="BW()" pt="bw" rel="nucl" root="dan" sense="dan" special="tmp" word="dan"/>
+            </node>
+          </node>
+          <node begin="16" end="17" frame="verb(hebben,sg,intransitive)" id="28" infl="sg" lcat="ssub" lemma="mogen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="mag" sc="intransitive" sense="mag" tense="present" word="mag" wvorm="pv"/>
+        </node>
+      </node>
+      <node begin="18" cat="np" end="21" id="29" rel="dp">
+        <node begin="18" end="19" frame="modal_adverb" id="30" lcat="advp" lemma="nog" pos="adv" postag="BW()" pt="bw" rel="mod" root="nog" sc="modal" sense="nog" word="nog"/>
+        <node begin="19" end="20" frame="determiner(een)" id="31" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+        <node begin="20" end="21" frame="tmp_noun(de,count,meas)" gen="de" genus="genus" getal="ev" graad="basis" id="32" lcat="np" lemma="keer" naamval="stan" ntype="soort" num="meas" pos="noun" postag="N(soort,ev,basis,genus,stan)" pt="n" rel="hd" rnum="sg" root="keer" sense="keer" special="tmp" word="keer."/>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="7141">als je als je goed hebt , als ik als ik er eentje heb , dan mag je nog een keer.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022448-1"/>
+    <meta type="date" name="date" value="1994-03-01"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to play a game"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="&lt;als je&gt; [/] als je goed hebt , &lt;als ik&gt; [/] als ik er eentje heb , dan mag je nog een keer."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="146"/>
+    <meta type="int" name="months" value="57"/>
+    <meta type="text" name="age" value="4;9.29"/>
+  </metadata>
+</alpino_ds>

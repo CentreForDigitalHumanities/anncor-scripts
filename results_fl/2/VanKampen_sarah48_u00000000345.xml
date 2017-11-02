@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-7340.xml">
+  <node begin="0" cat="top" end="8" id="0" rel="top">
+    <node begin="1" end="2" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="8" id="2" rel="--">
+      <node begin="0" end="1" frame="tag" id="3" lcat="advp" lemma="nee" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="nee" sense="nee" word="nee"/>
+      <node begin="2" cat="smain" end="8" id="4" rel="nucl">
+        <node begin="2" case="nom" def="def" end="3" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="5" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+        <node begin="3" end="4" frame="verb(hebben,sg1,transitive_ndev)" id="6" infl="sg1" lcat="smain" lemma="hebben" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="heb" sc="transitive_ndev" sense="heb" stype="declarative" tense="present" word="heb" wvorm="pv"/>
+        <node begin="4" cat="np" end="8" id="7" rel="obj1">
+          <node begin="4" buiging="zonder" end="5" frame="determiner(geen,nwh,mod,pro,yparg,nwkpro,geen)" id="8" infl="geen" lcat="detp" lemma="geen" naamval="stan" npagr="agr" pdtype="det" pos="det" positie="prenom" postag="VNW(onbep,det,stan,prenom,zonder,agr)" pt="vnw" rel="det" root="geen" sense="geen" vwtype="onbep" wh="nwh" word="geen"/>
+          <node begin="5" end="6" frame="proper_name(sg,'PER')" genus="zijd" getal="ev" graad="basis" id="9" lcat="np" lemma="Gaston" naamval="stan" neclass="PER" ntype="eigen" num="sg" pos="name" postag="N(eigen,ev,basis,zijd,stan)" pt="n" rel="mod" rnum="sg" root="Gaston" sense="Gaston" word="Gaston"/>
+          <node begin="6" end="7" frame="meas_mod_noun(both,count,sg)" gen="both" genus="zijd" getal="ev" graad="basis" id="10" lcat="np" lemma="nummer" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="nummer" sense="nummer" special="meas_mod" word="nummer"/>
+          <node begin="7" end="8" frame="number(hoofd(pl_num))" id="11" infl="pl_num" lcat="detp" lemma="twee" numtype="hoofd" pos="num" positie="vrij" postag="TW(hoofd,vrij)" pt="tw" rel="app" root="twee" sense="twee" special="hoofd" word="twee."/>
+        </node>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="7340">nee , ik heb geen Gaston nummer twee.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022448-1"/>
+    <meta type="date" name="date" value="1994-03-01"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to play a game"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="nee , &lt;ik heb geen&gt; [=! laughing] Gaston nummer twee."/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="345"/>
+  </metadata>
+</alpino_ds>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-5883.xml">
+  <node begin="0" cat="top" end="14" id="0" rel="top">
+    <node begin="2" case="nom" def="def" end="3" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="1" lcat="--" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="--" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+    <node begin="8" end="9" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="14" id="3" rel="--">
+      <node begin="0" cat="smain" end="2" id="4" rel="dp">
+        <node begin="0" case="nom" def="def" end="1" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="5" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+        <node begin="1" end="2" frame="verb(hebben,sg1,intransitive)" id="6" infl="sg1" lcat="smain" lemma="zoeken" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="zoek" sc="intransitive" sense="zoek" stype="declarative" tense="present" word="zoek" wvorm="pv"/>
+      </node>
+      <node begin="3" cat="conj" end="14" id="7" rel="dp">
+        <node begin="3" cat="smain" end="8" id="8" rel="cnj">
+          <node begin="3" case="nom" def="def" end="4" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="9" index="1" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+          <node begin="4" end="5" frame="verb(hebben,sg1,aux(te_inf))" id="10" infl="sg1" lcat="smain" lemma="hoeven" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="hoef" sc="aux(te_inf)" sense="hoef" stype="declarative" tense="present" word="hoef" wvorm="pv"/>
+          <node begin="3" cat="ti" end="8" id="11" rel="vc">
+            <node begin="6" end="7" frame="complementizer(te)" id="12" lcat="ti" lemma="te" pos="comp" postag="VZ(init)" pt="vz" rel="cmp" root="te" sc="te" sense="te" vztype="init" word="te"/>
+            <node begin="3" cat="inf" end="8" id="13" rel="body">
+              <node begin="3" end="4" id="14" index="1" rel="su"/>
+              <node begin="5" end="6" frame="adverb" id="15" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+              <node begin="7" buiging="zonder" end="8" frame="verb(hebben,inf,intransitive)" id="16" infl="inf" lcat="inf" lemma="zoeken" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="zoek" sc="intransitive" sense="zoek" word="zoeken" wvorm="inf"/>
+            </node>
+          </node>
+        </node>
+        <node begin="9" conjtype="neven" end="10" frame="conj(want)" id="17" lcat="vg" lemma="want" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="want" sense="want" word="want"/>
+        <node begin="10" cat="smain" end="14" id="18" rel="cnj">
+          <node begin="10" case="nom" def="def" end="11" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="19" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+          <node begin="11" end="12" frame="verb(hebben,sg1,transitive_ndev_ndev)" id="20" infl="sg1" lcat="smain" lemma="zien" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="zie" sc="transitive_ndev_ndev" sense="zie" stype="declarative" tense="present" word="zie" wvorm="pv"/>
+          <node begin="12" case="both" def="def" end="13" frame="pronoun(nwh,thi,both,de,both,def,wkpro)" gen="de" getal="mv" id="21" lcat="np" lemma="ze" naamval="stan" num="both" pdtype="pron" per="thi" persoon="3" pos="pron" postag="VNW(pers,pron,stan,red,3,mv)" pt="vnw" rel="obj1" rnum="sg" root="ze" sense="ze" special="wkpro" status="red" vwtype="pers" wh="nwh" word="ze"/>
+          <node begin="13" end="14" frame="adverb" id="22" lcat="advp" lemma="meteen" pos="adv" postag="BW()" pt="bw" rel="mod" root="meteen" sense="meteen" word="meteen."/>
+        </node>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="5883">ik zoek ik ik hoef niet te zoeken , want ik zie ze meteen.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022446-1"/>
+    <meta type="date" name="date" value="1994-01-30"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="&lt;ik zoek&gt; [//] ik [/] ik hoef niet te zoeken , want ik zie ze meteen."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="284"/>
+    <meta type="int" name="months" value="56"/>
+    <meta type="text" name="age" value="4;8.03"/>
+  </metadata>
+</alpino_ds>

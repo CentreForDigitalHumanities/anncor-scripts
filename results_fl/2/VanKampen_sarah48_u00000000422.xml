@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-7417.xml">
+  <node begin="0" cat="top" end="13" id="0" rel="top">
+    <node begin="0" end="1" frame="complementizer(als)" id="1" lcat="--" lemma="als" pos="comp" postag="VZ(init)" pt="vz" rel="--" root="als" sc="als" sense="als" vztype="init" word="als"/>
+    <node begin="1" end="2" frame="reflexive(je,both)" getal="ev" id="2" lcat="--" lemma="je" naamval="nomin" num="both" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,nomin,red,2v,ev)" pt="vnw" refl="refl" rel="--" root="je" sense="je" status="red" vwtype="pers" word="je"/>
+    <node begin="11" end="12" frame="punct(komma)" id="3" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="2" cat="smain" end="13" id="4" rel="--">
+      <node begin="2" cat="cp" end="7" id="5" rel="mod">
+        <node begin="2" conjtype="onder" end="3" frame="complementizer(als)" id="6" lcat="cp" lemma="als" pos="comp" postag="VG(onder)" pt="vg" rel="cmp" root="als" sc="als" sense="als" word="als"/>
+        <node begin="3" cat="ssub" end="7" id="7" rel="body">
+          <node begin="3" case="nom" def="def" end="4" frame="pronoun(nwh,fir,pl,de,nom,def,wkpro)" gen="de" getal="mv" id="8" index="1" lcat="np" lemma="we" naamval="nomin" num="pl" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,red,1,mv)" pt="vnw" rel="su" rnum="pl" root="we" sense="we" special="wkpro" status="red" vwtype="pers" wh="nwh" word="we"/>
+          <node begin="5" end="6" frame="verb(zijn,pl,aux(inf))" id="9" infl="pl" lcat="ssub" lemma="gaan" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="ga" sc="aux(inf)" sense="ga" tense="present" word="gaan" wvorm="pv"/>
+          <node begin="3" cat="inf" end="7" id="10" rel="vc">
+            <node begin="3" end="4" id="11" index="1" rel="su"/>
+            <node begin="4" end="5" frame="adverb" id="12" lcat="advp" lemma="weer" pos="adv" postag="BW()" pt="bw" rel="mod" root="weer" sense="weer" word="weer"/>
+            <node begin="6" buiging="zonder" end="7" frame="verb(hebben,inf,intransitive)" id="13" infl="inf" lcat="inf" lemma="kwartetten" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="kwartet" sc="intransitive" sense="kwartet" word="kwartetten" wvorm="inf"/>
+          </node>
+        </node>
+      </node>
+      <node begin="7" end="8" frame="verb(hebben,pl,transitive_ndev)" id="14" infl="pl" lcat="smain" lemma="hebben" pos="verb" postag="WW(pv,tgw,mv)" pt="ww" pvagr="mv" pvtijd="tgw" rel="hd" root="heb" sc="transitive_ndev" sense="heb" stype="declarative" tense="present" word="hebben" wvorm="pv"/>
+      <node begin="8" case="nom" def="def" end="9" frame="pronoun(nwh,fir,pl,de,nom,def,wkpro)" gen="de" getal="mv" id="15" lcat="np" lemma="we" naamval="nomin" num="pl" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,red,1,mv)" pt="vnw" rel="su" rnum="pl" root="we" sense="we" special="wkpro" status="red" vwtype="pers" wh="nwh" word="we"/>
+      <node begin="9" cat="np" end="11" id="16" rel="obj1">
+        <node begin="9" end="10" frame="determiner(een)" id="17" infl="een" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="det" root="een" sense="een" word="een"/>
+        <node begin="10" end="11" frame="noun(de,count,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="18" lcat="np" lemma="opname" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="hd" rnum="sg" root="opname" sense="opname" word="opname"/>
+      </node>
+      <node begin="12" end="13" frame="adverb" id="19" lcat="advp" lemma="toch" pos="adv" postag="BW()" pt="bw" rel="mod" root="toch" sense="toch" word="toch."/>
+    </node>
+  </node>
+  <sentence sentid="7417">als je als we weer gaan kwartetten hebben we een opname , toch.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022448-1"/>
+    <meta type="date" name="date" value="1994-03-01"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to play a game"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="&lt;als je&gt; [//] als we weer gaan kwartetten hebben we een opname , toch."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="422"/>
+    <meta type="int" name="months" value="57"/>
+    <meta type="text" name="age" value="4;9.29"/>
+  </metadata>
+</alpino_ds>

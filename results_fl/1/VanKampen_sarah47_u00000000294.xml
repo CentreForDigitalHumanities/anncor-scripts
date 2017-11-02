@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-6761.xml">
+  <node begin="0" cat="top" end="18" id="0" rel="top">
+    <node begin="0" conjtype="neven" end="1" frame="complementizer(root)" id="1" lcat="--" lemma="en" pos="comp" postag="VG(neven)" pt="vg" rel="--" root="en" sc="root" sense="en" word="en"/>
+    <node begin="1" end="2" frame="determiner(de)" id="2" infl="de" lcat="--" lemma="de" lwtype="bep" naamval="stan" npagr="rest" pos="det" postag="LID(bep,stan,rest)" pt="lid" rel="--" root="de" sense="de" word="de"/>
+    <node begin="12" end="13" frame="punct(komma)" id="3" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="2" cat="du" end="18" id="4" rel="--">
+      <node begin="2" cat="du" end="6" id="5" rel="dp">
+        <node begin="2" conjtype="neven" end="3" frame="complementizer(root)" id="6" lcat="du" lemma="en" pos="comp" postag="VG(neven)" pt="vg" rel="dlink" root="en" sc="root" sense="en" word="en"/>
+        <node begin="3" cat="smain" end="6" id="7" rel="nucl">
+          <node begin="3" end="4" frame="tmp_adverb" id="8" lcat="advp" lemma="dan" pos="adv" postag="BW()" pt="bw" rel="mod" root="dan" sense="dan" special="tmp" word="dan"/>
+          <node begin="4" end="5" frame="verb(hebben,sg3,intransitive)" id="9" infl="sg3" lcat="smain" lemma="denken" pos="verb" postag="WW(pv,tgw,met-t)" pt="ww" pvagr="met-t" pvtijd="tgw" rel="hd" root="denk" sc="intransitive" sense="denk" stype="declarative" tense="present" word="denkt" wvorm="pv"/>
+          <node begin="5" case="both" def="def" end="6" frame="pronoun(nwh,thi,both,de,both,def,wkpro)" gen="de" genus="fem" getal="ev" id="10" lcat="np" lemma="ze" naamval="stan" num="both" pdtype="pron" per="thi" persoon="3" pos="pron" postag="VNW(pers,pron,stan,red,3,ev,fem)" pt="vnw" rel="su" rnum="sg" root="ze" sense="ze" special="wkpro" status="red" vwtype="pers" wh="nwh" word="ze"/>
+        </node>
+      </node>
+      <node begin="6" cat="sv1" end="18" id="11" rel="dp">
+        <node begin="6" end="7" frame="verb(hebben,sg3,transitive)" id="12" infl="sg3" lcat="sv1" lemma="denken" pos="verb" postag="WW(pv,tgw,met-t)" pt="ww" pvagr="met-t" pvtijd="tgw" rel="hd" root="denk" sc="transitive" sense="denk" stype="ynquestion" tense="present" word="denkt" wvorm="pv"/>
+        <node begin="7" case="both" def="def" end="8" frame="pronoun(nwh,thi,both,de,both,def,wkpro)" gen="de" genus="fem" getal="ev" id="13" lcat="np" lemma="ze" naamval="stan" num="both" pdtype="pron" per="thi" persoon="3" pos="pron" postag="VNW(pers,pron,stan,red,3,ev,fem)" pt="vnw" rel="su" rnum="sg" root="ze" sense="ze" special="wkpro" status="red" vwtype="pers" wh="nwh" word="ze"/>
+        <node begin="8" cat="cp" end="16" id="14" rel="mod">
+          <node begin="8" conjtype="onder" end="9" frame="complementizer(of)" id="15" lcat="cp" lemma="of" pos="comp" postag="VG(onder)" pt="vg" rel="cmp" root="of" sc="of" sense="of" word="of"/>
+          <node begin="9" cat="ssub" end="16" id="16" rel="body">
+            <node begin="9" case="both" def="def" end="10" frame="pronoun(nwh,thi,both,de,both,def,wkpro)" gen="de" genus="fem" getal="ev" id="17" lcat="np" lemma="ze" naamval="stan" num="both" pdtype="pron" per="thi" persoon="3" pos="pron" postag="VNW(pers,pron,stan,red,3,ev,fem)" pt="vnw" rel="su" rnum="sg" root="ze" sense="ze" special="wkpro" status="red" vwtype="pers" wh="nwh" word="ze"/>
+            <node begin="10" end="11" frame="tmp_adverb" id="18" lcat="advp" lemma="dan" pos="adv" postag="BW()" pt="bw" rel="mod" root="dan" sense="dan" special="tmp" word="dan"/>
+            <node begin="11" cat="conj" end="15" id="19" rel="predc">
+              <node aform="compar" begin="11" buiging="zonder" end="12" frame="adjective(er(adv))" graad="comp" id="20" infl="no_e" lcat="ap" lemma="groot" pos="adj" positie="vrij" postag="ADJ(vrij,comp,zonder)" pt="adj" rel="cnj" root="groot" sense="groot" vform="adj" word="groter"/>
+              <node begin="13" conjtype="neven" end="14" frame="conj(maar)" id="21" lcat="vg" lemma="maar" pos="vg" postag="VG(neven)" pt="vg" rel="crd" root="maar" sense="maar" word="maar"/>
+              <node begin="14" end="15" frame="determiner(het,nwh,nmod,pro,nparg)" getal="ev" id="22" infl="het" lcat="np" lemma="dat" naamval="stan" pdtype="pron" persoon="3o" pos="det" postag="VNW(aanw,pron,stan,vol,3o,ev)" pt="vnw" rel="cnj" rnum="sg" root="dat" sense="dat" status="vol" vwtype="aanw" wh="nwh" word="dat"/>
+            </node>
+            <node begin="15" end="16" frame="verb(unacc,sg_heeft,copula)" id="23" infl="sg_heeft" lcat="ssub" lemma="zijn" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="ben" sc="copula" sense="ben" tense="present" word="is" wvorm="pv"/>
+          </node>
+        </node>
+        <node begin="16" end="17" frame="adverb" id="24" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+        <node begin="17" end="18" frame="noun(de,mass,sg)" gen="de" genus="zijd" getal="ev" graad="basis" id="25" lcat="np" lemma="waar" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="obj1" rnum="sg" root="waar" sense="waar" word="waar."/>
+      </node>
+    </node>
+  </node>
+  <sentence sentid="6761">en de en dan denkt ze denkt ze of ze dan groter , maar dat is niet waar.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022447-1"/>
+    <meta type="date" name="date" value="1994-02-15"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="JAC and SAR are going to make a puzzle"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="&lt;en de&gt; [/] en dan &lt;denkt ze&gt; [/] denkt ze of ze dan groter , maar dat is niet waar."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="294"/>
+    <meta type="int" name="months" value="57"/>
+    <meta type="text" name="age" value="4;9.13"/>
+  </metadata>
+</alpino_ds>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.3" id="year4-2854.xml">
+  <node begin="0" cat="top" end="13" id="0" rel="top">
+    <node begin="4" end="5" frame="punct(komma)" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="11" end="12" frame="punct(komma)" id="2" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="13" id="3" rel="--">
+      <node begin="0" cat="du" end="11" id="4" rel="nucl">
+        <node begin="0" cat="sv1" end="4" id="5" rel="sat">
+          <node begin="0" end="1" frame="verb(hebben,sg,intransitive)" id="6" infl="sg" lcat="sv1" lemma="mogen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="mag" sc="intransitive" sense="mag" tense="present" word="mag" wvorm="pv"/>
+          <node begin="1" case="nom" def="def" end="2" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="7" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+          <node begin="2" cat="pp" end="4" id="8" rel="mod">
+            <node begin="2" end="3" frame="preposition(van,[af,uit,vandaan,[af,aan]])" id="9" lcat="pp" lemma="van" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="van" sense="van" vztype="init" word="van"/>
+            <node begin="3" case="dat_acc" def="def" end="4" frame="pronoun(nwh,je,sg,de,dat_acc,def)" gen="de" getal="ev" id="10" lcat="np" lemma="jou" naamval="obl" num="sg" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,obl,vol,2v,ev)" pt="vnw" rel="obj1" rnum="sg" root="jou" sense="jou" status="vol" vwtype="pers" wh="nwh" word="jou"/>
+          </node>
+        </node>
+        <node begin="5" cat="smain" end="11" id="11" rel="nucl">
+          <node begin="5" case="nom" def="def" end="6" frame="pronoun(nwh,fir,sg,de,nom,def)" gen="de" getal="ev" id="12" index="1" lcat="np" lemma="ik" naamval="nomin" num="sg" pdtype="pron" per="fir" persoon="1" pos="pron" postag="VNW(pers,pron,nomin,vol,1,ev)" pt="vnw" rel="su" rnum="sg" root="ik" sense="ik" status="vol" vwtype="pers" wh="nwh" word="ik"/>
+          <node begin="6" end="7" frame="verb(hebben,sg,modifier(aux(inf)))" id="13" infl="sg" lcat="smain" lemma="mogen" pos="verb" postag="WW(pv,tgw,ev)" pt="ww" pvagr="ev" pvtijd="tgw" rel="hd" root="mag" sc="modifier(aux(inf))" sense="mag" stype="declarative" tense="present" word="mag" wvorm="pv"/>
+          <node begin="5" cat="inf" end="11" id="14" rel="vc">
+            <node begin="5" end="6" id="15" index="1" rel="su"/>
+            <node begin="7" end="8" frame="adverb" id="16" lcat="advp" lemma="niet" pos="adv" postag="BW()" pt="bw" rel="mod" root="niet" sense="niet" word="niet"/>
+            <node begin="8" cat="pp" end="10" id="17" rel="ld">
+              <node begin="8" end="9" frame="preposition(naar,[toe])" id="18" lcat="pp" lemma="naar" pos="prep" postag="VZ(init)" pt="vz" rel="hd" root="naar" sense="naar" vztype="init" word="naar"/>
+              <node begin="9" case="dat_acc" def="def" end="10" frame="pronoun(nwh,je,sg,de,dat_acc,def)" gen="de" getal="ev" id="19" lcat="np" lemma="jou" naamval="obl" num="sg" pdtype="pron" per="je" persoon="2v" pos="pron" postag="VNW(pers,pron,obl,vol,2v,ev)" pt="vnw" rel="obj1" rnum="sg" root="jou" sense="jou" status="vol" vwtype="pers" wh="nwh" word="jou"/>
+            </node>
+            <node begin="10" buiging="zonder" end="11" frame="verb(zijn,inf,ninv(ld_pp,part_ld_pp(toe)))" id="20" infl="inf" lcat="inf" lemma="toe_komen" pos="verb" positie="vrij" postag="WW(inf,vrij,zonder)" pt="ww" rel="hd" root="kom_toe" sc="part_ld_pp(toe)" sense="kom_toe" word="toekomen" wvorm="inf"/>
+          </node>
+        </node>
+      </node>
+      <node begin="12" end="13" frame="tag" id="21" lcat="advp" lemma="he" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="he" sense="he" word="he."/>
+    </node>
+  </node>
+  <sentence sentid="2854">mag ik van jou , ik mag niet naar jou toekomen , he.</sentence>
+  <metadata>
+    <meta type="text" name="pid" value="11312/c-00022441-1"/>
+    <meta type="date" name="date" value="1993-08-06"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="speaker" value="SAR"/>
+    <meta type="text" name="origutt" value="mag ik &lt;van jou&gt; [&gt;] , ik mag niet naar jou toekomen , he."/>
+    <meta type="text" name="name" value="Sarah"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="int" name="uttid" value="854"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to play scrabble , SAR calls it the &lt;game for people&gt;"/>
+    <meta type="int" name="months" value="51"/>
+    <meta type="text" name="age" value="4;3.04"/>
+  </metadata>
+</alpino_ds>
