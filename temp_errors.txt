@@ -1,4 +1,0 @@
-  File "/home/gerson/Documents/AnnCor-scripts/canonicalize/dtcanonicalize.py", line 207
-    print "sentence:", self.sentence
-                    ^
-SyntaxError: Missing parentheses in call to 'print'
