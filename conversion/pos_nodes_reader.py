@@ -36,11 +36,13 @@ class PosNodesReader:
         """
         sentence = parsed_sentence.find("sentence")
         pos_nodes = parsed_sentence.findall(".//node[@postag]")
+        origutt = normalize_utterance(parsed_sentence.find('metadata/meta[@name="origutt"]').get("value"))
 
         return AlpinoSentence(
             sentence.text,
             sentence.attrib["sentid"],
-            sorted((PosNode(node) for node in pos_nodes), key=PosNode.get_sort_key))
+            sorted((PosNode(node) for node in pos_nodes), key=PosNode.get_sort_key),
+            origutt)
 
 
 class AlpinoSentence:
@@ -48,10 +50,11 @@ class AlpinoSentence:
     Represents a sentence in the grouped Lassy (Alpino) XML file.
     """
 
-    def __init__(self, sentence_text, sentence_id, pos_nodes):
+    def __init__(self, sentence_text, sentence_id, pos_nodes, origutt):
         self.sentence_text = sentence_text
         self.sentence_id = sentence_id
         self.pos_nodes = pos_nodes
+        self.origutt = origutt
 
 class PosNode:
     """
@@ -69,3 +72,6 @@ class PosNode:
     def get_sort_key(self):
         """Get a key to sort the nodes by their position in the sentence."""
         return self.begin
+
+def normalize_utterance(text):
+    return text.strip()

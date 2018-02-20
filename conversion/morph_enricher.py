@@ -2,9 +2,9 @@
 """
 Module for enriching a CHAT file with morphological information.
 """
-from .exceptions import NodeMappingException, SentenceMappingException
+from .exceptions import NodeMappingException, SentenceMappingException, SentenceNotFoundException
 from .injectable_file import InjectableFile
-from .pos_nodes_reader import PosNodesReader
+from .pos_nodes_reader import PosNodesReader, normalize_utterance
 
 
 class MorphEnricher:
@@ -28,29 +28,53 @@ class MorphEnricher:
 
         with open(pos_filename) as pos_file:
             for sentence in self.__pos_reader.read_sentences(pos_file):
-                # the sentence id should be a positional number
-                sentence_map[int(sentence.sentence_id)] = sentence
+                if sentence.origutt in sentence_map:
+                    current_mapped = " ".join(self.__map_nodes(sentence.pos_nodes, []))
+                    existing_mapped = " ".join(self.__map_nodes(sentence_map[sentence.origutt].pos_nodes, []))
+                    if current_mapped != existing_mapped:
+                        raise Exception('Same sentence mapped differently! "{0}" != "{1}" for "{2}"'.format(
+                            current_mapped,
+                            existing_mapped,
+                            sentence.origutt))
+                else:
+                    sentence_map[sentence.origutt] = sentence
 
         chat_file = InjectableFile(chat_filename)
+        current_line = None
         try:
-            utterance = 0
             for line in chat_file.read_lines(False):
+                if line.startswith("*") or line.startswith('%') or line.startswith('@'):
+                    if current_line:
+                        yield self.__parse_line(current_line, sentence_map)
+                        current_line = None
+                    if line.startswith("*"):
+                        current_line = line
+                elif current_line != None:
+                    current_line += ' ' + line
+
                 yield line
 
-                if line.startswith("*"):
-                    utterance += 1  # utterances are one-based
-                    try:
-                        mapped_sentence = self.__map_sentence(
-                            sentence_map[utterance])
-                    except SentenceMappingException as exception:
-                        mapped_sentence = exception.converted_sentence
-                        self.failed_sentences_count += 1
-                        for node in exception.pos_nodes:
-                            self.missing_tags.add(node.tag)
-
-                    yield "%mor:\t{0}".format(mapped_sentence)
+            if current_line:
+                yield self.__parse_line(current_line, sentence_map)
         finally:
             chat_file.close()
+
+    def __parse_line(self, line, sentence_map):
+        try:
+            mapped_sentence = self.__map_sentence(
+                sentence_map,
+                line.split(':', 1)[1])
+        except SentenceMappingException as exception:
+            mapped_sentence = exception.converted_sentence
+            self.failed_sentences_count += 1
+            for node in exception.pos_nodes:
+                self.missing_tags.add(node.tag)
+        except SentenceNotFoundException as exception:
+            mapped_sentence = "???"
+            self.missing_tags.add(exception.text)
+            self.failed_sentences_count += 1
+
+        return "%mor:\t{0}".format(mapped_sentence)
 
     @property
     def has_failures(self):
@@ -67,8 +91,13 @@ class MorphEnricher:
                 unmapped_nodes.append(exception.pos_node)
                 yield "???|{0}-{1}".format(node.word, node.tag)
 
-    def __map_sentence(self, sentence):
+    def __map_sentence(self, sentences, origutt):
         unmapped_nodes = []
+
+        try:
+            sentence = sentences[normalize_utterance(origutt)]
+        except KeyError:
+            raise SentenceNotFoundException('Sentence not found for "{0}" ("{1}")'.format(origutt, normalize_utterance(origutt)))
 
         # expected to be in the right order
         result = " ".join(self.__map_nodes(sentence.pos_nodes, unmapped_nodes))
