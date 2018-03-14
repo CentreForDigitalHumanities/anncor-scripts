@@ -2,10 +2,13 @@
 """
 Module for enriching a CHAT file with morphological information.
 """
+import re
+
 from .exceptions import NodeMappingException, SentenceMappingException, SentenceNotFoundException
 from .injectable_file import InjectableFile
 from .pos_nodes_reader import PosNodesReader, normalize_utterance
 
+session_pattern = re.compile(r"(^.*[/\\]|\.cha$)", flags=re.IGNORECASE)
 
 class MorphEnricher:
     """
@@ -24,28 +27,31 @@ class MorphEnricher:
         of the utterances.
         """
 
+        # TODO: read the map once
+        session = session_pattern.sub("", chat_filename)
         sentence_map = {}
 
         with open(pos_filename) as pos_file:
             for sentence in self.__pos_reader.read_sentences(pos_file):
-                if sentence.origutt in sentence_map:
-                    current_mapped = " ".join(self.__map_nodes(sentence.pos_nodes, []))
-                    existing_mapped = " ".join(self.__map_nodes(sentence_map[sentence.origutt].pos_nodes, []))
-                    if current_mapped != existing_mapped:
-                        raise Exception('Same sentence mapped differently! "{0}" != "{1}" for "{2}"'.format(
-                            current_mapped,
-                            existing_mapped,
-                            sentence.origutt))
-                else:
-                    sentence_map[sentence.origutt] = sentence
+                if not sentence.session in sentence_map:
+                    sentence_map[sentence.session] = {}
+                elif sentence.uttid in sentence_map[sentence.session]:
+                    raise Exception('Duplicate uttid {0} in "{1}! ({2})"'.format(
+                        sentence.uttid,
+                        sentence.session,
+                        sentence.sentence_text))
+
+                sentence_map[sentence.session][sentence.uttid] = sentence
 
         chat_file = InjectableFile(chat_filename)
         current_line = None
+        uttid = 0
         try:
             for line in chat_file.read_lines(False):
                 if line.startswith("*") or line.startswith('%') or line.startswith('@'):
                     if current_line:
-                        yield self.__parse_line(current_line, sentence_map)
+                        yield self.__parse_line(current_line, sentence_map, session, uttid)
+                        uttid += 1
                         current_line = None
                     if line.startswith("*"):
                         current_line = line
@@ -55,15 +61,16 @@ class MorphEnricher:
                 yield line
 
             if current_line:
-                yield self.__parse_line(current_line, sentence_map)
+                yield self.__parse_line(current_line, sentence_map, session, uttid)
         finally:
             chat_file.close()
 
-    def __parse_line(self, line, sentence_map):
+    def __parse_line(self, line, sentence_map, session, uttid):
         try:
             mapped_sentence = self.__map_sentence(
                 sentence_map,
-                line.split(':', 1)[1])
+                session,
+                uttid)
         except SentenceMappingException as exception:
             mapped_sentence = exception.converted_sentence
             self.failed_sentences_count += 1
@@ -91,13 +98,13 @@ class MorphEnricher:
                 unmapped_nodes.append(exception.pos_node)
                 yield "???|{0}-{1}".format(node.word, node.tag)
 
-    def __map_sentence(self, sentences, origutt):
+    def __map_sentence(self, sentences, session, uttid):
         unmapped_nodes = []
 
         try:
-            sentence = sentences[normalize_utterance(origutt)]
+            sentence = sentences[session][uttid]
         except KeyError:
-            raise SentenceNotFoundException('Sentence not found for "{0}" ("{1}")'.format(origutt, normalize_utterance(origutt)))
+            raise SentenceNotFoundException('Sentence not found for "{0}" ({1})'.format(origutt, session))
 
         # expected to be in the right order
         result = " ".join(self.__map_nodes(sentence.pos_nodes, unmapped_nodes))
