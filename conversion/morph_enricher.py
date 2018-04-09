@@ -91,9 +91,9 @@ class MorphEnricher:
         return self.failed_sentences_count > 0
 
     def __map_nodes(self, nodes, unmapped_nodes):
-        for node in nodes:
+        for i, node in enumerate(nodes):
             try:
-                yield self.pos_mapping.map(node)
+                yield self.pos_mapping.map(node, i == len(nodes) - 1)
             except NodeMappingException as exception:
                 unmapped_nodes.append(exception.pos_node)
                 yield "???|{0}-{1}".format(node.word, node.tag)
@@ -104,7 +104,10 @@ class MorphEnricher:
         try:
             sentence = sentences[session][uttid]
         except KeyError:
-            raise SentenceNotFoundException('Sentence not found for "{0}" ({1})'.format(origutt, session))
+            try:
+                sentence = sentences[None][uttid]
+            except KeyError:
+                raise SentenceNotFoundException('Sentence not found for "{0}" ({1})'.format(session, uttid))
 
         # expected to be in the right order
         result = " ".join(self.__map_nodes(sentence.pos_nodes, unmapped_nodes))

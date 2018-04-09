@@ -56,7 +56,7 @@ class PosMapping:
 
                 self.lookup[row[2]] = (prefix, WordForm(row[3]), postfix)
 
-    def map(self, pos_node):
+    def map(self, pos_node, is_last = False):
         """
         Map a POS Lassy node to a morphological tag as used in CHAT.
 
@@ -78,17 +78,32 @@ class PosMapping:
                 raise Exception(
                     "Unknown word form type: {0}".format(word_form_type))
 
+            if pos_tag.upper() == "PUNCT":
+                if is_last:
+                    return stem
+                else:
+                    return self.__format_stem(pos_tag, self.punctuation_mapping[stem])
+
+            # mor tier requires ending punctuation
+            last_punctuation = '.'
+            if is_last:
+                # punctuation is probably suffixed to the last node
+                if stem[-1] in self.punctuation_mapping.keys():
+                    # separate punctuation
+                    (stem, last_punctuation) = (stem[:-1], stem[-1])
             if pos_tag.upper() == "V" and '_' in pos_node.root:
                 # Separable verbs should mark the preposition separately.
                 [verb, preposition] = pos_node.root.split('_')
                 if pos_node.word.startswith(preposition):
-                    return "{0}$ {1}".format(preposition, self.__format_stem(pos_tag, verb, affix))
+                    formatted = "{0}$ {1}".format(preposition, self.__format_stem(pos_tag, verb, affix))
                 else:
-                    return self.__format_stem(pos_tag, verb, affix)
-            elif pos_tag.upper() == "PUNCT":
-                return self.__format_stem(pos_tag, self.punctuation_mapping[stem])
+                    formatted = self.__format_stem(pos_tag, verb, affix)
             else:
-                return self.__format_stem(pos_tag, stem, affix)
+                formatted = self.__format_stem(pos_tag, stem, affix)
+
+            if is_last:
+                formatted += " " + last_punctuation
+            return formatted
         else:
             raise NodeMappingException(pos_node)
 

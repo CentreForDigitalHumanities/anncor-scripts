@@ -36,7 +36,8 @@ class PosNodesReader:
         """
         sentence = parsed_sentence.find("sentence")
         pos_nodes = parsed_sentence.findall(".//node[@postag]")
-        session = parsed_sentence.find('metadata/meta[@name="session"]').get("value")
+        session_attribute = parsed_sentence.find('metadata/meta[@name="session"]')
+        session = session_attribute.get("value") if session_attribute != None else None
         uttid_attribute = parsed_sentence.find('metadata/meta[@name="uttid"]')
         # because 0 is "empty" according to PHP this metadata field is not present
         uttid = int(uttid_attribute.get("value")) if uttid_attribute != None else 0

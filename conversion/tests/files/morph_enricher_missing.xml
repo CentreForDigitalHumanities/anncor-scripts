@@ -18,6 +18,7 @@
       <node begin="7" end="8" frame="punct(punt)" id="12" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/></node>
     <sentence sentid="1">nee , we gaan zo pindaatjes rijgen .</sentence>
     <metadata>
+      <meta type="text" name="session" value="morph_enricher_missing"/>
       <meta type="text" name="pid" value="11312/c-00022185-1"/>
       <meta type="text" name="transcriber" value="Evelien Krikhaar"/>
       <meta type="text" name="charencoding" value="UTF8"/>
