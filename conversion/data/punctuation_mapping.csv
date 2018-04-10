@@ -4,5 +4,9 @@
 ,	cm
 !	exclamation
 ?	question
-“	quote
-""""	quote
+“	bq
+”	eq
+‡	beg
+„	end
+‘	bq2
+’	eq2

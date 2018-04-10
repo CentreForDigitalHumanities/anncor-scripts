@@ -56,7 +56,7 @@ class PosMapping:
 
                 self.lookup[row[2]] = (prefix, WordForm(row[3]), postfix)
 
-    def map(self, pos_node, is_last = False):
+    def map(self, pos_node, state = {}, is_last = False):
         """
         Map a POS Lassy node to a morphological tag as used in CHAT.
 
@@ -79,6 +79,14 @@ class PosMapping:
                     "Unknown word form type: {0}".format(word_form_type))
 
             if pos_tag.upper() == "PUNCT":
+                if stem == "\"":
+                    if "quote_open" in state:
+                        stem = "”"
+                        del state["quote_open"]
+                    else:
+                        stem = "“"
+                        state["quote_open"] = True
+
                 if is_last:
                     return stem
                 else:
@@ -108,6 +116,8 @@ class PosMapping:
             raise NodeMappingException(pos_node)
 
     def __format_stem(self, pos_tag, stem, affix=None):
+        if pos_tag == "PUNCT":
+            return "{0}|{0}".format(stem)
         if affix is None:
             return "{0}|{1}".format(pos_tag, stem)
         else:

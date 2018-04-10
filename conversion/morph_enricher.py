@@ -91,9 +91,10 @@ class MorphEnricher:
         return self.failed_sentences_count > 0
 
     def __map_nodes(self, nodes, unmapped_nodes):
+        state = {}
         for i, node in enumerate(nodes):
             try:
-                yield self.pos_mapping.map(node, i == len(nodes) - 1)
+                yield self.pos_mapping.map(node, state, i == len(nodes) - 1)
             except NodeMappingException as exception:
                 unmapped_nodes.append(exception.pos_node)
                 yield "???|{0}-{1}".format(node.word, node.tag)
