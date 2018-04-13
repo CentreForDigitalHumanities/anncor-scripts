@@ -38,6 +38,14 @@ These errors could also be written to a file if needed:
 $ ./add_mor_to_cha.py -c example.cha -p example.xml -c incomplete_mapping.csv > enriched.cha 2> errors.log
 ```
 
+Converting multiple files at once can be done as such:
+
+```bash
+$ ./add_mor_to_cha.py -c *.cha -p example.xml -o example_output
+```
+
+All the converted files would be written to the directory `example_output`.
+
 ### POS Mapping
 
 The POS mapping can be provided as a comma-separated CSV file using `--mapping` (`-m`). This is used to map each node denoting as single word in the Lassy XML file to a well-formed CHAT tag e.g. `V|help-inf`. The CSV file should contain a header and the following columns:
