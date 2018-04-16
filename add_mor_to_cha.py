@@ -54,6 +54,13 @@ def main(argv):
             dest="output_directory",
             help="The output_directory to use.",
             metavar="DIRECTORY")
+        parser.add_argument(
+            "-f",
+            "--force",
+            dest="force",
+            default=False,
+            help="Continue on error",
+            action='store_true')
 
         parser.set_defaults(
             mapping_filename=DEFAULT_POS_MAPPING,
@@ -75,8 +82,9 @@ def main(argv):
                             options.pos_filename,
                             writer)
             except Exception as exception:
-                sys.stderr.write(chat_file)
-                raise exception
+                sys.stderr.write('Problem in file: ' + chat_file + '\n')
+                if not options.force:
+                    raise exception
     except Exception as exception:
         sys.stderr.write(repr(exception) + "\n")
         sys.stderr.write("for help use --help\n\n")
