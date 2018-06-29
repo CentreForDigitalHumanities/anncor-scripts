@@ -18,3 +18,6 @@ class PunctuationMapping:
 
     def __getitem__(self, key):
         return self.__lookup__[key]
+
+    def keys(self):
+        return self.__lookup__.keys()

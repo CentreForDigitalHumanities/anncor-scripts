@@ -36,11 +36,16 @@ class PosNodesReader:
         """
         sentence = parsed_sentence.find("sentence")
         pos_nodes = parsed_sentence.findall(".//node[@postag]")
-
+        session_attribute = parsed_sentence.find('metadata/meta[@name="session"]')
+        session = session_attribute.get("value") if session_attribute != None else None
+        uttid_attribute = parsed_sentence.find('metadata/meta[@name="uttid"]')
+        # because 0 is "empty" according to PHP this metadata field is not present
+        uttid = int(uttid_attribute.get("value")) if uttid_attribute != None else 0
         return AlpinoSentence(
             sentence.text,
-            sentence.attrib["sentid"],
-            sorted((PosNode(node) for node in pos_nodes), key=PosNode.get_sort_key))
+            uttid,
+            sorted((PosNode(node) for node in pos_nodes), key=PosNode.get_sort_key),
+            session)
 
 
 class AlpinoSentence:
@@ -48,10 +53,11 @@ class AlpinoSentence:
     Represents a sentence in the grouped Lassy (Alpino) XML file.
     """
 
-    def __init__(self, sentence_text, sentence_id, pos_nodes):
+    def __init__(self, sentence_text, uttid, pos_nodes, session):
         self.sentence_text = sentence_text
-        self.sentence_id = sentence_id
+        self.uttid = uttid
         self.pos_nodes = pos_nodes
+        self.session = session
 
 class PosNode:
     """
@@ -69,3 +75,6 @@ class PosNode:
     def get_sort_key(self):
         """Get a key to sort the nodes by their position in the sentence."""
         return self.begin
+
+def normalize_utterance(text):
+    return text.strip()

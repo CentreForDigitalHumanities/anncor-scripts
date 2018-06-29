@@ -21,7 +21,9 @@ class PosMappingTest(unittest.TestCase):
             '.': "period",
             ',': "cm",
             '!': "exclamation",
-            '?': "question"
+            '?': "question",
+            "“": "bq",
+            "”": "eq"
         }
 
         self.mapping = PosMapping(mock_punctuation)
@@ -66,6 +68,42 @@ class PosMappingTest(unittest.TestCase):
             "zo",
             "zo")
         self.assertEqual("ADV|zo", self.mapping.map(pos_node))
+
+    def test_map_quotes(self):
+        """
+        Test that quotation marks are converted to “smart” quotes and properly converted.
+        """
+
+        pos_node = MockPosNode(
+            "LET()",
+            '"',
+            '"',
+            '"')
+        state = {}
+        self.assertEqual("bq|bq", self.mapping.map(pos_node, state))
+        self.assertEqual("eq|eq", self.mapping.map(pos_node, state))
+        self.assertEqual("bq|bq", self.mapping.map(pos_node, state))
+
+        # new state
+        self.assertEqual("bq|bq", self.mapping.map(pos_node))
+
+        # test that an already encoded document is parsed as is
+        pos_node = MockPosNode(
+            "LET()",
+            "“",
+            "“",
+            "“")
+
+        self.assertEqual("bq|bq", self.mapping.map(pos_node, state))
+        self.assertEqual("bq|bq", self.mapping.map(pos_node, state))
+
+        pos_node = MockPosNode(
+            "LET()",
+            "”",
+            "”",
+            "v")
+        self.assertEqual("eq|eq", self.mapping.map(pos_node, state))
+
 
     def test_separable_verb(self):
         """
