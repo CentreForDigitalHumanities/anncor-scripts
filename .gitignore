@@ -1,5 +1,6 @@
 env
 .idea
+.vscode
 selection/data
 *.pyc
 __pycache__
