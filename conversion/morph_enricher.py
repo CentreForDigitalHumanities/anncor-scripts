@@ -21,7 +21,7 @@ class MorphEnricher:
         self.failed_sentences_count = 0
         self.missing_tags = set()
 
-    def map(self, chat_filename, pos_filename):
+    def map(self, chat_filename, pos_filename, replace_existing_mor = True):
         """
         Map a single CHAT file using the provided Lassy XML file containing the morphology
         of the utterances.
@@ -46,19 +46,24 @@ class MorphEnricher:
         chat_file = InjectableFile(chat_filename)
         current_line = None
         uttid = 0
+        skipping_mor_lines = False
         try:
             for line in chat_file.read_lines(False):
                 if line.startswith("*") or line.startswith('%') or line.startswith('@'):
+                    if replace_existing_mor:
+                        skipping_mor_lines = line.startswith('%mor')
                     if current_line:
                         yield self.__parse_line(current_line, sentence_map, session, uttid)
                         uttid += 1
                         current_line = None
                     if line.startswith("*"):
                         current_line = line
+                    else:
+                        current_line = None
                 elif current_line != None:
                     current_line += ' ' + line
-
-                yield line
+                if not skipping_mor_lines:
+                    yield line
 
             if current_line:
                 yield self.__parse_line(current_line, sentence_map, session, uttid)

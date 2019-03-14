@@ -18,7 +18,7 @@ class PunctuationMapping:
 
     def __getitem__(self, key):
         try:
-            self.__lookup__[key]
+            return self.__lookup__[key]
         except Exception as error:
             raise Exception(f'Unknown punctuation symbol: {key}' ) from error
 
