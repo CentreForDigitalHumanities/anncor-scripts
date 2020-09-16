@@ -39,7 +39,7 @@ class Replacement:
         self.remove: List[str] = remove or []
         self.keep_only: List[str] = keep_only or []
         self.edit: Dict = edit or {}
-        self.search_query = self.xpath_query(search)
+        self.search_query = self.xpath_query()
 
     def xpath_query(self) -> XPath:
         conditions = ["@{}='{}'".format(k, v)
@@ -48,10 +48,44 @@ class Replacement:
         query_str = '//node[{}]'.format(conditions_str)
         return etree.XPath(query_str)
 
+def convert_replacements(replacements: Dict):
+    "Convert replacement specifications to a list of Replacement objects"
 
-def replace_in_file(replacements: List[Replacement],
-                    in_path: str,
-                    out_path: str
-                    ) -> None:
-    tree = etree.parse(in_path)
-    root = tree.getroot().xpath('alpino_ds')
+    #function for a single replacement
+    def single_replacement(key):
+        #retrieve replacement specifications
+        specs = replacements[key]
+        search = specs['search']
+        get_specs_with_default = lambda key: specs[key] if key in specs else None #avoid key errors
+        remove = get_specs_with_default('remove')
+        keep_only = get_specs_with_default('keep_only')
+        edit = get_specs_with_default('edit')
+
+        #convert
+        return Replacement(search, remove, keep_only, edit)
+    
+    #map to all replacements
+    all_replacements = [single_replacement(key) for key in replacements]
+    return all_replacements
+
+def replace_in_tree(syntree, replacements: List[Replacement]):
+    #get root node
+    root = syntree.getroot()
+
+    #go through replacements
+    for rep in replacements:
+        #find matches for search
+        query = rep.search_query
+        matches = query(root)
+
+        for match in matches:
+            #check and apply changes for each attribute
+            for key in match.attrib:
+                if rep.edit and key in rep.edit:
+                    match.attrib[key] = rep.edit[key]
+
+                elif rep.remove and key in rep.remove:
+                    del match.attrib[key]
+
+                elif rep.keep_only and key not in rep.keep_only:
+                    del match.attrib[key]
