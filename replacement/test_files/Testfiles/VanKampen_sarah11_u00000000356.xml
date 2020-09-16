@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.6" id="Sarah-11313.xml">
+  <parser cats="1" skips="0"/>
+  <node begin="0" cat="top" end="7" id="0" rel="top">
+    <node begin="1" end="2" frame="punct(komma)" his="normal" his_1="normal" id="1" lcat="punct" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="0" cat="du" end="6" id="2" rel="--">
+      <node begin="0" end="1" frame="tag" his="normal" his_1="normal" id="3" lcat="advp" lemma="o" pos="tag" postag="TSW()" pt="tsw" rel="tag" root="o" sense="o" word="o"/>
+      <node begin="2" cat="np" end="6" id="4" rel="nucl">
+        <node begin="2" cat="mwu" end="4" his="normal" his_1="normal" id="5" mwu_root="wat een" mwu_sense="wat een" rel="det">
+          <node begin="2" end="3" frame="determiner(pron,wh)" getal="ev" id="6" infl="pron" lcat="detp" lemma="wat" naamval="stan" pdtype="pron" persoon="3o" pos="det" postag="VNW(vb,pron,stan,vol,3o,ev)" pt="vnw" rel="mwp" root="wat" sense="wat" status="vol" vwtype="vb" wh="wh" word="wat"/>
+          <node begin="3" end="4" frame="determiner(pron,wh)" id="7" infl="pron" lcat="detp" lemma="een" lwtype="onbep" naamval="stan" npagr="agr" pos="det" postag="LID(onbep,stan,agr)" pt="lid" rel="mwp" root="een" sense="een" wh="wh" word="een"/>
+        </node>
+        <node aform="base" begin="4" buiging="zonder" end="5" frame="adjective(no_e(adv))" graad="basis" his="normal" his_1="normal" id="8" infl="no_e" lcat="ap" lemma="lief" pos="adj" positie="prenom" postag="ADJ(prenom,basis,zonder)" pt="adj" rel="mod" root="lief" sense="lief" vform="adj" word="lief"/>
+        <node begin="5" end="6" frame="noun(het,count,sg)" gen="het" genus="onz" getal="ev" graad="dim" his="normal" his_1="normal" id="9" lcat="np" lemma="konijn" naamval="stan" ntype="soort" num="sg" pos="noun" postag="N(soort,ev,dim,onz,stan)" pt="n" rel="hd" rnum="sg" root="konijn_DIM" sense="konijn_DIM" stype="whquestion" word="konijntje"/>
+      </node>
+    </node>
+    <node begin="6" end="7" frame="punct(punt)" his="normal" his_1="normal" id="10" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence sentid="11313">o , wat een lief konijntje .</sentence>
+  <metadata>
+    <meta type="text" name="session" value="sarah11"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="pid" value="11312/c-00022411-1"/>
+    <meta type="text" name="transcriber" value="Jacky Vernimmen , Jacqueline van Kampen"/>
+    <meta type="date" name="date" value="1991-07-20"/>
+    <meta type="text" name="location" value="The house of SAR's grandparents , Holland"/>
+    <meta type="text" name="situation" value="JAC reads from the book"/>
+    <meta type="text" name="comment" value="the tape is recorded badly , many utterances are difficult to hear"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="o , wat een lief konijntje@q."/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="int" name="uttid" value="356"/>
+  </metadata>
+</alpino_ds>

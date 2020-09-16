@@ -3,3 +3,4 @@ env
 selection/data
 *.pyc
 __pycache__
+.mypy_cache/

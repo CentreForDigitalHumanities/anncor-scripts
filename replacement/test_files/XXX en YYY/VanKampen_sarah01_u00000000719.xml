@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.6">
+  <metadata>
+    <meta type="text" name="session" value="sarah01"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="pid" value="11312/c-00022401-1"/>
+    <meta type="text" name="transcriber" value="Jacqueline van Kampen , Simone Boezewinkel"/>
+    <meta type="date" name="date" value="1990-11-18"/>
+    <meta type="text" name="location" value="SAR's home , Utrecht , Holland"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to play scrabble , SAR calls it the &lt;game for people&gt;"/>
+    <meta type="text" name="comment" value="the tape is recorded badly , many utterances are difficult to hear"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="yyy."/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="int" name="uttid" value="719"/>
+  </metadata>
+  <node rel="top" cat="top">
+    <node rel="--" pos="tag" root="yyy" postag="TSW()" pt="tsw" lemma="yyy" word="yyy" sense="y" begin="0" end="1"/>
+    <node rel="--" pos="punct" root="." postag="LET()" pt="let" lemma="." word="." sense="." begin="1" end="2"/>
+  </node>
+  <sentence sentid="720">yyy .</sentence>
+</alpino_ds>

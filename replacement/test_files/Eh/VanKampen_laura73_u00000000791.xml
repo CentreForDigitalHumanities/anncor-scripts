@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.6" id="Laura-63081.xml">
+  <parser cats="1" skips="0"/>
+  <node begin="0" cat="top" end="11" id="0" rel="top">
+    <node begin="5" end="6" frame="--" genus="zijd" getal="ev" graad="basis" his="skip" id="1" lcat="--" lemma="eh" naamval="stan" ntype="soort" pos="--" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="--" root="eh" sense="eh" word="eh"/>
+    <node begin="6" end="7" frame="punct(komma)" his="skip" id="2" lcat="--" lemma="," pos="punct" postag="LET()" pt="let" rel="--" root="," sense="," special="komma" word=","/>
+    <node begin="7" end="8" frame="tag" his="skip" id="3" lcat="--" lemma="xxx" pos="tag" postag="TSW()" pt="tsw" rel="--" root="xxx" sense="xxx" word="xxx"/>
+    <node begin="0" cat="ap" end="10" id="4" rel="--">
+      <node begin="0" cat="advp" end="4" id="5" rel="mod">
+        <node begin="0" buiging="zonder" end="1" frame="modal_adverb(adv_noun_prep)" graad="basis" his="normal" his_1="normal" id="6" lcat="advp" lemma="heel" pos="adv" positie="vrij" postag="ADJ(vrij,basis,zonder)" pt="adj" rel="mod" root="heel" sc="adv_noun_prep" sense="heel" word="heel"/>
+        <node begin="1" cat="mwu" end="4" his="normal" his_1="normal" id="7" mwu_root="af en toe" mwu_sense="af en toe" rel="hd">
+          <node begin="1" end="2" frame="sentence_adverb" id="8" lcat="advp" lemma="af" pos="adv" postag="VZ(fin)" pt="vz" rel="mwp" root="af" sense="af" special="sentence" vztype="fin" word="af"/>
+          <node begin="2" conjtype="neven" end="3" frame="sentence_adverb" id="9" lcat="advp" lemma="en" pos="adv" postag="VG(neven)" pt="vg" rel="mwp" root="en" sense="en" special="sentence" word="en"/>
+          <node begin="3" end="4" frame="sentence_adverb" id="10" lcat="advp" lemma="toe" pos="adv" postag="VZ(fin)" pt="vz" rel="mwp" root="toe" sense="toe" special="sentence" vztype="fin" word="toe"/>
+        </node>
+      </node>
+      <node begin="4" end="5" frame="tmp_adverb" his="normal" his_1="normal" id="11" lcat="advp" lemma="dan" pos="adv" postag="BW()" pt="bw" rel="mod" root="dan" sense="dan" special="tmp" word="dan"/>
+      <node begin="8" end="9" frame="wk_tmp_adverb" his="normal" his_1="variant" id="12" lcat="advp" lemma="eens" pos="adv" postag="BW()" pt="bw" rel="mod" root="eens" sense="eens" special="tmp" wk="yes" word="es"/>
+      <node aform="base" begin="9" end="10" frame="adjective(both(tmpadv))" his="normal" his_1="normal" id="13" infl="both" lcat="ap" lemma="even" pos="adj" postag="BW()" pt="bw" rel="hd" root="even" sense="even" vform="adj" word="even"/>
+    </node>
+    <node begin="10" end="11" frame="punct(punt)" his="normal" his_1="normal" id="14" lcat="punct" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence sentid="63081">heel af en toe dan eh , xxx es even .</sentence>
+  <metadata>
+    <meta type="text" name="session" value="laura73"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="pid" value="11312/c-00022399-1"/>
+    <meta type="date" name="date" value="1991-10-20"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="LAU is going to draw"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="heel af en toe dan eh , xxx es even."/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="int" name="uttid" value="791"/>
+  </metadata>
+</alpino_ds>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.6">
+  <metadata>
+    <meta type="text" name="session" value="sarah01"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="pid" value="11312/c-00022401-1"/>
+    <meta type="text" name="transcriber" value="Jacqueline van Kampen , Simone Boezewinkel"/>
+    <meta type="date" name="date" value="1990-11-18"/>
+    <meta type="text" name="location" value="SAR's home , Utrecht , Holland"/>
+    <meta type="text" name="situation" value="SAR and JAC are going to play scrabble , SAR calls it the &lt;game for people&gt;"/>
+    <meta type="text" name="comment" value="the tape is recorded badly , many utterances are difficult to hear"/>
+    <meta type="text" name="speaker" value="JAC"/>
+    <meta type="text" name="origutt" value="xxx sloffen [//] , sok weer aan."/>
+    <meta type="text" name="name" value="Jacqueline"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="text" name="role" value="Mother"/>
+    <meta type="int" name="uttid" value="758"/>
+  </metadata>
+  <node rel="top" cat="top">
+    <node rel="--" pos="punct" root="," postag="LET()" pt="let" lemma="," word="," sense="," begin="2" end="3"/>
+    <node rel="--" cat="du">
+      <node rel="dp" cat="du">
+        <node rel="tag" pos="tag" root="xxx" postag="TSW()" pt="tsw" lemma="xxx" word="xxx" sense="xxx" begin="0" end="1"/>
+        <node rel="nucl" pos="noun" root="slof" postag="N(soort,mv,basis)" pt="n" ntype="soort" getal="mv" graad="basis" lemma="slof" word="sloffen" sense="slof" begin="1" end="2"/>
+      </node>
+      <node rel="dp" cat="du">
+        <node rel="dp" pos="noun" root="sok" postag="N(soort,ev,basis,zijd,stan)" pt="n" ntype="soort" getal="ev" graad="basis" genus="zijd" naamval="stan" lemma="sok" word="sok" sense="sok" begin="3" end="4"/>
+        <node rel="dp" pos="adv" root="weer" postag="BW()" pt="bw" lemma="weer" word="weer" sense="weer" begin="4" end="5"/>
+        <node rel="dp" pos="part" root="aan" postag="VZ(init)" pt="vz" vztype="init" lemma="aan" word="aan" sense="aan" begin="5" end="6"/>
+      </node>
+    </node>
+    <node rel="--" pos="punct" root="." postag="LET()" pt="let" lemma="." word="." sense="." begin="6" end="7"/>
+  </node>
+  <sentence sentid="759">xxx sloffen , sok weer aan .</sentence>
+</alpino_ds>

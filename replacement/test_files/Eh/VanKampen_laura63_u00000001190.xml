@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alpino_ds version="1.6" id="Laura-53698.xml">
+  <parser cats="0" skips="1"/>
+  <node begin="0" cat="top" end="2" id="0" rel="top">
+    <node begin="0" end="1" frame="--" genus="zijd" getal="ev" graad="basis" his="robust_skip" id="1" lcat="--" lemma="eh" naamval="stan" ntype="soort" pos="--" postag="N(soort,ev,basis,zijd,stan)" pt="n" rel="--" root="eh" sense="eh" word="eh"/>
+    <node begin="1" end="2" frame="punct(punt)" his="robust_skip" id="2" lcat="--" lemma="." pos="punct" postag="LET()" pt="let" rel="--" root="." sense="." special="punt" word="."/>
+  </node>
+  <sentence sentid="53698">eh .</sentence>
+  <metadata>
+    <meta type="text" name="session" value="laura63"/>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="text" name="pid" value="11312/c-00022389-1"/>
+    <meta type="date" name="date" value="1991-01-20"/>
+    <meta type="text" name="transcriber" value="Simone Boezewinkel"/>
+    <meta type="text" name="situation" value="LAU and JAC are going to play another game"/>
+    <meta type="text" name="location" value="LAU's home , Utrecht , Holland"/>
+    <meta type="text" name="speaker" value="LAU"/>
+    <meta type="text" name="origutt" value="eh."/>
+    <meta type="text" name="name" value="Laura"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="corpus" value="VanKampen"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="int" name="uttid" value="1190"/>
+    <meta type="date" name="birth_of" value="1986-05-06"/>
+    <meta type="text" name="age" value="4;8.14"/>
+    <meta type="int" name="months" value="56"/>
+  </metadata>
+</alpino_ds>
