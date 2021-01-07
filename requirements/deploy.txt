@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file deploy.txt deploy.in
 #
-coloredlogs==7.0
+coloredlogs==7.0          # via -r conversion.in
 humanfriendly==3.8        # via coloredlogs
-lxml==3.8.0
-numpy==1.13.1
+lxml==4.6.2               # via -r conversion.in
+numpy==1.13.1             # via -r selection.in
