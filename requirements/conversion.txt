@@ -5,5 +5,8 @@
 #    pip-compile --output-file conversion.txt conversion.in
 #
 coloredlogs==7.0
-humanfriendly==3.8        # via coloredlogs
-lxml==3.8.0
+    # via -r conversion.in
+humanfriendly==3.8
+    # via coloredlogs
+lxml==4.6.3
+    # via -r conversion.in
