@@ -10,5 +10,5 @@ humanfriendly==3.8
     # via coloredlogs
 lxml==4.6.3
     # via -r conversion.in
-numpy==1.13.1
+numpy==1.21.0
     # via -r selection.in

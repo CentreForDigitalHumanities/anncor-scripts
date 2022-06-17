@@ -20,7 +20,7 @@ lxml==4.6.3
     # via -r conversion.in
 mccabe==0.6.1
     # via pylint
-numpy==1.13.1
+numpy==1.21.0
     # via -r selection.in
 pycodestyle==2.3.1
     # via autopep8
