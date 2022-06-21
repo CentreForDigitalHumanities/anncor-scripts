@@ -4,4 +4,4 @@
 #
 #    pip-compile --output-file selection.txt selection.in
 #
-numpy==1.13.1
+numpy==1.22.0
