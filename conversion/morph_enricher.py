@@ -3,6 +3,8 @@
 Module for enriching a CHAT file with morphological information.
 """
 import re
+from os import listdir
+from os.path import isdir, join
 
 from .exceptions import NodeMappingException, SentenceMappingException, SentenceNotFoundException
 from .injectable_file import InjectableFile
@@ -20,45 +22,76 @@ class MorphEnricher:
         self.__pos_reader = PosNodesReader()
         self.failed_sentences_count = 0
         self.missing_tags = set()
+        self.sentence_map = {}
 
-    def map(self, chat_filename, pos_filename):
+    def read_pos_directories(self, filepath):
+        directories = listdir(filepath)
+        self.directory_count = len(directories)
+        for directory_i in range(0, self.directory_count):
+            directory = directories[directory_i]
+            dirpath = join(filepath, directory)
+            if isdir(dirpath):
+                session = session_pattern.sub("", directory)
+                files = listdir(dirpath)
+                self.file_count = len(files)
+                for file_i in range(0, self.file_count):
+                    filename = files[file_i]
+                    xmlpath = join(dirpath, filename)
+                    try:
+                        for sentence_i in self.read_pos_file(xmlpath, session):
+                            yield (directory_i, file_i, sentence_i)
+                    except:
+                        raise Exception('Problem parsing ' + xmlpath)
+
+    def read_pos_file(self, filename, session = None):
+        with open(filename) as pos_file:
+            sentences = list(self.__pos_reader.read_sentences(pos_file))
+            self.sentence_count = len(sentences)
+            for i in range(0, self.sentence_count):
+                sentence = sentences[i]
+                if session == None:
+                    session = sentence.session
+                if not session in self.sentence_map:
+                    self.sentence_map[session] = {}
+                elif sentence.uttid in self.sentence_map[session]:
+                    raise Exception('Duplicate uttid {0} in "{1}! ({2})"'.format(
+                        sentence.uttid,
+                        session,
+                        sentence.sentence_text))
+
+                self.sentence_map[session][sentence.uttid] = sentence
+
+                yield i
+
+
+    def map(self, chat_filename, replace_existing_mor = True):
         """
         Map a single CHAT file using the provided Lassy XML file containing the morphology
         of the utterances.
         """
 
-        # TODO: read the map once
-        session = session_pattern.sub("", chat_filename)
-        sentence_map = {}
-
-        with open(pos_filename) as pos_file:
-            for sentence in self.__pos_reader.read_sentences(pos_file):
-                if not sentence.session in sentence_map:
-                    sentence_map[sentence.session] = {}
-                elif sentence.uttid in sentence_map[sentence.session]:
-                    raise Exception('Duplicate uttid {0} in "{1}! ({2})"'.format(
-                        sentence.uttid,
-                        sentence.session,
-                        sentence.sentence_text))
-
-                sentence_map[sentence.session][sentence.uttid] = sentence
-
         chat_file = InjectableFile(chat_filename)
+        session = session_pattern.sub("", chat_filename)
         current_line = None
         uttid = 0
+        skipping_mor_lines = False
         try:
             for line in chat_file.read_lines(False):
                 if line.startswith("*") or line.startswith('%') or line.startswith('@'):
+                    if replace_existing_mor:
+                        skipping_mor_lines = line.startswith('%mor')
                     if current_line:
-                        yield self.__parse_line(current_line, sentence_map, session, uttid)
+                        yield self.__parse_line(current_line, self.sentence_map, session, uttid)
                         uttid += 1
                         current_line = None
                     if line.startswith("*"):
                         current_line = line
+                    else:
+                        current_line = None
                 elif current_line != None:
                     current_line += ' ' + line
-
-                yield line
+                if not skipping_mor_lines:
+                    yield line
 
             if current_line:
                 yield self.__parse_line(current_line, sentence_map, session, uttid)

@@ -17,7 +17,10 @@ class PunctuationMapping:
                 self.__lookup__[row[0]] = row[1]
 
     def __getitem__(self, key):
-        return self.__lookup__[key]
+        try:
+            return self.__lookup__[key]
+        except Exception as error:
+            raise Exception(f'Unknown punctuation symbol: {key}' ) from error
 
     def keys(self):
         return self.__lookup__.keys()
