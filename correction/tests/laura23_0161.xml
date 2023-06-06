@@ -1,0 +1,42 @@
+<alpino_ds version="1.3">
+  <node rel="top" cat="top">
+    <node rel="--" pos="tag" root="e" postag="TSW()" pt="tsw" lemma="e" word="e" begin="3" end="4"/>
+    <node rel="--" pos="tag" root="eh" postag="TSW()" pt="tsw" lemma="eh" word="eh" begin="0" end="1"/>
+    <node rel="--" cat="du">
+      <node rel="tag" pos="tag" root="xxx" postag="SPEC(onverst)" pt="spec" lemma="xxx" word="xxx" begin="4" end="5" spectype="onverst"/>
+      <node rel="nucl" cat="du">
+        <node rel="dp" pos="pron" root="jij" postag="VNW(pers,pron,nomin,vol,2v,ev)" pt="vnw" vwtype="pers" pdtype="pron" naamval="nomin" status="vol" persoon="2v" getal="ev" lemma="jij" word="jij" begin="1" end="2"/>
+        <node rel="dp" cat="np">
+          <node rel="mod" pos="adv" root="ook" postag="BW()" pt="bw" lemma="ook" word="ook" begin="2" end="3"/>
+          <node rel="hd" pos="noun" root="spul" postag="N(soort,mv,basis)" pt="n" ntype="soort" getal="mv" graad="basis" lemma="spullen" word="pulle" begin="5" end="6"/>
+        </node>
+      </node>
+    </node>
+    <node rel="--" pos="punct" root="." postag="LET()" pt="let" lemma="." word="." begin="6" end="7"/>
+  </node>
+  <sentence>eh jij ook e xxx pulle .</sentence>
+  <metadata>
+    <meta type="text" name="charencoding" value="UTF8"/>
+    <meta type="date" name="date" value="1988-12-25"/>
+    <meta type="text" name="location" value="LAU's home , Utrecht , Holland"/>
+    <meta type="text" name="session" value="laura23"/>
+    <meta type="text" name="situation" value="LAU is drawing"/>
+    <meta type="text" name="transcriber" value="Evelien Krikhaar , Jacqueline van Kampen"/>
+    <meta type="text" name="speaker" value="LAU"/>
+    <meta type="text" name="origutt" value="eh jij ook e xxx pulle +..."/>
+    <meta type="int" name="uttstartlineno" value="178"/>
+    <meta type="int" name="uttendlineno" value="178"/>
+    <meta type="text" name="childage" value="2;7.19"/>
+    <meta type="int" name="childmonths" value="31"/>
+    <meta type="text" name="name" value="Laura"/>
+    <meta type="text" name="corpus" value="vankampen"/>
+    <meta type="text" name="language" value="nld"/>
+    <meta type="text" name="role" value="Child"/>
+    <meta type="int" name="uttid" value="161"/>
+    <meta type="date" name="birth_of" value="1986-05-06"/>
+    <meta type="text" name="age" value="2;7.19"/>
+    <meta type="int" name="months" value="31"/>
+    <meta name="annotators" type="text" value="140,100"/>
+  </metadata>
+</alpino_ds>
+
