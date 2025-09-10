@@ -1,5 +1,7 @@
 # AnnCor-scripts
 
+[![DOI](https://zenodo.org/badge/93640811.svg)](https://doi.org/10.5281/zenodo.17094017)
+
 It is recommended to create a `virtualenv` using Python 3.5 (or higher) before running any of the code.
 
 Then simply:
