@@ -1,0 +1,41 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: AnnCor scripts
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - family-names: >-
+      Research Software Lab, Centre for Digital Humanities,
+      Utrecht University
+  - given-names: Jan
+    family-names: Odijk
+    affiliation: Utrecht University
+    orcid: 'https://orcid.org/0000-0003-3331-1182'
+  - given-names: Gerson
+    family-names: Foks
+    affiliation: Utrecht University
+  - given-names: Sheean
+    family-names: Spoel
+    affiliation: Utrecht University
+    orcid: 'https://orcid.org/0000-0002-6802-4135'
+  - given-names: Jelte
+    family-names: van Boheemen
+    affiliation: Utrecht University
+    orcid: 'https://orcid.org/0000-0002-2802-3242'
+repository-code: >-
+  https://github.com/CentreForDigitalHumanities/anncor-scripts
+abstract: >-
+  A place for all the AnnCor scripts. These are various
+  scripts for dealing with Lassy (Alpino) XML Dutch corpora
+  to investigate morphological and syntactic phenomena
+keywords:
+  - morphology
+  - dutch
+  - syntactic
+  - alpino
+  - lassy
+license: MIT
