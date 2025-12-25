@@ -11,4 +11,6 @@ humanfriendly==3.8
 lxml==4.6.3
     # via -r conversion.in
 numpy==1.13.1
-tqdm==4.32.2
+    # via -r selection.in
+tqdm==4.66.3
+    # via -r conversion.in
